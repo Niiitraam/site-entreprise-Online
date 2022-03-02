@@ -1,11 +1,11 @@
 <header>
     <nav class="navbar-main">
-        <div class="logo">
-            <i class="fas fa-rocket"></i>
+        <div class="div-logo">
+            <img src="{{asset('image/logo.png')}}" class="logo" alt="">
         </div>
         <div class="toggle">
-            <i class="fas fa-bars ouvrir"></i>
-            <i class="fas fa-times fermer"></i>
+            <i class="fas fa-bars ouvrir jaune"></i>
+            <i class="fas fa-times fermer jaune"></i>
         </div>
         <ul class="ul-navbar">
             <div class="div-lien">
