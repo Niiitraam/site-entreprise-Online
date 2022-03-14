@@ -73,7 +73,3 @@ TL
 //fin home et navbar
 
 // fin greensock
-
-// window.addEventListener('scroll', function(e){
-//     window.scrollTo(0,0)
-// }, false)
