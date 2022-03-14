@@ -1,7 +1,7 @@
 <header>
     <nav class="navbar-main">
         <div class="div-logo">
-            <img src="{{secure_asset('image/logo.png')}}" class="logo" alt="">
+            <img src="{{asset('image/logo.png')}}" class="logo" alt="">
         </div>
         <div class="toggle">
             <i class="fas fa-bars ouvrir jaune"></i>
