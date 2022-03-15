@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger)
+
 //navbar
 
 let toggle = document.querySelector('.toggle')
@@ -6,6 +8,15 @@ let body = document.querySelector('body')
 toggle.addEventListener('click', function(){
     body.classList.toggle('open')
 })
+
+
+
+gsap.to('header', {
+    ScrollTrigger: "header",
+    backgroundColor:'black',
+    duration:1
+})
+
 
 //card service
 
@@ -47,6 +58,8 @@ let scrollHome = document.querySelector('.scroll-home')
 
 let logo = document.querySelector('.div-logo')
 let divLien = document.querySelectorAll('.div-lien')
+let burger = document.querySelector('.ouvrir')
+let icone = document.querySelectorAll('.icone')
 
 let TL = gsap.timeline({
     defaults: {
@@ -65,9 +78,11 @@ TL
 .to(divCache, {display:'block'}, '-=0.01')
 //fin loader
 //debut home et navbar
-.to(logo, {y:0, ease:'power4', opacity:1}, '<')
+.to(logo, {y:0, opacity:1}, '<')
+.to(burger, {y:0, fontSize:'2rem', opacity:1}, '<')
+.to(icone, {y:0, opacity:1},'<')
 .to(divLien, {y:0, ease:'power4', opacity:1}, '<')
-.to(divHome, {x:0, opacity:1, duration:1, ease:'power4'}, '-=0.75')
+.to(divHome, {x:0, opacity:1, duration:1, ease:'power4'}, '-=0.50')
 .to(ligne, {height:'5vh', ease:'power4'})
 .to(scrollHome, {y:0, ease:'power4', opacity:1}, '-=0.75')
 //fin home et navbar

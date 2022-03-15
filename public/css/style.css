@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+body{
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: fantasy;
+}
+
+.color-gradient{
+    background-image: linear-gradient(45deg,#ECFD18, #201E20);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
 .jaune{
     color: #ECFD18;
 }
@@ -40,7 +53,7 @@
 .div-gauche{
     width: 50%;
     height: 100%;
-    background-color: #020a59;
+    background-image: radial-gradient(circle at center center, rgb(2,10,89),rgb(8, 8, 8));
     position: relative;
     display: flex;
     align-items: center;
@@ -84,7 +97,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #020a59;
+    background-image: radial-gradient(circle at center center, rgb(2,10,89),rgb(8, 8, 8));
     width: 100%;
     height: 8vh;
     color: white;
@@ -176,6 +189,8 @@ li{
 
 .icone{
     font-size: 30px;
+    opacity: 0;
+    transform: translateY(30px);
 }
 
 /* Fin section navbar */
@@ -190,7 +205,7 @@ li{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #020a59;
+    background-image: radial-gradient(circle at center center, rgb(2,10,89),rgb(8, 8, 8));
 }
 
 .h1-home{
@@ -267,107 +282,6 @@ li{
 
 /* service */
 
-.div-service{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    flex-direction: column;
-}
-
-.location{
-    border: 3px solid #ECFD18;
-    padding: 1%;
-    border-radius: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 300px;
-    width: 250px;
-    transform-style: preserve-3d;
-    position: relative;
-    transition: 1s;
-}
-
-.img-location{
-    width: 100%;
-}
-
-.text-location{
-    font-size: 20px;
-    text-align: center;
-}
-
-.margin-about{
-    margin-left: 5%;
-    /* transform: rotate(50deg); */
-}
-
-.carte1{
-    transform: rotate(-20deg);
-    margin-top: 15%;
-}
-
-.carte2{
-    transform: rotate(-10deg);
-    margin-top: 3%;
-}
-
-.carte3{
-    transform: rotate(10deg);
-    margin-top: 3%;
-}
-
-.carte4{
-    transform: rotate(20deg);
-    margin-top: 15%;
-}
-
-.div-carte{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.h2-service{
-    font-size: 40px;
-    text-transform: uppercase;
-    border-bottom: 1px solid #ECFD18;
-}
-
-.carte-face{
-    position: absolute;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    width: 100%;
-    height: 100%;
-    border-radius: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.carte-front{
-    background-color: #020a59;
-    background-size: cover;
-}
-
-.carte-back{
-    background-color: #020a59;
-    background-size: cover;
-    transform: rotateY(180deg);
-}
-
-.location.flip{
-    transform: rotateY(160deg);
-}
-
-.carte-back p{
-    padding: 5%;
-}
 
 /* fin service */
 
@@ -394,6 +308,9 @@ li{
     }
     .ouvrir{
         display: block;
+        font-size: 0;
+        opacity: 0;
+        transform: translateY(-30px);
     }
     .fermer{
         display: none;
@@ -410,7 +327,7 @@ li{
         left: 0;
         width: 100%;
         height: 100vh;
-        background-color: rgba(2, 10, 89, 255);
+        background-image: radial-gradient(circle at center center, rgb(2,10,89),rgb(8, 8, 8));
         flex-direction: column;
         justify-content: space-around;
         padding-top: 20%;
@@ -430,6 +347,8 @@ li{
     }
     .div-logo{
         width: 80%;
+        position: relative;
+        z-index: 20;
     }
     .a-lien{
         text-transform: uppercase;
@@ -470,43 +389,7 @@ li{
     }
 
     /* service */
-    .div-carte{
-        flex-wrap: wrap;
-    }
-    .location{
-        height: 200px;
-        width: 150px;
-        margin-bottom: 10px;
-    }
-    .carte1{
-        transform: rotate(0deg);
-        margin-top: 0;
-    }
-    .carte2{
-        transform: rotate(0deg);
-        margin-top: 0;
-    }
-    .carte3{
-        transform: rotate(0deg);
-        margin-top: 0;
-    }
-    .carte4{
-        transform: rotate(0deg);
-        margin-top: 0;
-    }
-    .text-location{
-        font-size: 11px;
-    }
-    .exeption{
-        margin-left: 0;
-    }
-    .h2-service{
-        font-size: 30px;
-        padding-bottom: 5%;
-    }
-    .carte-back p {
-        font-size: 13px;
-    }
+    
     /* loader */
     .h1-loader{
         font-size: 20px;
