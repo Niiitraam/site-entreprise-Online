@@ -1,5 +1,3 @@
-gsap.registerPlugin(ScrollTrigger)
-
 //navbar
 
 let toggle = document.querySelector('.toggle')
@@ -11,8 +9,66 @@ toggle.addEventListener('click', function(){
 
 
 
+let lienImpair = document.querySelectorAll('.s1')
+let tableauImpair = Array.from(lienImpair)
+
+let lienPair = document.querySelectorAll('.s2')
+let tableauPair = Array.from(lienPair)
+
+let lienColor = document.querySelectorAll('.s1-color')
+let tableauColor = Array.from(lienColor)
+
+let lienColor2 = document.querySelectorAll('.s2-color')
+let tableauColor2 = Array.from(lienColor2)
+
+
+tableauImpair.forEach((element, index) =>{
+    element.addEventListener('mouseover', function(){
+        s1In(index)
+    })
+    element.addEventListener('mouseout', function(){
+        s1Out(index)
+    })
+})
+
+function s1In(i){
+    tableauColor[i].style.color = '#e53d00';
+    gsap.to(tableauColor[i], {paddingLeft:200, duration:.1})
+}
+
+function s1Out(i){
+    tableauColor[i].style.color = '#ECFD18';
+    gsap.to(tableauColor[i], {paddingLeft:0, duration:.1})
+}
+
+tableauPair.forEach((element, index) =>{
+    element.addEventListener('mouseover', function(){
+        s2In(index)
+    })
+    element.addEventListener('mouseout', function(){
+        s2Out(index)
+    })
+})
+
+function s2In(i){
+    tableauColor2[i].style.color = '#e53d00';
+    gsap.to(tableauColor2[i], {paddingRight:200, ease:'power1', duration:.1})
+}
+
+function s2Out(i){
+    tableauColor2[i].style.color = '#ECFD18';
+    gsap.to(tableauColor2[i], {paddingRight:0, ease:'power1', duration:.1})
+}
+
+
+
+
+//gsap pour changement de couleur
+
+gsap.registerPlugin(ScrollTrigger)
+
 gsap.to('header', {
-    ScrollTrigger: "header",
+    scrollTrigger: "header",
     backgroundColor:'black',
     duration:1
 })

@@ -121,64 +121,58 @@ li{
     position: relative;
     transform: translateY(-10px);
     opacity: 0;
+    /* width: 500px;
+    display: flex;
+    justify-content: center; */
 }
 
 .a-lien{
-    color: white;
-    will-change: transform;
-    display: inline-block;
+    color: #ECFD18;
     transition: 0.5s;
 }
 
 .div-lien li a{
     text-decoration: none;
-    color: #ECFD18;
-    font-size: 19px;
-}
-
-.toggle{
-    display: none;
+    font-size: 75px;
 }
 
 .ul-navbar{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    width: 50%;
-}
-
-.s1 a{
-    transform-origin: bottom;
-}
-
-.s2 a{
-    transform-origin: top;
-    transform: translateY(100%) rotateX(-90deg);
-}
-
-.s2{
     position: absolute;
     top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(circle at center center, rgb(2,10,89),rgb(8, 8, 8));
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    transform: translateX(-100%);
+    transition: transform 1s;
 }
 
-.div-lien:hover .s1 a{
-    transform: translateY(-100%) rotateX(-90deg);
+.toggle{
+    display: block;
+    font-size: 2rem;
+    position: relative;
+    z-index: 20;
 }
 
-.div-lien:hover .s2 a{
-    transform: translateY(0%) rotateX(0deg);
-}
+
 
 .logo{
     width: 20%;
+    color: #ECFD18;
 }
 
 .div-logo{
     width: 30%;
     transform: translateY(-10px);
     opacity: 0;
+    position: relative;
+    z-index: 20;
 }
 
 .div-reseau{
@@ -191,6 +185,25 @@ li{
     font-size: 30px;
     opacity: 0;
     transform: translateY(30px);
+}
+
+.ouvrir{
+    display: block;
+    font-size: 0;
+    opacity: 0;
+    transform: translateY(-30px);
+}
+.fermer{
+    display: none;
+}
+.open .ouvrir{
+    display: none;
+}
+.open .fermer{
+    display: block;
+}
+.open .ul-navbar{
+    transform: translateX(0);
 }
 
 /* Fin section navbar */
@@ -278,6 +291,8 @@ li{
     width: 30%;
 }
 
+
+
 /* fin About us */
 
 /* service */
@@ -295,60 +310,12 @@ li{
     header{
         padding: 0 2rem;
     }
-    .toggle{
-        display: block;
-        font-size: 2rem;
-        position: relative;
-        z-index: 20;
-    }
-    .logo{
-        position: relative;
-        z-index: 20;
-        color: #ECFD18;
-    }
-    .ouvrir{
-        display: block;
-        font-size: 0;
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-    .fermer{
-        display: none;
-    }
-    .open .ouvrir{
-        display: none;
-    }
-    .open .fermer{
-        display: block;
-    }
-    .ul-navbar{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background-image: radial-gradient(circle at center center, rgb(2,10,89),rgb(8, 8, 8));
-        flex-direction: column;
-        justify-content: space-around;
-        padding-top: 20%;
-        padding-bottom: 20%;
-        transform: translateX(-100%);
-        transition: transform 1s;
-    }
     .div-lien li a{
         font-size: 25px;
         color: #ECFD18;
     }
-    .open .ul-navbar{
-        transform: translateX(0);
-    }
-    .s2{
-        display: none;
-    }
     .div-logo{
         width: 80%;
-        position: relative;
-        z-index: 20;
     }
     .a-lien{
         text-transform: uppercase;
@@ -383,6 +350,7 @@ li{
     }
     .text2-about{
         font-size: 13px;
+        text-align: center;
     }
     .logo-noir{
         width: 50%;

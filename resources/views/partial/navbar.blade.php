@@ -8,25 +8,20 @@
             <i class="fas fa-times fermer jaune"></i>
         </div>
         <ul class="ul-navbar">
-            <div class="div-lien">
-                <li class="s1"><a href="" class="a-lien">Home</a></li>
-                <li class="s2"><a href="" class="a-lien">Home</a></li>
+            <div class="div-lien s1">
+                <li><a href="" class="a-lien s1-color">Home</a></li>
             </div>
-            <div class="div-lien">
-                <li class="s1"><a href="" class="a-lien">A propos</a></li>
-                <li class="s2"><a href="" class="a-lien">A propos</a></li>
+            <div class="div-lien s2">
+                <li><a href="" class="a-lien s2-color">A propos</a></li>
             </div>
-            <div class="div-lien">
-                <li class="s1"><a href="" class="a-lien">Nos services</a></li>
-                <li class="s2"><a href="" class="a-lien">Nos services</a></li>
+            <div class="div-lien s1">
+                <li><a href="" class="a-lien s1-color">Nos services</a></li>
             </div>
-            <div class="div-lien">
-                <li class="s1"><a href="" class="a-lien">Projets</a></li>
-                <li class="s2"><a href="" class="a-lien">Projets</a></li>
+            <div class="div-lien s2">
+                <li><a href="" class="a-lien s2-color">Projets</a></li>
             </div>
-            <div class="div-lien">
-                <li class="s1"><a href="" class="a-lien">Contact</a></li>
-                <li class="s2"><a href="" class="a-lien">Contact</a></li>
+            <div class="div-lien s1">
+                <li><a href="" class="a-lien s1-color">Contact</a></li>
             </div>
         </ul>
     </nav>
