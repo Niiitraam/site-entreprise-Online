@@ -13,6 +13,7 @@
     <div class="div-loader">
         <div class="div-gauche">
             <img src="{{asset('image/logo-black.jpg')}}" class="img-loader" alt="">
+            <p class="p-phone">Bienvenue chez MM</p>
         </div>
         <div class="div-droite">
             <h1 class="h1-loader">Agence</h1>

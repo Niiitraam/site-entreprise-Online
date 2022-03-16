@@ -6,8 +6,6 @@
         <div class="toggle rondAutour">
             <i class="ouvrir"></i>
             <i class="fermer"></i>
-            {{-- <i class="fas fa-bars ouvrir rondAutour"></i>
-            <i class="fas fa-times fermer rondAutour"></i> --}}
         </div>
         <ul class="ul-navbar">
             <div class="div-lien s1">

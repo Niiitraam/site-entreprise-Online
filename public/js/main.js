@@ -5,7 +5,7 @@ let body = document.querySelector('body')
 
 toggle.addEventListener('click', function(){
     body.classList.toggle('open')
-    gsap.to(divLien, {y:0, ease:'power4', opacity:1})
+    gsap.to(divLien, {x:0, ease:'steps(5)', opacity:1, stagger:0.3})
 })
 
 let rond = document.querySelector('.rondAutour')
@@ -34,16 +34,6 @@ fermerTourne.forEach((element, index) =>{
         gsap.to(fermer, {rotate:0, y:30})
     })
 })
-
-// test.addEventListener('mouseover', ()=>{
-//     gsap.to(burger, {rotation:180})
-// })
-
-// test.addEventListener('mouseout', ()=>{
-//     gsap.to(burger, {rotation:'-180'})
-// })
-
-
 
 let lienImpair = document.querySelectorAll('.s1')
 let tableauImpair = Array.from(lienImpair)
@@ -152,6 +142,8 @@ let logo = document.querySelector('.div-logo')
 let divLien = document.querySelectorAll('.div-lien')
 let icone = document.querySelectorAll('.icone')
 
+let textPhone = document.querySelector('.p-phone')
+
 
 let TL = gsap.timeline({
     defaults: {
@@ -160,23 +152,47 @@ let TL = gsap.timeline({
     }
 });
 
-TL
-.to(imageLoader, {y:0, opacity:1})
-.to(titre, {y:0, opacity:1}, 0)
-.to(divAccueil, {display:'flex'})
-.to(divGauche, {y:'-100%', ease: 'power4'})
-.to(divDroite, {y: '100%', ease: 'power4'}, '-=0.75')
-.to(divLoader, {display: 'none', duration:.1})
-.to(divCache, {display:'block'}, '-=0.01')
-//fin loader
-//debut home et navbar
-.to(logo, {y:0, opacity:1}, '<')
-// .to(burger, {y:0, fontSize:'2rem', opacity:1}, '<')
-.to(rond, {y:0, opacity:1}, '<')
-.to(icone, {y:0, opacity:1},'<')
-.to(divHome, {x:0, opacity:1, duration:1, ease:'power4'}, '-=0.50')
-.to(ligne, {height:'5vh', ease:'power4'})
-.to(scrollHome, {y:0, ease:'power4', opacity:1}, '-=0.75')
+if(window.matchMedia('(min-width:600px)').matches){
+    TL
+    .to(imageLoader, {y:0, opacity:1})
+    .to(titre, {y:0, opacity:1}, 0)
+    .to(divAccueil, {display:'flex'})
+    .to(divGauche, {y:'-100%', ease: 'power4'})
+    .to(divDroite, {y: '100%', ease: 'power4'}, '-=0.75')
+    .to(divLoader, {display: 'none', duration:.1})
+    .to(divCache, {display:'block'}, '-=0.01')
+    //fin loader
+    //debut home et navbar
+    .to(logo, {y:0, opacity:1}, '<')
+    .to(burger, {y:0, fontSize:'2rem', opacity:1}, '<')
+    .to(rond, {y:0, opacity:1}, '<')
+    .to(icone, {y:0, opacity:1},'<')
+    .to(divHome, {x:0, opacity:1, duration:1, ease:'power4'}, '-=0.50')
+    .to(ligne, {height:'5vh', ease:'power4'})
+    .to(scrollHome, {y:0, ease:'power4', opacity:1}, '-=0.75')
+}else{
+    TL
+    .to(imageLoader, {y:0, opacity:1})
+    .to(titre, {y:0, opacity:1}, 0)
+    .to(divAccueil, {display:'flex'})
+    .to(imageLoader, { width:'40%', ease:'power4'})
+    .to(textPhone, {y:0, ease:'power4', opacity:1}, '<')
+    .to(divGauche, {y:'-100%', ease: 'power4'})
+    .to(divDroite, {y: '100%', ease: 'power4'}, '-=0.75')
+    .to(divLoader, {display: 'none', duration:.1})
+    .to(divCache, {display:'block'}, '<')
+    //fin loader
+    //debut home et navbar
+    .to(logo, {y:0, opacity:1}, '<')
+    // .to(burger, {y:0, fontSize:'2rem', opacity:1}, '<')
+    .to(rond, {y:0, opacity:1}, '<')
+    .to(icone, {y:0, opacity:1},'<')
+    .to(divHome, {x:0, opacity:1, duration:1, ease:'power4'}, '-=0.50')
+    .to(ligne, {height:'5vh', ease:'power4'})
+    .to(scrollHome, {y:0, ease:'power4', opacity:1}, '-=0.75')
+}
+
+
 //fin home et navbar
 
 // fin greensock

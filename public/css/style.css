@@ -35,6 +35,10 @@ body{
 
 /* debut loader */
 
+.p-phone{
+    display: none;
+}
+
 .div-accueil{
     display: none;
 }
@@ -119,9 +123,18 @@ li{
 
 .div-lien{
     position: relative;
-    transform: translateY(-30px);
+}
+
+.s1{
+    transform: translateX(-60px);
     opacity: 0;
-    transition: 1s;
+    transition: 0.15s;
+}
+
+.s2{
+    transform: translateX(60px);
+    opacity: 0;
+    transition: 0.15s;
 }
 
 .a-lien{
@@ -383,7 +396,7 @@ li{
     /* Home */
     
     .h1-home{
-        font-size: 30px;
+        font-size: 25px;
         text-align: center;
     }
     .h2-home{
@@ -396,7 +409,7 @@ li{
     /* about */
 
     .h2-about{
-        font-size: 30px;
+        font-size: 25px;
     }
     .text1-about{
         font-size: 15px;
@@ -415,5 +428,23 @@ li{
     /* loader */
     .h1-loader{
         font-size: 20px;
+    }
+    .div-droite{
+        display: none;
+    }
+    .div-gauche{
+        width: 100%;
+        background-color: #ECFD18;
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .p-phone{
+        color: #020a59;
+        display: block;
+        font-size: 30px;
+        padding-top: 10%;
+        opacity: 0;
+        transform: translateY(50px);
     }
 }
