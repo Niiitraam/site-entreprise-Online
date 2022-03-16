@@ -99,7 +99,7 @@ header{
     left: 0;
     background-image: radial-gradient(circle at center center, rgb(2,10,89),rgb(8, 8, 8));
     width: 100%;
-    height: 8vh;
+    height: 12vh;
     color: white;
     padding: 0 3rem;
     z-index: 20;
@@ -119,15 +119,13 @@ li{
 
 .div-lien{
     position: relative;
-    transform: translateY(-10px);
+    transform: translateY(-30px);
     opacity: 0;
-    /* width: 500px;
-    display: flex;
-    justify-content: center; */
+    transition: 1s;
 }
 
 .a-lien{
-    color: #ECFD18;
+    color: white;
     transition: 0.5s;
 }
 
@@ -160,7 +158,17 @@ li{
     z-index: 20;
 }
 
-
+.rondAutour{
+    color: #020a59;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: white;
+    width: 62px;
+    height: 62px;
+    min-width: max-content;
+    transform: translateY(-30px);
+    opacity: 0;
+}
 
 .logo{
     width: 20%;
@@ -188,19 +196,65 @@ li{
 }
 
 .ouvrir{
-    display: block;
-    font-size: 0;
-    opacity: 0;
-    transform: translateY(-30px);
+    width: 26px;
+    height: 2px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
 }
+
+.ouvrir:before,
+.ouvrir:after
+{
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 2px;
+    background: #020a59;
+    top: -6px;
+}
+
+.ouvrir:before{
+    top: -7px;
+}
+
+.ouvrir:after{
+    top: 7px;
+}
+
 .fermer{
     display: none;
 }
+
+.fermer:before,
+.fermer:after
+{
+    background: #020a59;
+    position: absolute;
+    content: '';
+    display: block;
+    width: 26px;
+    height: 2px;
+    top: 50%;
+    transform: rotate(45deg);
+    pointer-events: none;
+}
+
+.fermer:after{
+    transform: rotate(-45deg);
+}
+
+
 .open .ouvrir{
     display: none;
 }
 .open .fermer{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .open .ul-navbar{
     transform: translateX(0);

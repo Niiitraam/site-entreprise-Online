@@ -1,11 +1,13 @@
 <header>
     <nav class="navbar-main">
         <div class="div-logo">
-            <img src="{{secure_asset('image/logo.png')}}" class="logo" alt="">
+            <img src="{{asset('image/logo.png')}}" class="logo" alt="">
         </div>
-        <div class="toggle">
-            <i class="fas fa-bars ouvrir jaune"></i>
-            <i class="fas fa-times fermer jaune"></i>
+        <div class="toggle rondAutour">
+            <i class="ouvrir"></i>
+            <i class="fermer"></i>
+            {{-- <i class="fas fa-bars ouvrir rondAutour"></i>
+            <i class="fas fa-times fermer rondAutour"></i> --}}
         </div>
         <ul class="ul-navbar">
             <div class="div-lien s1">

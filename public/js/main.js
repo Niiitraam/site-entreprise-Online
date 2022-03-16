@@ -5,7 +5,43 @@ let body = document.querySelector('body')
 
 toggle.addEventListener('click', function(){
     body.classList.toggle('open')
+    gsap.to(divLien, {y:0, ease:'power4', opacity:1})
 })
+
+let rond = document.querySelector('.rondAutour')
+let burger = document.querySelector('.ouvrir')
+
+let ouvrirTourne = [rond, burger]
+
+ouvrirTourne.forEach((element, index) =>{
+    element.addEventListener('mouseover', function(){
+        gsap.to(burger, {rotation:180})
+    })
+    element.addEventListener('mouseout', function(){
+        gsap.to(burger, {rotation:'0'})
+    })
+})
+
+let fermer = document.querySelector('.fermer')
+
+let fermerTourne = [rond, fermer]
+
+fermerTourne.forEach((element, index) =>{
+    element.addEventListener('mouseover', function(){
+        gsap.to(fermer, {rotation:180, y:30})
+    })
+    element.addEventListener('mouseout', function(){
+        gsap.to(fermer, {rotate:0, y:30})
+    })
+})
+
+// test.addEventListener('mouseover', ()=>{
+//     gsap.to(burger, {rotation:180})
+// })
+
+// test.addEventListener('mouseout', ()=>{
+//     gsap.to(burger, {rotation:'-180'})
+// })
 
 
 
@@ -32,12 +68,12 @@ tableauImpair.forEach((element, index) =>{
 })
 
 function s1In(i){
-    tableauColor[i].style.color = '#e53d00';
+    tableauColor[i].style.color = '#ECFD18';
     gsap.to(tableauColor[i], {paddingLeft:200, duration:.1})
 }
 
 function s1Out(i){
-    tableauColor[i].style.color = '#ECFD18';
+    tableauColor[i].style.color = 'white';
     gsap.to(tableauColor[i], {paddingLeft:0, duration:.1})
 }
 
@@ -51,12 +87,12 @@ tableauPair.forEach((element, index) =>{
 })
 
 function s2In(i){
-    tableauColor2[i].style.color = '#e53d00';
+    tableauColor2[i].style.color = '#ECFD18';
     gsap.to(tableauColor2[i], {paddingRight:200, ease:'power1', duration:.1})
 }
 
 function s2Out(i){
-    tableauColor2[i].style.color = '#ECFD18';
+    tableauColor2[i].style.color = 'white';
     gsap.to(tableauColor2[i], {paddingRight:0, ease:'power1', duration:.1})
 }
 
@@ -114,8 +150,8 @@ let scrollHome = document.querySelector('.scroll-home')
 
 let logo = document.querySelector('.div-logo')
 let divLien = document.querySelectorAll('.div-lien')
-let burger = document.querySelector('.ouvrir')
 let icone = document.querySelectorAll('.icone')
+
 
 let TL = gsap.timeline({
     defaults: {
@@ -135,9 +171,9 @@ TL
 //fin loader
 //debut home et navbar
 .to(logo, {y:0, opacity:1}, '<')
-.to(burger, {y:0, fontSize:'2rem', opacity:1}, '<')
+// .to(burger, {y:0, fontSize:'2rem', opacity:1}, '<')
+.to(rond, {y:0, opacity:1}, '<')
 .to(icone, {y:0, opacity:1},'<')
-.to(divLien, {y:0, ease:'power4', opacity:1}, '<')
 .to(divHome, {x:0, opacity:1, duration:1, ease:'power4'}, '-=0.50')
 .to(ligne, {height:'5vh', ease:'power4'})
 .to(scrollHome, {y:0, ease:'power4', opacity:1}, '-=0.75')
