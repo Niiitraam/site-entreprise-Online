@@ -25,5 +25,6 @@
                 <li><a href="" class="a-lien s1-color">Contact</a></li>
             </div>
         </ul>
+        <div class="deuxieme-slide"></div>
     </nav>
 </header>

@@ -176,6 +176,7 @@ if(window.matchMedia('(min-width:600px)').matches){
     .to(divDroite, {y: '100%', ease: 'power4'}, '-=0.75')
     .to(divLoader, {display: 'none', duration:.1})
     .to(divCache, {display:'block'}, '-=0.01')
+
     //fin loader
     //debut home et navbar
     .to(logo, {y:0, opacity:1}, '<')
@@ -196,10 +197,11 @@ if(window.matchMedia('(min-width:600px)').matches){
     .to(divDroite, {y: '100%', ease: 'power4'}, '-=0.75')
     .to(divLoader, {display: 'none', duration:.1})
     .to(divCache, {display:'block'}, '<')
+
     //fin loader
     //debut home et navbar
     .to(logo, {y:0, opacity:1}, '<')
-    // .to(burger, {y:0, fontSize:'2rem', opacity:1}, '<')
+    .to(burger, {y:0, fontSize:'2rem', opacity:1}, '<')
     .to(rond, {y:0, opacity:1}, '<')
     .to(icone, {y:0, opacity:1},'<')
     .to(divHome, {x:0, opacity:1, duration:1, ease:'power4'}, '-=0.50')
@@ -210,4 +212,32 @@ if(window.matchMedia('(min-width:600px)').matches){
 
 //fin home et navbar
 
-// fin greensock
+// Projet
+
+
+// Photo et croix
+let lienProjet = document.querySelectorAll('.a-projet')
+let tableauLienProjet = Array.from(lienProjet)
+
+let imgProjet = document.querySelectorAll('.img-projet')
+let tableauImgProjet = Array.from(imgProjet)
+
+let croix = document.querySelectorAll('.li-projet')
+let tableauCroix = Array.from(croix)
+
+
+tableauLienProjet.forEach((element, index) => {
+    element.addEventListener('mouseover', function(){
+        tableauImgProjet[index].style.display = 'block';
+        gsap.to(tableauImgProjet[index], {opacity:1, ease:'power4', duration:1})
+        gsap.to(tableauCroix[index], {x:0, ease:'elastic', duration:1})
+    })
+    element.addEventListener('mouseout', function(){
+        tableauImgProjet[index].style.display = 'none';
+        gsap.to(tableauImgProjet[index], {opacity:0, ease:'power4', duration:1})
+        gsap.to(tableauCroix[index], {x:'-30', ease:'elastic', duration:1})
+    })
+})
+
+
+// fin projet

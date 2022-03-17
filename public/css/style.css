@@ -4,9 +4,59 @@
     box-sizing: border-box;
 }
 
-body{
-    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+body {
     font-family: monospace;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background-image: url(../image/noise2.jpg);
+    animation: 0.5s infinite noise;
+    content: '';
+}
+
+@keyframes noise {
+    0%,to {
+        background-position: 0 0;
+    }
+
+    10% {
+        background-position: -5% -10%;
+    }
+
+    20% {
+        background-position: -15% 5%;
+    }
+
+    30% {
+        background-position: 7% -25%;
+    }
+
+    40% {
+        background-position: 20% 25%;
+    }
+
+    50% {
+        background-position: -25% 10%;
+    }
+
+    60% {
+        background-position: 15% 5%;
+    }
+
+    70% {
+        background-position: 0% 15%;
+    }
+
+    80% {
+        background-position: 25% 35%;
+    }
+
+    90% {
+        background-position: -10% 10%;
+    }
 }
 
 .jaune{
@@ -32,7 +82,7 @@ body{
 }
 
 .div-accueil{
-    display: none;
+    /* display: none; */
 }
 
 .div-loader{
@@ -44,6 +94,7 @@ body{
     z-index: 100;
     display: flex;
     overflow-y: hidden;
+    /* display: none; */
 }
 
 .div-gauche{
@@ -153,7 +204,20 @@ li{
     padding-top: 7%;
     padding-bottom: 7%;
     transform: translateX(-100%);
-    transition: transform 1s;
+    transition: transform 0.6s ease-in-out;
+    transition-delay: 0.1s;
+    z-index: 10;
+}
+
+.deuxieme-slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #ECFD18;
+    transform: translateX(-100%);
+    transition: transform 0.6s ease-in-out;
 }
 
 .toggle{
@@ -264,12 +328,16 @@ li{
 .open .ul-navbar{
     transform: translateX(0);
 }
+.open .deuxieme-slide{
+    transform: translateX(0);
+}
 
 .rond-blanc{
     position: absolute;
     top: -250%;
     right: -250%;
     z-index: 0;
+    pointer-events: none;
 }
 
 /* Fin section navbar */
@@ -286,6 +354,9 @@ li{
     flex-direction: column;
     background-image: radial-gradient(circle at center center, rgb(2,10,89),rgb(8, 8, 8));
 }
+
+
+
 
 .h1-home{
     font-size: 50px;
@@ -335,6 +406,7 @@ li{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #F3F2F9;
 }
 
 .text1-about{
@@ -365,6 +437,96 @@ li{
 
 
 /* fin service */
+
+/* Projet */
+
+.div-projet{
+    width: 100%;
+    height: 100vh;
+    background-color: beige;
+    display: flex;
+}
+
+/* div gauche projet */
+
+.div-gauche-projet{
+    width: 50%;
+    height: 100%;
+    background-color: #F3F2F9;
+    padding-top: 15%;
+}
+
+.img-projet{
+    width: 100%;
+    height: 100%;
+    border-radius: 0% 10% 10% 0%;
+    opacity: 0;
+    display: none;
+}
+
+/* div droite projet */
+
+.div-droite-projet{
+    width: 50%;
+    height:100%;
+    background-color: #F3F2F9;
+    padding-top: 15%;
+    padding-left: 3%;
+}
+
+.container-droit-projet{
+    width: 90%;
+    overflow: hidden;
+}
+
+.div-h2-projet{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid black;
+}
+
+.h2-projet{
+    font-size: 3rem;
+}
+
+.text-projet{
+    font-size: 1.5rem;
+    text-align: end;
+    color: black;
+}
+
+.a-projet{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    padding:3% 0;
+    border-bottom: 1px solid black;
+}
+
+.li-projet{
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: translateX(-30px);
+    pointer-events: none;
+}
+
+.p-r{
+    padding-right: 10px;
+}
+
+.p-projet{
+    min-width: max-content;
+    pointer-events: none;
+}
+
+
+/* Fin projet */
 
 
 
@@ -454,6 +616,39 @@ li{
         transform: translateY(50px);
     }
     .rond-blanc{
-        /* display: none; */
+        display: none;
+    }
+    /* projet */
+    .h2-projet{
+        font-size: 2rem;
+    }
+    .div-projet{
+        height: 70vh;
+    }
+    .div-gauche-projet{
+        display: none;
+    }
+    .div-droite-projet{
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .li-projet{
+        font-size: 1rem;
+    }
+    .exeption{
+        transform: translateX(0);
+    }
+    .exeption-none{
+        transform: translateX(-24px);
+    }
+    .text-projet{
+        font-size: 1rem;
+    }
+    .a-projet{
+        padding: 1.5rem 0;
+    }
+    .container-droit-projet{
+        width: 100%;
     }
 }

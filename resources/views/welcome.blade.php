@@ -24,6 +24,7 @@
         <div class="div-cache">
             @include('page/about')
             @include('page/service')
+            @include('page/projet')
         </div>
 
     
