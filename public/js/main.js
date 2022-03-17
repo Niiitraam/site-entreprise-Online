@@ -1,5 +1,7 @@
 //navbar
 
+
+// ouverture
 let toggle = document.querySelector('.toggle')
 let body = document.querySelector('body')
 
@@ -35,6 +37,8 @@ fermerTourne.forEach((element, index) =>{
     })
 })
 
+
+// lien navbar slide
 let lienImpair = document.querySelectorAll('.s1')
 let tableauImpair = Array.from(lienImpair)
 
@@ -86,6 +90,17 @@ function s2Out(i){
     gsap.to(tableauColor2[i], {paddingRight:0, ease:'power1', duration:.1})
 }
 
+
+// rond qui tourne autour du menu burger
+
+let svgBlanc = document.querySelector('.rond-blanc')
+
+
+if(window.matchMedia('(min-width:600px)').matches){
+    gsap.to(svgBlanc, 20, {rotation:360, ease:Linear.easeNone, repeat:-1})
+}else{
+    gsap.to(svgBlanc, 0, {rotation:0, ease:'none', repeat:0})
+}
 
 
 

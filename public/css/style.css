@@ -150,8 +150,8 @@ li{
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 7%;
+    padding-bottom: 7%;
     transform: translateX(-100%);
     transition: transform 1s;
 }
@@ -176,7 +176,7 @@ li{
 }
 
 .logo{
-    width: 20%;
+    width: 30%;
     color: #ECFD18;
 }
 
@@ -263,6 +263,13 @@ li{
 }
 .open .ul-navbar{
     transform: translateX(0);
+}
+
+.rond-blanc{
+    position: absolute;
+    top: -250%;
+    right: -250%;
+    z-index: 0;
 }
 
 /* Fin section navbar */
@@ -388,6 +395,10 @@ li{
     .icone{
         font-size: 20px;
     }
+    .ul-navbar{
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
     /* Home */
     
     .h1-home{
@@ -441,5 +452,8 @@ li{
         padding-top: 10%;
         opacity: 0;
         transform: translateY(50px);
+    }
+    .rond-blanc{
+        /* display: none; */
     }
 }
