@@ -12,7 +12,7 @@
 <body>
     <div class="div-loader">
         <div class="div-gauche">
-            <img src="{{secure_asset('image/logo-black.jpg')}}" class="img-loader" alt="">
+            <img src="{{secure_asset('image/logo-dark.webp')}}" class="img-loader" alt="">
             <p class="p-phone">Bienvenue chez MM</p>
         </div>
         <div class="div-droite">

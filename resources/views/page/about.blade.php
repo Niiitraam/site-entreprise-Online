@@ -5,5 +5,5 @@
     <p class="text2-about bleu">Pour nous, chaque détail compte.</p>
     <p class="text2-about bleu">Nous nous poussons mutuellement à nous dépasser pour nous améliorer.</p>
     <p class="text2-about bleu">Toujours dans la bonne humeur et le fun bien sûre!</p>
-    <img src="{{secure_asset('image/logo-black.jpg')}}" class="logo-noir" alt="image logo noir">
+    <img src="{{asset('image/logo-blue.webp')}}" class="logo-noir" alt="image logo noir">
 </section>

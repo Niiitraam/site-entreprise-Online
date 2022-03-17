@@ -1,10 +1,10 @@
 <header>
     <nav class="navbar-main">
         <div class="div-logo">
-            <img src="{{secure_asset('image/logo.png')}}" class="logo" alt="">
+            <img src="{{secure_asset('image/logo.webp')}}" class="logo" alt="">
         </div>
         <div class="toggle rondAutour">
-            <img src="{{secure_asset('image/rond-blanc.png')}}" class="rond-blanc" alt="">
+            <img src="{{secure_asset('image/rond-blanc.webp')}}" class="rond-blanc" alt="">
             <i class="ouvrir"></i>
             <i class="fermer"></i>
         </div>
