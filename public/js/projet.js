@@ -7,7 +7,7 @@ let body = document.querySelector('body')
 
 toggle.addEventListener('click', function(){
     body.classList.toggle('open');
-    gsap.to(divLien, {y:0, ease:'power4', opacity:1})
+    gsap.to(divLien, {x:0, ease:'steps(5)', opacity:1, stagger:0.3})
     if(body.classList.contains('open')== true){
         body.classList.add('overflow');
     }else{
@@ -95,113 +95,50 @@ function s2Out(i){
     gsap.to(tableauColor2[i], {paddingRight:0, ease:'power1', duration:.1})
 }
 
-
-// rond qui tourne autour du menu burger
-
-let svgBlanc = document.querySelector('.rond-blanc')
-
-
-if(window.matchMedia('(min-width:600px)').matches){
-    gsap.to(svgBlanc, 20, {rotation:360, ease:Linear.easeNone, repeat:-1})
-}else{
-    gsap.to(svgBlanc, 0, {rotation:0, ease:'none', repeat:0})
-}
-
-
-
-//gsap pour changement de couleur
-
-// gsap.registerPlugin(ScrollTrigger)
-
-// gsap.to('header', {
-//     scrollTrigger: "header",
-//     backgroundColor:'black',
-//     duration:1
-// })
-
-
 // Greensock
 
 
 //loader
-let divLoader = document.querySelector('.div-loader')
-let divGauche = document.querySelector('.div-gauche')
-let imageLoader = document.querySelector('.img-loader')
-let divAccueil = document.querySelector('.div-home')
-let divCache = document.querySelector('.div-cache')
+
 
 let logo = document.querySelector('.div-logo')
 let divLien = document.querySelectorAll('.div-lien')
 let icone = document.querySelectorAll('.icone')
 
-let textPhone = document.querySelector('.p-phone')
-
 
 let TL = gsap.timeline({
     defaults: {
         duration: 1,
-        ease: 'power4',
+        ease: 'elastic',
     }
 });
 
 if(window.matchMedia('(min-width:600px)').matches){
     TL
-    .to(imageLoader, {y:0, opacity:1})
-    .to(textPhone, {y:0, opacity:1}, '<')
-    .to(divAccueil, {display:'block'})
-    .to(divGauche, {y:'-100%'})
-    .to(divLoader, {display: 'none', duration:.1})
-    .to(divCache, {display:'block'}, '-=0.01')
-
-    //fin loader
     //debut home et navbar
-    .to(logo, {y:0, opacity:1}, '<')
+    .to(logo, {y:0, opacity:1})
+    .to(burger, {y:0, fontSize:'2rem', opacity:1}, '-=0.75')
+    .to(rond, {y:0, opacity:1}, '<')
     .to(icone, {y:0, opacity:1},'<')
 }else{
     TL
-    .to(imageLoader, {y:0, opacity:1})
-    .to(divAccueil, {display:'block'})
-    .to(imageLoader, { width:'40%'})
-    .to(textPhone, {y:0, ease:'power4', opacity:1}, '<')
-    .to(divGauche, {y:'-100%'})
-    .to(divLoader, {display: 'none', duration:.1})
-    .to(divCache, {display:'block'}, '<')
-
-    //fin loader
     //debut home et navbar
     .to(logo, {y:0, opacity:1}, '<')
+    .to(burger, {y:0, fontSize:'2rem', opacity:1}, '<')
+    .to(rond, {y:0, opacity:1}, '<')
     .to(icone, {y:0, opacity:1},'<')
 }
 
 
 //fin home et navbar
 
-// Projet
+
+// rond blanc
+let svgBlanc = document.querySelector('.rond-blanc')
 
 
-// Photo et flèche
-let lienProjet = document.querySelectorAll('.a-projet')
-let tableauLienProjet = Array.from(lienProjet)
-
-let imgProjet = document.querySelectorAll('.img-projet')
-let tableauImgProjet = Array.from(imgProjet)
-
-let croix = document.querySelectorAll('.li-projet')
-let tableauCroix = Array.from(croix)
-
-
-tableauLienProjet.forEach((element, index) => {
-    element.addEventListener('mouseover', function(){
-        tableauImgProjet[index].style.display = 'block';
-        gsap.to(tableauImgProjet[index], {opacity:1, ease:'elastic', duration:1, scale:1})
-        gsap.to(tableauCroix[index], {x:0, ease:'elastic', duration:1,})
-    })
-    element.addEventListener('mouseout', function(){
-        tableauImgProjet[index].style.display = 'none';
-        gsap.to(tableauImgProjet[index], {opacity:0, ease:'elastic', duration:1, scale:0})
-        gsap.to(tableauCroix[index], {x:'-30', ease:'elastic', duration:1})
-    })
-})
-
-
-// fin projet
+if(window.matchMedia('(min-width:600px)').matches){
+    gsap.to(svgBlanc, 0, {rotation:0, ease:'none', repeat:0, display:'none'})
+}else{
+    gsap.to(svgBlanc, 0, {rotation:0, ease:'none', repeat:0})
+}

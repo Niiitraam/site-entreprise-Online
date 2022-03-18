@@ -15,9 +15,6 @@
             <img src="{{secure_asset('image/logo-dark.webp')}}" class="img-loader" alt="">
             <p class="p-phone">Bienvenue chez MM</p>
         </div>
-        <div class="div-droite">
-            <h1 class="h1-loader">Agence</h1>
-        </div>
     </div>
         @include('partial/navbar')
         @include('page/home')
