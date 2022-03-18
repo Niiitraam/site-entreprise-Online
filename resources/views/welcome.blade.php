@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/6434cb6a94.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{secure_asset('css/style.css')}}">
-    
+
     <title>Main</title>
 </head>
 <body>

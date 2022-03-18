@@ -241,6 +241,7 @@ li{
 
 .logo{
     width: 30%;
+    height: 100%;
     color: #ECFD18;
 }
 
@@ -529,7 +530,132 @@ li{
 /* Fin projet */
 
 
+/* les pages projets */
 
+.section-projet-unanime{
+    width: 100%;
+    background-color: #F3F2F9;
+}
+
+.div-photo-projet1{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.photo-projet1{
+    width: 100%;
+    border-radius: 0% 0% 10% 10%;
+}
+
+.div-description{
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.h3-projet{
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 3rem;
+    color: #E4B021;
+}
+
+.border-projet1{
+    width: 80%;
+    height: 2px;
+    background-color: #E4B021;
+}
+
+.category-projet{
+    display: flex;
+    width: 100%;
+    padding: 3% 10%;
+
+}
+
+.li-projet-view{
+    width: 100%;
+    height: 300px;
+    padding-right: 5%;
+}
+
+.div-story-projet{
+    width: 100%;
+    height: 300px;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.p-story-projet{
+    font-size: 1.25rem;
+}
+
+.lien-vers-site{
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+    padding-top: 5%;
+    display: inline;
+    max-width: max-content;
+    position: relative;
+}
+
+.lien-vers-site::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.2s ease-in-out;
+}
+
+.lien-vers-site:hover::after{
+    width: 100%;
+}
+
+.ligne-projet{
+    display: flex;
+    justify-content: space-between;
+}
+
+.texte-projet-view{
+    font-size: 1.25rem;
+    color: #E4B021;
+    padding-bottom: 5%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.texte2-projet-view{
+    font-size: 1.25rem;
+    text-align: end;
+    padding-bottom: 5%;
+    text-transform: uppercase;
+}
+
+.div-photo-projet-view{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo-taille-projet{
+    width: 80%;
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+
+.titre-projet-view{
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
 
 /* Media queries */
 

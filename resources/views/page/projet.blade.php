@@ -1,9 +1,9 @@
 <section class="div-projet">
     <div class="div-gauche-projet">
-        <img src="{{asset('image/projet/isabel-gomez.webp')}}" class="img-projet" alt="">
-        <img src="{{asset('image/projet/martin-design.webp')}}" class="img-projet" alt="">
-        <img src="{{asset('image/projet/isabel-gomez.webp')}}" class="img-projet" alt="">
-        <img src="{{asset('image/projet/martin-design.webp')}}" class="img-projet" alt="">
+        <img src="{{secure_asset('image/projet/isabel-gomez.webp')}}" class="img-projet" alt="">
+        <img src="{{secure_asset('image/projet/martin-design.webp')}}" class="img-projet" alt="">
+        <img src="{{secure_asset('image/projet/isabel-gomez.webp')}}" class="img-projet" alt="">
+        <img src="{{secure_asset('image/projet/martin-design.webp')}}" class="img-projet" alt="">
     </div>
     <div class="div-droite-projet">
         <div class="container-droit-projet">
@@ -12,7 +12,7 @@
                 <p class="text-projet">4</p>
             </div>
             <ul>
-                <a href="" class="a-projet">
+                <a href="/projet1" class="a-projet">
                     <div class="li-projet exeption">
                         <i class="p-r fas fa-solid fa-arrow-right"></i>
                         <p class="p-projet">Isabel Gomez</p>
