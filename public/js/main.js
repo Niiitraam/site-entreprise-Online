@@ -10,6 +10,7 @@ toggle.addEventListener('click', function(){
     gsap.to(divLien, {y:0, ease:'power4', opacity:1})
     if(body.classList.contains('open')== true){
         body.classList.add('overflow');
+        body.classList.remove('.fermer')
     }else{
         body.classList.remove('overflow');
     }
@@ -136,6 +137,11 @@ let icone = document.querySelectorAll('.icone')
 
 let textPhone = document.querySelector('.p-phone')
 
+let borderGauche = document.querySelector('.border-gauche-home')
+let borderDroite = document.querySelector('.border-droite-home')
+let borderGaucheBottom = document.querySelector('.border-gauche-bottom')
+let borderDroiteBottom = document.querySelector('.border-droite-bottom')
+let borderMilieu = document.querySelector('.border-milieu-home')
 
 let TL = gsap.timeline({
     defaults: {
@@ -148,7 +154,7 @@ if(window.matchMedia('(min-width:600px)').matches){
     TL
     .to(imageLoader, {y:0, opacity:1})
     .to(textPhone, {y:0, opacity:1}, '<')
-    .to(divAccueil, {display:'block'})
+    .to(divAccueil, {display:'flex'})
     .to(divGauche, {y:'-100%'})
     .to(divLoader, {display: 'none', duration:.1})
     .to(divCache, {display:'block'}, '-=0.01')
@@ -157,10 +163,15 @@ if(window.matchMedia('(min-width:600px)').matches){
     //debut home et navbar
     .to(logo, {y:0, opacity:1}, '<')
     .to(icone, {y:0, opacity:1},'<')
+    .to(borderGauche, {duration:1, left:'0%', width:"50%", ease:'power4'})
+    .to(borderDroite, {duration:1, right:'0%', width:"50%", ease:'power4'}, '<')
+    .to(borderMilieu, {duration:1, height:'100%'}, '-=0.75')
+    .to(borderGaucheBottom, {duration:1, left:'0%', width:"50%", ease:'power4'}, '-=0.75')
+    .to(borderDroiteBottom, {duration:1, right:'0%', width:"50%", ease:'power4'}, '<')
 }else{
     TL
     .to(imageLoader, {y:0, opacity:1})
-    .to(divAccueil, {display:'block'})
+    .to(divAccueil, {display:'flex'})
     .to(imageLoader, { width:'40%'})
     .to(textPhone, {y:0, ease:'power4', opacity:1}, '<')
     .to(divGauche, {y:'-100%'})
@@ -171,6 +182,11 @@ if(window.matchMedia('(min-width:600px)').matches){
     //debut home et navbar
     .to(logo, {y:0, opacity:1}, '<')
     .to(icone, {y:0, opacity:1},'<')
+    .to(borderGauche, {duration:1, left:'0%', width:"50%", ease:'power4'})
+    .to(borderDroite, {duration:1, right:'0%', width:"50%", ease:'power4'}, '<')
+    .to(borderMilieu, {duration:1, height:'100%'}, '-=0.75')
+    .to(borderGaucheBottom, {duration:1, left:'0%', width:"50%", ease:'power4'}, '-=0.75')
+    .to(borderDroiteBottom, {duration:1, right:'0%', width:"50%", ease:'power4'}, '<')
 }
 
 
@@ -205,3 +221,7 @@ tableauLienProjet.forEach((element, index) => {
 
 
 // fin projet
+
+// changement de page
+
+barba.init()

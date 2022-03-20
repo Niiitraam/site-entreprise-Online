@@ -3,9 +3,16 @@
     <div class="div-home-center">
         <div class="div-gauche-home">
             <p class="p-creative">I support designer and agencies with creative development</p>
+            <div class="border-gauche-home"></div>
+            <div class="border-gauche-bottom"></div>
         </div>
-        <div class="div-droite-home"></div>
+        <div class="div-droite-home">
+            <div class="border-droite-home"></div>
+            <div class="border-droite-bottom"></div>
+            <div class="border-milieu-home"></div>
+        </div>
+        
+        <img src="{{asset('image/photo-martin.jpg')}}" alt="photo martin" class="img-home">
     </div>
     <h2 class="h2-home">Creative Developer</h2>
-    <img src="{{secure_asset('image/photo-martin.jpg')}}" alt="photo martin" class="img-home">
 </section>
