@@ -1,13 +1,82 @@
 //navbar
 
+// changement de page
 
+function delay(n){
+    n = n || 2000;
+    return new Promise((done) => {
+        setTimeout(() => {
+            done();
+        }, n)
+    })
+}
+
+
+function pageTransition(){
+    let tl = gsap.timeline();
+    
+    tl
+    .to('.loading-screen', {
+        duration:1.2,
+        height:"100%",
+        top:'0%',
+        ease:'Expo.easeInOut',
+    })
+    // .to('.open .ul-navbar', {
+    //     y:'-100%',
+    //     duration:0.1,
+    // }, '-=0.90')
+    // .to('.open .deuxieme-slide', {
+    //     y:'-100%',
+    //     duration:0.1
+    // }, '<')
+    .to('.loading-screen', {
+        duration:1,
+        height:"100%",
+        top:"100%",
+        ease:'Expo.easeInOut',
+        delay:0.3,
+    })
+    
+    
+    
+}
+
+function contentAnimation(){
+    document.querySelector('body').classList.remove('overflow')
+    document.querySelector('body').classList.remove('open')
+}
+
+barba.init({
+    sync:true,
+
+    transitions:[{
+        async leave(data){
+            let done = this.async();
+
+            pageTransition();
+            await delay(1500);
+
+            done();
+        },
+
+        async enter(data){
+            contentAnimation()
+        },
+
+        async once(date){
+            contentAnimation()
+        }
+    }]
+})
 // ouverture
 let toggle = document.querySelector('.toggle')
 let body = document.querySelector('body')
 
 toggle.addEventListener('click', function(){
     body.classList.toggle('open');
-    gsap.to(divLien, {y:0, ease:'power4', opacity:1})
+    gsap.to(divLien, {y:0, ease:'Expo.easeInOut', opacity:1})
+    
     if(body.classList.contains('open')== true){
         body.classList.add('overflow');
         body.classList.remove('.fermer')
@@ -222,59 +291,7 @@ tableauLienProjet.forEach((element, index) => {
 
 // fin projet
 
-// changement de page
 
-function delay(n){
-    n = n || 2000;
-    return new Promise((done) => {
-        setTimeout(() => {
-            done();
-        }, n)
-    })
-}
-
-function pageTransition(){
-    let tl = gsap.timeline();
-    tl
-    .to('.loading-screen', {
-        duration:1.2,
-        height:"100%",
-        top:'0%',
-        ease:'Expo.easeInOut',
-    })
-    .to('.open .ul-navbar', {
-        y:'-100%',
-        duration:0.1,
-    }, '-=0.90')
-    .to('.open .deuxieme-slide', {
-        y:'-100%',
-        duration:0.1
-    }, '<')
-    .to('.loading-screen', {
-        duration:1,
-        height:"100%",
-        top:"100%",
-        ease:'Expo.easeInOut',
-        delay:0.3,
-    })
-    tl.restart()
-    
-}
-
-barba.init({
-    sync:true,
-
-    transitions:[{
-        async leave(data){
-            let done = this.async();
-
-            pageTransition();
-            await delay(1500);
-
-            done();
-        }
-    }]
-})
 
 // Barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container) {
 //     eval(container.querySelector("script").innerHTML);
