@@ -1,9 +1,9 @@
 <section class="div-projet">
     <div class="div-gauche-projet">
-        <img src="{{asset('image/projet/isabel-gomez.webp')}}" class="img-projet" alt="">
-        <img src="{{asset('image/projet/martin-design.webp')}}" class="img-projet" alt="">
-        <img src="{{asset('image/projet/isabel-gomez.webp')}}" class="img-projet" alt="">
-        <img src="{{asset('image/projet/martin-design.webp')}}" class="img-projet" alt="">
+        <img src="{{secure_asset('image/projet/isabel-gomez.webp')}}" class="img-projet" alt="">
+        <img src="{{secure_asset('image/projet/martin-design.webp')}}" class="img-projet" alt="">
+        <img src="{{secure_asset('image/projet/isabel-gomez.webp')}}" class="img-projet" alt="">
+        <img src="{{secure_asset('image/projet/martin-design.webp')}}" class="img-projet" alt="">
     </div>
     <div class="div-droite-projet">
         <div class="container-droit-projet">
