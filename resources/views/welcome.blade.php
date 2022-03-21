@@ -19,8 +19,9 @@
             <p class="p-phone">Bienvenue chez MM</p>
         </div>
     </div>
+    @include('partial/navbar')
     <div data-barba="container" data-barba-namespace="home-section">
-            @include('partial/navbar')
+            
             @include('page/home')
             <div class="div-cache">
                 @include('page/about')

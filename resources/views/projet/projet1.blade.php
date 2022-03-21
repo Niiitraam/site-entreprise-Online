@@ -11,12 +11,10 @@
 </head>
 
 <body data-barba="wrapper">
-    <div class="load-container">
-        <div class="loading-screen"></div>
-    </div>
+    @include('partial/navbar')
     <div data-barba="container" date-barba-namespace="projet1-section">
-        @include('partial/navbar')
-        <section class="section-projet-unanime">
+        
+        <section class="section-projet-unanime" id="projet1">
             <div class="div-photo-projet1">
                 <img src="{{asset('image/projet/isabel-gomez.webp')}}" class="photo-projet1" alt="">
             </div>
@@ -76,6 +74,6 @@
     <script src="https://unpkg.com/@barba/core"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-    <script src="{{asset('js/main.js')}}"></script>
+    <script src="{{asset('js/projet.js')}}"></script>
 </body>
 </html>

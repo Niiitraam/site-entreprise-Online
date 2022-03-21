@@ -224,4 +224,58 @@ tableauLienProjet.forEach((element, index) => {
 
 // changement de page
 
-barba.init()
+function delay(n){
+    n = n || 2000;
+    return new Promise((done) => {
+        setTimeout(() => {
+            done();
+        }, n)
+    })
+}
+
+function pageTransition(){
+    let tl = gsap.timeline();
+    tl
+    .to('.loading-screen', {
+        duration:1.2,
+        height:"100%",
+        top:'0%',
+        ease:'Expo.easeInOut',
+    })
+    .to('.open .ul-navbar', {
+        y:'-100%',
+        duration:0.1,
+    }, '-=0.90')
+    .to('.open .deuxieme-slide', {
+        y:'-100%',
+        duration:0.1
+    }, '<')
+    .to('.loading-screen', {
+        duration:1,
+        height:"100%",
+        top:"100%",
+        ease:'Expo.easeInOut',
+        delay:0.3,
+    })
+    tl.restart()
+    
+}
+
+barba.init({
+    sync:true,
+
+    transitions:[{
+        async leave(data){
+            let done = this.async();
+
+            pageTransition();
+            await delay(1500);
+
+            done();
+        }
+    }]
+})
+
+// Barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container) {
+//     eval(container.querySelector("script").innerHTML);
+// });

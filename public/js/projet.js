@@ -139,3 +139,44 @@ if(window.matchMedia('(min-width:600px)').matches){
 }else{
     gsap.to(svgBlanc, 0, {rotation:0, ease:'none', repeat:0})
 }
+
+function delay(n){
+    n = n || 2000;
+    return new Promise((done) => {
+        setTimeout(() => {
+            done();
+        }, n)
+    })
+}
+
+function pageTransition(){
+    let tl = gsap.timeline();
+    tl.to('.ul-navbar', {
+        duration:1,
+        y:0,
+        ease:'Expo.easeInOut',
+    });
+    tl.to('.deuxieme-slide', {
+        duration:0.8,
+        y:0,
+        ease:'Expo.easeInOut',
+    })
+}
+
+barba.init({
+    sync:true,
+
+    transitions:[{
+        async leave(data){
+            let done = this.async();
+
+            pageTransition();
+            await delay(1500);
+            done();
+        }
+    }]
+})
+
+// Barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container) {
+//     eval(container.querySelector("script").innerHTML);
+// });
