@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/6434cb6a94.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <link rel="stylesheet" href="{{secure_asset('css/style.css')}}">
 
     <title>Main</title>
 </head>
@@ -15,8 +15,12 @@
     </div>
     <div class="div-loader">
         <div class="div-gauche">
-            <img src="{{asset('image/logo-dark.webp')}}" class="img-loader" alt="">
-            <p class="p-phone">Bienvenue chez MM</p>
+            <div class="div-animation-loader">
+                <div class="rond-loader rond1"></div>
+                <div class="rond-loader rond2"></div>
+                <div class="rond-loader rond3"></div>
+                <div class="rond-loader rond4"></div>
+            </div>
         </div>
     </div>
     @include('partial/navbar')
@@ -40,6 +44,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 
     
-    <script src="{{asset('js/main.js')}}"></script>
+    <script src="{{secure_asset('js/main.js')}}"></script>
 </body>
 </html>

@@ -16,20 +16,14 @@ function pageTransition(){
     let tl = gsap.timeline();
     
     tl
+    .to(fermerTest, {display:'none', duration:0.01})
+    .to(ouvrirTest, {display:'block'}, '<')
     .to('.loading-screen', {
         duration:1.2,
         height:"100%",
         top:'0%',
         ease:'Expo.easeInOut',
-    })
-    // .to('.open .ul-navbar', {
-    //     y:'-100%',
-    //     duration:0.1,
-    // }, '-=0.90')
-    // .to('.open .deuxieme-slide', {
-    //     y:'-100%',
-    //     duration:0.1
-    // }, '<')
+    },'<')
     .to('.loading-screen', {
         duration:1,
         height:"100%",
@@ -37,6 +31,14 @@ function pageTransition(){
         ease:'Expo.easeInOut',
         delay:0.3,
     })
+    .to('.ul-navbar', {
+        y:'-100%',
+        duration:0.1,
+    }, '-=0.90')
+    .to('.deuxieme-slide', {
+        y:'-100%',
+        duration:0.1
+    }, '<')
     
     
     
@@ -70,19 +72,41 @@ barba.init({
     }]
 })
 // ouverture
-let toggle = document.querySelector('.toggle')
 let body = document.querySelector('body')
+let rondNoir = document.querySelector('.rondAutour')
+let ouvrirTest = document.querySelector('.ouvrir')
+let fermerTest = document.querySelector('.fermer')
 
-toggle.addEventListener('click', function(){
-    body.classList.toggle('open');
-    gsap.to(divLien, {y:0, ease:'Expo.easeInOut', opacity:1})
-    
-    if(body.classList.contains('open')== true){
+rondNoir.addEventListener('click', function(){
+    if(rondNoir.classList.contains('normal') == true){
+        let tl = gsap.timeline();
+        tl
+        .to(ouvrirTest, {display:'none',duration:0.01})
+        .to(fermerTest, {display:'flex', justifyContent:'center', alignItems:'center'}, '<')
+        .to('.deuxieme-slide', {y:0, ease:'Expo.easeInOut', duration:1}, '<') 
+        .to('.ul-navbar', {y:0, ease:'Expo.easeInOut', duration:1.2},'-=0.75')
+        
+        .to(divLien, {y:0, ease:'Expo.easeInOut', opacity:1, stagger:{
+            each:0.15
+        }}, '-=0.50')
+        rondNoir.classList.remove('normal')
         body.classList.add('overflow');
-        body.classList.remove('.fermer')
+        
     }else{
-        body.classList.remove('overflow');
+        let tl = gsap.timeline();
+        tl
+        .to(fermerTest, {display:'none', duration:0.01})
+        .to(ouvrirTest, {display:'block'}, '<')
+        .to(divLien, {y:'-200px', ease:'Expo.easeInOut', opacity:0, stagger:{
+            each:0.15
+        }}, '-=0.50')
+        .to('.ul-navbar', {y:'-100%', ease:'Expo.easeInOut', duration:1.2},'<')
+        .to('.deuxieme-slide', {y:'-100%', ease:'Expo.easeInOut', duration:1}, '-=0.75') 
+        rondNoir.classList.add('normal')
+        body.classList.remove('overflow')
+
     }
+    
 })
 
 let rond = document.querySelector('.rondAutour')
@@ -137,7 +161,7 @@ tableauImpair.forEach((element, index) =>{
 })
 
 function s1In(i){
-    tableauColor[i].style.color = '#ECFD18';
+    tableauColor[i].style.color = 'black';
     gsap.to(tableauColor[i], {paddingLeft:200, duration:.1})
 }
 
@@ -156,7 +180,7 @@ tableauPair.forEach((element, index) =>{
 })
 
 function s2In(i){
-    tableauColor2[i].style.color = '#ECFD18';
+    tableauColor2[i].style.color = 'black';
     gsap.to(tableauColor2[i], {paddingRight:200, ease:'power1', duration:.1})
 }
 
@@ -196,15 +220,17 @@ if(window.matchMedia('(min-width:600px)').matches){
 //loader
 let divLoader = document.querySelector('.div-loader')
 let divGauche = document.querySelector('.div-gauche')
-let imageLoader = document.querySelector('.img-loader')
 let divAccueil = document.querySelector('.div-home')
 let divCache = document.querySelector('.div-cache')
+
+let rondLoader1 = document.querySelector('.rond1')
+let rondLoader2 = document.querySelector('.rond2')
+let rondLoader3 = document.querySelector('.rond3')
+let rondLoader4 = document.querySelector('.rond4')
 
 let logo = document.querySelector('.div-logo')
 let divLien = document.querySelectorAll('.div-lien')
 let icone = document.querySelectorAll('.icone')
-
-let textPhone = document.querySelector('.p-phone')
 
 let borderGauche = document.querySelector('.border-gauche-home')
 let borderDroite = document.querySelector('.border-droite-home')
@@ -221,10 +247,12 @@ let TL = gsap.timeline({
 
 if(window.matchMedia('(min-width:600px)').matches){
     TL
-    .to(imageLoader, {y:0, opacity:1})
-    .to(textPhone, {y:0, opacity:1}, '<')
+    .to(rondLoader1, {y:0, ease:'elastic', opacity:1})
+    .to(rondLoader2, {y:0, ease:'elastic', opacity:1}, '-=0.75')
+    .to(rondLoader3, {y:0, ease:'elastic', opacity:1}, '-=0.75')
+    .to(rondLoader4, {y:0, ease:'elastic', opacity:1}, '-=0.75')
     .to(divAccueil, {display:'flex'})
-    .to(divGauche, {y:'-100%'})
+    .to(divGauche, {y:'100%', ease:'Expo.easeInOut'})
     .to(divLoader, {display: 'none', duration:.1})
     .to(divCache, {display:'block'}, '-=0.01')
 
@@ -239,11 +267,12 @@ if(window.matchMedia('(min-width:600px)').matches){
     .to(borderDroiteBottom, {duration:1, right:'0%', width:"50%", ease:'power4'}, '<')
 }else{
     TL
-    .to(imageLoader, {y:0, opacity:1})
+    .to(rondLoader1, {y:0, ease:'elastic', opacity:1})
+    .to(rondLoader2, {y:0, ease:'elastic', opacity:1}, '-=0.75')
+    .to(rondLoader3, {y:0, ease:'elastic', opacity:1}, '-=0.75')
+    .to(rondLoader4, {y:0, ease:'elastic', opacity:1}, '-=0.75')
     .to(divAccueil, {display:'flex'})
-    .to(imageLoader, { width:'40%'})
-    .to(textPhone, {y:0, ease:'power4', opacity:1}, '<')
-    .to(divGauche, {y:'-100%'})
+    .to(divGauche, {y:'100%'})
     .to(divLoader, {display: 'none', duration:.1})
     .to(divCache, {display:'block'}, '<')
 
