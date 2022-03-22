@@ -290,38 +290,67 @@ if(window.matchMedia('(min-width:600px)').matches){
 
 //fin home et navbar
 
-// Projet
+// Section projet
 
 
-// Photo et flèche
-let lienProjet = document.querySelectorAll('.a-projet')
-let tableauLienProjet = Array.from(lienProjet)
+let navLink = gsap.utils.toArray('.lien-projet'),
+    imgWrap = document.querySelector('.img-wrapper'),
+    imgItem = document.querySelector('.img-placeholder img');
 
-let imgProjet = document.querySelectorAll('.img-projet')
-let tableauImgProjet = Array.from(imgProjet)
-
-let croix = document.querySelectorAll('.li-projet')
-let tableauCroix = Array.from(croix)
-
-
-tableauLienProjet.forEach((element, index) => {
-    element.addEventListener('mouseover', function(){
-        tableauImgProjet[index].style.display = 'block';
-        gsap.to(tableauImgProjet[index], {opacity:1, ease:'elastic', duration:1, scale:1})
-        gsap.to(tableauCroix[index], {x:0, ease:'elastic', duration:1,})
+function moveImg(e){
+    let mouseX = e.clientX,
+        mouseY = e.clientY
+    tl = gsap.timeline();
+    tl.to(imgWrap, {
+        duration:1,
+        x: mouseX,
+        y: mouseY,
+        ease: Expo.ease
     })
-    element.addEventListener('mouseout', function(){
-        tableauImgProjet[index].style.display = 'none';
-        gsap.to(tableauImgProjet[index], {opacity:0, ease:'elastic', duration:1, scale:0})
-        gsap.to(tableauCroix[index], {x:'-30', ease:'elastic', duration:1})
+}
+
+function linkHover(e){
+    if(e.type === 'mouseenter'){
+        let imgSrc = e.target.dataset.src;
+        let tl = gsap.timeline();
+        
+        tl.set(imgItem, {
+            attr: {src: imgSrc}
+        }).to(imgWrap, {
+            autoAlpha: 1,
+            scale:1
+        })
+    }else if(e.type === 'mouseleave'){
+        let tl = gsap.timeline();
+        tl.to(imgWrap, {
+            autoAlpha:0,
+            scale:0.3
+        })
+    }
+}
+
+function initAnimation(){
+    navLink.forEach(link => {
+        link.addEventListener('mouseenter', linkHover)
+        link.addEventListener('mouseleave', linkHover)
+        link.addEventListener('mousemove', moveImg)
     })
+}
+
+function init(){
+    initAnimation();
+}
+
+window.addEventListener('load', function(){
+    init();
 })
-
-
-// fin projet
+// fin  section projet
 
 
 
 // Barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container) {
 //     eval(container.querySelector("script").innerHTML);
 // });
+
+
+

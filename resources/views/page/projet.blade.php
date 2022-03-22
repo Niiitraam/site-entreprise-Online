@@ -1,46 +1,30 @@
-<section class="div-projet">
-    <div class="div-gauche-projet">
-        <img src="{{secure_asset('image/projet/isabel-gomez.webp')}}" class="img-projet" alt="">
-        <img src="{{secure_asset('image/projet/martin-design.webp')}}" class="img-projet" alt="">
-        <img src="{{secure_asset('image/projet/isabel-gomez.webp')}}" class="img-projet" alt="">
-        <img src="{{secure_asset('image/projet/martin-design.webp')}}" class="img-projet" alt="">
-    </div>
-    <div class="div-droite-projet">
-        <div class="container-droit-projet">
-            <div class="div-h2-projet">
-                <h2 class="h2-projet">Projets</h2>
-                <p class="text-projet">4</p>
-            </div>
-            <ul>
-                <a href="/projet1" class="a-projet">
-                    <div class="li-projet exeption">
-                        <i class="p-r fas fa-solid fa-arrow-right"></i>
-                        <p class="p-projet">Isabel Gomez</p>
-                    </div>
-                    <p class="text-projet">Web Development</p>
-                </a>
-                <a href="" class="a-projet">
-                    <div class="li-projet exeption-none">
-                        <i class="p-r fas fa-solid fa-arrow-right"></i>
-                        <p class="p-projet">MM. MM. MM.</p>
-                    </div>
-                    <p class="text-projet">Web Design</p>
-                </a>
-                <a href="" class="a-projet">
-                    <div class="li-projet exeption-none">
-                        <i class="p-r fas fa-solid fa-arrow-right"></i>
-                        <p class="p-projet">Martin Manderveld</p>
-                    </div>
-                    <p class="text-projet">Intégration Web</p>
-                </a>
-                <a href="" class="a-projet">
-                    <div class="li-projet exeption-none">
-                        <i class="p-r fas fa-solid fa-arrow-right"></i>
-                        <p class="p-projet">Isabel Gomez</p>
-                    </div>
-                    <p class="text-projet">Web Development</p>
-                </a>
-            </ul>
+<section class="section-projet">
+    
+    <div class="element-projet">
+        <div class="img-wrapper">
+            <div class="img-placeholder"><img src="{{secure_asset('image/projet/isabel-gomez.webp')}}" alt=""></div>
         </div>
+        <div class="titre-projet">
+            <h3 class="h3-projet-div">Projects</h3>
+            <p class="p4-projet">4</p>
+        </div>
+        <ul>
+            <a href="/projet1" class="lien-projet" data-src="{{secure_asset('image/projet/isabel-gomez.webp')}}">
+                <p class="p1-projet">Isabel Gomez</p>
+                <p class="p2-projet">Web development</p>
+            </a>
+            <a href="" class="lien-projet" data-src="{{secure_asset('image/projet/martin-design.webp')}}">
+                <p class="p1-projet">MM. MM. MM.</p>
+                <p class="p2-projet">Web Design</p>
+            </a>
+            <a href="" class="lien-projet" data-src="{{secure_asset('image/projet/isabel-gomez.webp')}}">
+                <p class="p1-projet">Martin Manderveld</p>
+                <p class="p2-projet">Intégration Web</p>
+            </a>
+            <a href="" class="lien-projet" data-src="{{secure_asset('image/projet/martin-design.webp')}}">
+                <p class="p1-projet">Parfum ico</p>
+                <p class="p2-projet">Web development</p>
+            </a>
+        </ul>
     </div>
 </section>
