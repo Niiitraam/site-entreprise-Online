@@ -13,32 +13,32 @@
 <body data-barba="wrapper">
     @include('partial/navbar')
     <div data-barba="container" date-barba-namespace="projet1-section">
-        
+        <div class="cursor"></div>
         <section class="section-projet-unanime" id="projet1">
             <div class="div-photo-projet1">
                 <img src="{{secure_asset('image/projet/isabel-gomez.webp')}}" class="photo-projet1" alt="">
             </div>
     
             <div class="div-description">
-                <h3 class="h3-projet">Isabel Gomez Interiors</h3>
-                <div class="border-projet1"></div>
+                <h3 class="h3-projet color-isabel">Isabel Gomez Interiors</h3>
+                <div class="border-projet1 bg-color-isabel"></div>
             </div>
             <div class="category-projet">
                 <div class="li-projet-view">
                     <div class="ligne-projet">
-                        <p class="texte-projet-view">Category</p>
+                        <p class="texte-projet-view color-isabel">Category</p>
                         <p class="texte2-projet-view">Web development<br>UX/UI Design</p>
                     </div>
                     <div class="ligne-projet">
-                        <p class="texte-projet-view">Year</p>
+                        <p class="texte-projet-view color-isabel">Year</p>
                         <p class="texte2-projet-view">2021</p>
                     </div>
                     <div class="ligne-projet">
-                        <p class="texte-projet-view">Team</p>
+                        <p class="texte-projet-view color-isabel">Team</p>
                         <p class="texte2-projet-view">Martin Manderveld<br>Jordano Cubbedu<br>Cédric Correia</p>
                     </div>
                     <div class="ligne-projet">
-                        <p class="texte-projet-view">Client</p>
+                        <p class="texte-projet-view color-isabel">Client</p>
                         <p class="texte2-projet-view">Isabel Gomez Interiors</p>
                     </div>
                     

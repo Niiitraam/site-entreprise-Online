@@ -1,4 +1,41 @@
-//navbar
+// cursor
+
+let cursor = document.querySelector('.cursor');
+
+gsap.set(cursor, {
+    xPercent: -50,
+    yPercent: -50,
+})
+
+document.addEventListener('mousemove', e =>{
+    gsap.set(cursor,{
+        x:e.x,
+        y:e.y,
+    })
+})
+
+let lienCursor = document.querySelectorAll('.lien-cursor')
+let tableauCursor = Array.from(lienCursor)
+
+tableauCursor.forEach(element=> {
+    element.addEventListener('mouseover', function(){
+        gsap.to(cursor, {
+            scale:5,
+            backgroundColor:'white',
+            mixBlendMode:'difference',
+            border:'none',
+        })
+    })
+    element.addEventListener('mouseout', function(){
+        gsap.to(cursor, {
+            scale:1,
+            backgroundColor:'transparent',
+            mixBlendMode: 'unset',
+            border: '2px solid black'
+        })
+    })
+})
+
 
 // changement de page
 
@@ -71,7 +108,7 @@ barba.init({
         }
     }]
 })
-// ouverture
+// ouverture //navbar
 let body = document.querySelector('body')
 let rondNoir = document.querySelector('.rondAutour')
 let ouvrirTest = document.querySelector('.ouvrir')
@@ -238,12 +275,19 @@ let borderGaucheBottom = document.querySelector('.border-gauche-bottom')
 let borderDroiteBottom = document.querySelector('.border-droite-bottom')
 let borderMilieu = document.querySelector('.border-milieu-home')
 
+let h1Home = document.querySelector('.h1-home');
+let h2Home = document.querySelector('.h2-home')
+let imgHome = document.querySelector('.img-home')
+let pCreative = document.querySelector('.p-creative')
+
 let TL = gsap.timeline({
     defaults: {
         duration: 1,
         ease: 'power4',
     }
 });
+
+
 
 if(window.matchMedia('(min-width:600px)').matches){
     TL
@@ -260,7 +304,11 @@ if(window.matchMedia('(min-width:600px)').matches){
     //debut home et navbar
     .to(logo, {y:0, opacity:1}, '<')
     .to(icone, {y:0, opacity:1},'<')
-    .to(borderGauche, {duration:1, left:'0%', width:"50%", ease:'power4'})
+    .to(h1Home, {y:0, opacity:1}, '-=0.75')
+    .to(h2Home, {y:0, opacity:1}, '-=0.75')
+    .to(imgHome, {y:'-50%', opacity:1}, '-=0.75')
+    .to(pCreative, {y:0, opacity:1}, '-=0.75')
+    .to(borderGauche, {duration:1, left:'0%', width:"50%", ease:'power4'}, '-=0.75')
     .to(borderDroite, {duration:1, right:'0%', width:"50%", ease:'power4'}, '<')
     .to(borderMilieu, {duration:1, height:'100%'}, '-=0.75')
     .to(borderGaucheBottom, {duration:1, left:'0%', width:"50%", ease:'power4'}, '-=0.75')
@@ -280,7 +328,11 @@ if(window.matchMedia('(min-width:600px)').matches){
     //debut home et navbar
     .to(logo, {y:0, opacity:1}, '<')
     .to(icone, {y:0, opacity:1},'<')
-    .to(borderGauche, {duration:1, left:'0%', width:"50%", ease:'power4'})
+    .to(h1Home, {y:0, opacity:1}, '-=0.75')
+    .to(h2Home, {y:0, opacity:1}, '-=0.75')
+    .to(imgHome, {y:'-50%', opacity:1}, '-=0.75')
+    .to(pCreative, {y:0, opacity:1}, '-=0.75')
+    .to(borderGauche, {duration:1, left:'0%', width:"50%", ease:'power4'}, '-=0.75')
     .to(borderDroite, {duration:1, right:'0%', width:"50%", ease:'power4'}, '<')
     .to(borderMilieu, {duration:1, height:'100%'}, '-=0.75')
     .to(borderGaucheBottom, {duration:1, left:'0%', width:"50%", ease:'power4'}, '-=0.75')
@@ -297,6 +349,19 @@ let navLink = gsap.utils.toArray('.lien-projet'),
     imgWrap = document.querySelector('.img-wrapper'),
     imgItem = document.querySelector('.img-placeholder img');
 
+tableauLink = Array.from(navLink)
+
+let divProjet = document.querySelector('.element-projet')
+
+tableauLink.forEach(element => {
+    element.addEventListener('mouseover', () => {
+        divProjet.style.overflow = 'hidden'
+    })
+    element.addEventListener('mouseout', () => {
+        divProjet.style.overflow = 'unset'
+    })
+})
+
 function moveImg(e){
     let mouseX = e.clientX,
         mouseY = e.clientY
@@ -305,7 +370,7 @@ function moveImg(e){
         duration:1,
         x: mouseX,
         y: mouseY,
-        ease: Expo.ease
+        ease: Expo.ease,
     })
 }
 
@@ -318,13 +383,14 @@ function linkHover(e){
             attr: {src: imgSrc}
         }).to(imgWrap, {
             autoAlpha: 1,
-            scale:1
+            scale:1,
+            
         })
     }else if(e.type === 'mouseleave'){
         let tl = gsap.timeline();
         tl.to(imgWrap, {
             autoAlpha:0,
-            scale:0.3
+            scale:0.3,
         })
     }
 }

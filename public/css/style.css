@@ -53,6 +53,11 @@ body {
     background-image: url(../image/noise.avif);
     animation: 0.4s infinite noise;
     content: '';
+    cursor: none;
+}
+
+a{
+    cursor: none;
 }
 
 .overflow{
@@ -109,6 +114,24 @@ body {
 .bg-bleu{
     background-color: #020a59;
 }
+
+/* cursor */
+
+.cursor{
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;
+    z-index: 100;
+    border-radius: 50%;
+    pointer-events: none;
+    position: absolute;
+    background-color: transparent;
+    position: fixed;
+    /* top: 0;
+    left: 0; */
+}
+
+/* fin cursor */
 
 /* debut loader */
 
@@ -276,7 +299,7 @@ li{
 
 .div-logo{
     width: 30%;
-    transform: translateY(50px);
+    transform: translateY(-30px);
     opacity: 0;
     position: relative;
     z-index: 20;
@@ -315,6 +338,7 @@ li{
     height: 2px;
     background: white;
     top: -6px;
+    pointer-events: none;
 }
 
 .ouvrir:before{
@@ -347,24 +371,6 @@ li{
     transform: rotate(-45deg);
 }
 
-
-.open .ouvrir{
-    display: none;
-}
-.open .fermer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.open .ul-navbar{
-    transform: translateY(0);
-    transition-delay: 0.5s;
-}
-.open .deuxieme-slide{
-    transform: translateY(0);
-}
-
-
 .rond-blanc{
     position: absolute;
     top: -250%;
@@ -393,6 +399,8 @@ li{
     text-align: center;
     padding-top: 1%;
     text-transform: uppercase;
+    transform: translateY(-30px);
+    opacity: 0;
 }
 
 .h2-home{
@@ -401,6 +409,8 @@ li{
     text-align: center;
     padding-top: 1%;
     text-transform: uppercase;
+    transform: translateY(-30px);
+    opacity: 0;
 }
 
 .div-home-center{
@@ -460,12 +470,15 @@ li{
     height: auto;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -100%);
+    opacity: 0;
 }
 
 .p-creative{
     width: 30%;
     text-transform: uppercase;
+    transform: translateY(-30px);
+    opacity: 0;
 }
 
 /* fin home */
@@ -547,6 +560,8 @@ li{
     height: 10%;
     padding: 2% 0;
     border-top: 1px solid black;
+    position: relative;
+    align-items: center;
 }
 
 .p1-projet{
@@ -562,14 +577,14 @@ li{
 
 .img-wrapper{
     position: absolute;
-    left: 200px;
-    top: -200px;
+    left: 100px;
+    top: -300px;
     width: 500px;
-    height: 500px;
+    height: 350px;
     overflow: hidden;
     pointer-events: none;
     z-index: 10;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     visibility: hidden;
     transform: scale(0.3);
     /* mix-blend-mode: difference; */
@@ -619,13 +634,27 @@ li{
     padding-left: 10%;
     padding-right: 10%;
     font-size: 3rem;
+}
+
+.color-isabel{
     color: #E4B021;
+}
+
+.bg-color-isabel{
+    background-color: #E4B021;
+}
+
+.color-martin{
+    color: #25FDE9;
+}
+
+.bg-color-martin{
+    background-color: #25FDE9;
 }
 
 .border-projet1{
     width: 80%;
     height: 2px;
-    background-color: #E4B021;
 }
 
 .category-projet{
@@ -682,7 +711,6 @@ li{
 
 .texte-projet-view{
     font-size: 1.25rem;
-    color: #E4B021;
     padding-bottom: 5%;
     text-transform: uppercase;
     font-family: 'poppinsmedium';
@@ -776,6 +804,9 @@ li{
         padding-bottom: 20%;
     }
     /* Home */
+    .cursor{
+        display: none;
+    }
     
     .h1-home{
         font-size: 25px;
@@ -850,6 +881,7 @@ li{
     }
     .p2-projet{
         font-size: 1rem;
+        font-family: 'poppinsextralight';
     }
     .lien-projet{
         padding: 1.5rem 0;
@@ -859,6 +891,9 @@ li{
     }
     .p4-projet{
         font-size: 1.25rem;
+    }
+    .img-wrapper{
+        display: none;
     }
 
     /* page projet */

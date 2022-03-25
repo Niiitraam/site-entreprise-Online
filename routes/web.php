@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Projet1Controller;
+use App\Http\Controllers\Projet2Controller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,3 +19,4 @@ Route::get('/', function () {
 });
 
 Route::resource('/projet1', Projet1Controller::class);
+Route::resource('/projet2', Projet2Controller::class);

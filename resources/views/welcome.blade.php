@@ -7,12 +7,13 @@
     <script src="https://kit.fontawesome.com/6434cb6a94.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{secure_asset('css/style.css')}}">
 
-    <title>Main</title>
+    <title>Martin Manderveld</title>
 </head>
 <body data-barba="wrapper">
     <div class="load-container">
         <div class="loading-screen"></div>
     </div>
+    <div class="cursor"></div>
     <div class="div-loader">
         <div class="div-gauche">
             <div class="div-animation-loader">
