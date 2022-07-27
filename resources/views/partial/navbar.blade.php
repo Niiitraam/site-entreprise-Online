@@ -13,13 +13,13 @@
                 <li><a href="/" class="a-lien s1-color">Home</a></li>
             </div>
             <div class="div-lien s2 lien-cursor">
-                <li><a href="/projet1#projet1" class="a-lien s2-color">About us</a></li>
+                <li><a href="/" class="a-lien s2-color">About me</a></li>
             </div>
             <div class="div-lien s1 lien-cursor">
                 <li><a href="/" class="a-lien s1-color">Our services</a></li>
             </div>
             <div class="div-lien s2 lien-cursor">
-                <li><a href="" class="a-lien s2-color">Projects</a></li>
+                <li><a href="#project" class="a-lien s2-color">Projects</a></li>
             </div>
             <div class="div-lien s1 lien-cursor">
                 <li><a href="" class="a-lien s1-color">Contact us</a></li>

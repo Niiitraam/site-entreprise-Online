@@ -357,9 +357,7 @@ tableauLink.forEach(element => {
     element.addEventListener('mouseover', () => {
         divProjet.style.overflow = 'hidden'
     })
-    element.addEventListener('mouseout', () => {
-        divProjet.style.overflow = 'unset'
-    })
+   
 })
 
 function moveImg(e){
@@ -412,7 +410,27 @@ window.addEventListener('load', function(){
 })
 // fin  section projet
 
+// About us
 
+let rondIcone = document.querySelectorAll('.icone-about')
+let iconeAbout = Array.from(rondIcone)
+
+iconeAbout.forEach((element, index) =>{
+    element.addEventListener('mouseover', function(){
+        scaleAbout(index)
+    })
+    element.addEventListener('mouseout', function(){
+        scaleMin(index)
+    })
+})
+
+function scaleAbout(i){
+    gsap.to(iconeAbout[i], {scale:4})
+}
+
+function scaleMin(i){
+    gsap.to(iconeAbout[i], {scale:1})
+}
 
 // Barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container) {
 //     eval(container.querySelector("script").innerHTML);

@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+::selection {
+    background-color: red;
+  }
 
 @font-face {
     font-family: 'poppinsextralight';
@@ -488,34 +491,48 @@ li{
 .div-about{
     height: 60vh;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     background-color: #F3F2F9;
+    padding: 0% 5%;
 }
 
 .text1-about{
     text-transform: uppercase;
-    font-size: 20px;
-    margin-bottom: 4vh;
+    font-size: 3rem;
+    color: black;
+    border-bottom: 1px solid black;
+    width: 100%;
 }
 
-.text2-about{
-    font-size: 20px;
+.icone-about{
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 5px;
 }
 
-.h2-about{
+.image-icone{
+    width: 40px;
+    height: 100%;
+}
+
+.section-icone{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+.titre-skills{
+    font-size: 1.25rem;
     text-transform: uppercase;
-    font-size: 40px;
-    margin-bottom: 2vh;
+    font-family: 'poppinsmedium';
 }
 
-.logo-noir{
-    width: 30%;
+.skills{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5%;
 }
-
-
 
 /* fin About us */
 
@@ -530,7 +547,6 @@ li{
 
 .section-projet{
     width: 100%;
-    height: 100vh;
     background-color: #F3F2F9;
 }
 
@@ -577,13 +593,13 @@ li{
 
 .img-wrapper{
     position: absolute;
-    left: 100px;
-    top: -500px;
+    left: -250px;
+    top: -400px;
     width: 500px;
     height: 350px;
     overflow: hidden;
     pointer-events: none;
-    z-index: 10;
+    z-index: 0;
     border-radius: 10%;
     visibility: hidden;
     transform: scale(0.3);
@@ -831,20 +847,7 @@ li{
 
     /* about */
 
-    .h2-about{
-        font-size: 25px;
-    }
-    .text1-about{
-        font-size: 15px;
-        margin-bottom: 0;
-    }
-    .text2-about{
-        font-size: 13px;
-        text-align: center;
-    }
-    .logo-noir{
-        width: 50%;
-    }
+    
 
     /* service */
     
