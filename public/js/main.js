@@ -367,7 +367,7 @@ function moveImg(e){
         mouseY = e.clientY
     tl = gsap.timeline();
     tl.to(imgWrap, {
-        duration:1,
+        duration:0.5,
         x: mouseX,
         y: mouseY,
         ease: Expo.ease,
