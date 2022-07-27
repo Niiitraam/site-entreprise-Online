@@ -425,7 +425,7 @@ iconeAbout.forEach((element, index) =>{
 })
 
 function scaleAbout(i){
-    gsap.to(iconeAbout[i], {scale:4})
+    gsap.to(iconeAbout[i], {scale:3})
 }
 
 function scaleMin(i){

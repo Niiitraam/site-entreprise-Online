@@ -506,7 +506,7 @@ li{
 .icone-about{
     border: 2px solid black;
     border-radius: 50%;
-    padding: 5px;
+    padding: 10px;
 }
 
 .image-icone{
@@ -532,6 +532,16 @@ li{
     justify-content: space-between;
     align-items: center;
     padding-top: 5%;
+}
+
+.texte-about{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'poppinsmedium';
+}
+
+.section-tools{
+    width: 50%;
 }
 
 /* fin About us */
