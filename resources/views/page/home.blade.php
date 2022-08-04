@@ -1,4 +1,4 @@
-<section class="div-home">
+{{-- <section class="div-home">
     <h1 class="h1-home">Martin Manderveld</h1>
     <div class="div-home-center">
         <div class="div-gauche-home">
@@ -15,4 +15,12 @@
         <img src="{{asset('image/photo-martin.webp')}}" alt="photo martin" class="img-home">
     </div>
     <h2 class="h2-home">Creative Developer</h2>
+</section> --}}
+<section class="div-home">
+    <div class="div-element-home">
+        <p class="titre-principal">Martin Manderveld</p>
+        <p class="sous-titre-home">Designer & Web developer</p>
+        <div class="ligne"></div>
+        <p class="titre-endroit">Bruxelles, Belgium</p>
+    </div>
 </section>

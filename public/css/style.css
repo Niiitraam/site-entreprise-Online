@@ -235,14 +235,11 @@ li{
     opacity: 0;
 }
 
-.s2{
-    transform: translateY(-200px);
-    opacity: 0;
-}
-
 .a-lien{
-    color: white;
+    color: transparent;
     transition: 0.5s;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    -webkit-text-stroke: 2px black;
 }
 
 .div-lien li a{
@@ -384,6 +381,39 @@ li{
 
 /* Fin section navbar */
 
+/* Home test */
+
+.div-element-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titre-principal{
+    font-family: cursive;
+    font-size: 100px;
+    padding-bottom: 2%;
+}
+
+.sous-titre-home{
+    font-family: 'poppinssemibold';
+    font-size: 40px;
+    padding-bottom: 2%;
+}
+
+.ligne{
+    height: 2px;
+    width: 10%;
+    background-color: red;
+    margin-bottom: 2%;
+}
+
+.titre-endroit{
+    font-family: cursive;
+    font-size: 20px;
+    font-style: italic;
+}
 
 /* Home */
 

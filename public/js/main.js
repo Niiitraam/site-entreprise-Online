@@ -175,56 +175,7 @@ fermerTourne.forEach((element, index) =>{
 
 
 // lien navbar slide
-let lienImpair = document.querySelectorAll('.s1')
-let tableauImpair = Array.from(lienImpair)
 
-let lienPair = document.querySelectorAll('.s2')
-let tableauPair = Array.from(lienPair)
-
-let lienColor = document.querySelectorAll('.s1-color')
-let tableauColor = Array.from(lienColor)
-
-let lienColor2 = document.querySelectorAll('.s2-color')
-let tableauColor2 = Array.from(lienColor2)
-
-
-tableauImpair.forEach((element, index) =>{
-    element.addEventListener('mouseover', function(){
-        s1In(index)
-    })
-    element.addEventListener('mouseout', function(){
-        s1Out(index)
-    })
-})
-
-function s1In(i){
-    tableauColor[i].style.color = 'black';
-    gsap.to(tableauColor[i], {paddingLeft:200, duration:.1})
-}
-
-function s1Out(i){
-    tableauColor[i].style.color = 'white';
-    gsap.to(tableauColor[i], {paddingLeft:0, duration:.1})
-}
-
-tableauPair.forEach((element, index) =>{
-    element.addEventListener('mouseover', function(){
-        s2In(index)
-    })
-    element.addEventListener('mouseout', function(){
-        s2Out(index)
-    })
-})
-
-function s2In(i){
-    tableauColor2[i].style.color = 'black';
-    gsap.to(tableauColor2[i], {paddingRight:200, ease:'power1', duration:.1})
-}
-
-function s2Out(i){
-    tableauColor2[i].style.color = 'white';
-    gsap.to(tableauColor2[i], {paddingRight:0, ease:'power1', duration:.1})
-}
 
 
 // rond qui tourne autour du menu burger
