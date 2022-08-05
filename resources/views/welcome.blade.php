@@ -30,8 +30,8 @@
             @include('page/home')
             <div class="div-cache">
                 @include('page/about')
-                @include('page/service')
                 @include('page/projet')
+                @include('page/contact')
             </div>
     </div>
         

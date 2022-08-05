@@ -1,6 +1,13 @@
 <section class="div-about">
     <h3 class="text1-about bleu">About me</h3>
     <div class="skills">
+        <div class="image-photo-about">
+            <img src="{{asset('image/photo-martin.webp')}}" alt="photo martin" class="photo-martin">
+            <img src="{{asset('image/image1.jpg')}}" alt="photo martin" class="photo-1-about">
+            <img src="{{asset('image/image2.jpg')}}" alt="photo martin" class="photo-2-about">
+        </div>
+    </div>
+    <div class="skills">
         <h4 class="titre-skills">Programming languages & others</h4>
         <div class="section-icone">
             <div class="icone-about">

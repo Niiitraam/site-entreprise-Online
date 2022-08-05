@@ -8,6 +8,10 @@
     background-color: red;
   }
 
+body{
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: 'poppinsextralight';
     src: url('../font/poppins-extralight-webfont.woff2') format('woff2'),
@@ -239,7 +243,7 @@ li{
     color: transparent;
     transition: 0.5s;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    -webkit-text-stroke: 2px black;
+    -webkit-text-stroke: 2px #F3F2F9;
 }
 
 .div-lien li a{
@@ -388,24 +392,29 @@ li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 10;
 }
 
 .titre-principal{
-    font-family: cursive;
+    font-family: 'poppinssemibold';
     font-size: 100px;
     padding-bottom: 2%;
+    color: transparent;
+    -webkit-text-stroke: 2px black;
 }
 
 .sous-titre-home{
     font-family: 'poppinssemibold';
     font-size: 40px;
     padding-bottom: 2%;
+    color: transparent;
+    -webkit-text-stroke: 1.5px black;
 }
 
 .ligne{
     height: 2px;
     width: 10%;
-    background-color: red;
+    background-color: black;
     margin-bottom: 2%;
 }
 
@@ -413,6 +422,75 @@ li{
     font-family: cursive;
     font-size: 20px;
     font-style: italic;
+}
+
+.box {
+    position: absolute;
+    color: #f1f1f1;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.23,1.83,0.42,1.19);
+}
+.circle {
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    border: 5px solid black;
+    animation: 1s linear infinite alternate boxMagic,
+               4s linear infinite spinning;
+    padding-top: 600px;
+    filter: blur(2px);
+    transform: scale(0.5);
+}
+
+@keyframes boxMagic {
+    from {
+        box-shadow: 
+        0 -5px 0 black
+        -5px 0 0 black,
+        0 5px 0 black,
+        5px 0 0 black;
+    }
+    to {
+        box-shadow: 
+        0 -10px 0 black,
+        -10px 0 0 black,
+        0 10px 0 black,
+        10px 0 0 black;
+    }
+}
+@keyframes spinning {
+
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .circle {
+        width: 200px;
+        height: 200px;
+        padding-top: 210px;
+    }
+    @keyframes boxMagic {
+        from {
+            box-shadow: 
+            0 0 0 black,
+            0 0 0 black,
+            0 0 0 black,
+            0 0 0 black;
+        }
+        to {
+            box-shadow: 
+            0 -6px 0 black,
+            -6px 0 0 black,
+            0 6px 0 black,
+            6px 0 0 black;
+        }
+    }
 }
 
 /* Home */
@@ -424,6 +502,7 @@ li{
     justify-content: space-around;
     flex-direction: column;
     position: relative;
+    align-items: center;
 }
 
 .h1-home{
@@ -516,10 +595,9 @@ li{
 
 /* fin home */
 
-/* About us */
+/* About me */
 
 .div-about{
-    height: 60vh;
     width: 100%;
     background-color: #F3F2F9;
     padding: 0% 5%;
@@ -572,6 +650,25 @@ li{
 
 .section-tools{
     width: 50%;
+}
+
+.image-photo-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-martin{
+    width: 35%;
+}
+
+.photo-1-about{
+    position: absolute;
+    width: 18%;
+}
+.photo-2-about{
+    position: absolute;
+    width: 25%;
 }
 
 /* fin About us */

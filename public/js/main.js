@@ -383,9 +383,23 @@ function scaleMin(i){
     gsap.to(iconeAbout[i], {scale:1})
 }
 
+
+let photoM = document.querySelector('.photo-martin')
+let photo1 = document.querySelector('.photo-1-about')
+let photo2 = document.querySelector('.photo-2-about')
+
+photoM.addEventListener('mouseover', function(){
+    let tl = gsap.timeline();
+    tl.to(photo1, {x:"40%", duration: 1, rotate:'30deg'})
+})
+
 // Barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container) {
 //     eval(container.querySelector("script").innerHTML);
 // });
+
+//https://astrodigital.co/contact
+//https://verbalplusvisual.com/about
+//https://www.bradypatterson.design/
 
 
 
