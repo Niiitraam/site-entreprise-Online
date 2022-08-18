@@ -384,14 +384,31 @@ function scaleMin(i){
 }
 
 
-let photoM = document.querySelector('.photo-martin')
-let photo1 = document.querySelector('.photo-1-about')
-let photo2 = document.querySelector('.photo-2-about')
+// 3 photos
 
-photoM.addEventListener('mouseover', function(){
-    let tl = gsap.timeline();
-    tl.to(photo1, {x:"40%", duration: 1, rotate:'30deg'})
+gsap.to('.rectangle-photo', {
+    y: "-101%",
+    autoAlpha:1,
+    scrollTrigger: {
+        trigger: ".rectangle-photo",
+        // avoir les markers
+        // markers:true,
+        // Trigger scroller
+        start: "top center",
+        end: "bottom bottom",
+        // onEnter onLeave onEnterBack onLeaveBack
+        toggleActions: "play pause reverse reset",
+        // onEnter: () => console.log('test'),
+        // Faire que l'animation se déroule pendant le scroll
+        scrub:1,
+    }
 })
+
+// Faire que la div reste fixed pendant un certain temps
+// ScrollTrigger.create({
+//     trigger: ".div-about",
+//     pin: true,
+// })
 
 // Barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container) {
 //     eval(container.querySelector("script").innerHTML);

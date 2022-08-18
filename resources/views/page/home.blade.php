@@ -12,7 +12,7 @@
             <div class="border-milieu-home"></div>
         </div>
         
-        <img src="{{asset('image/photo-martin.webp')}}" alt="photo martin" class="img-home">
+        <img src="{{secure_asset('image/photo-martin.webp')}}" alt="photo martin" class="img-home">
     </div>
     <h2 class="h2-home">Creative Developer</h2>
 </section> --}}

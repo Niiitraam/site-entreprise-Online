@@ -113,15 +113,6 @@ a{
     }
 }
 
-
-.bleu{
-    color: #020a59;
-}
-
-.bg-bleu{
-    background-color: #020a59;
-}
-
 /* cursor */
 
 .cursor{
@@ -471,9 +462,11 @@ li{
 
 @media screen and (max-width: 700px) {
     .circle {
-        width: 200px;
-        height: 200px;
-        padding-top: 210px;
+        width: 100px;
+        height: 100px;
+        padding-top: 105px;
+        border: 3px solid black;
+        filter: blur(1px);
     }
     @keyframes boxMagic {
         from {
@@ -611,24 +604,6 @@ li{
     width: 100%;
 }
 
-.icone-about{
-    border: 2px solid black;
-    border-radius: 50%;
-    padding: 10px;
-}
-
-.image-icone{
-    width: 40px;
-    height: 100%;
-}
-
-.section-icone{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 50%;
-}
-
 .titre-skills{
     font-size: 1.25rem;
     text-transform: uppercase;
@@ -638,7 +613,6 @@ li{
 .skills{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding-top: 5%;
 }
 
@@ -656,19 +630,19 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .photo-martin{
-    width: 35%;
+    width: 30%;
 }
 
-.photo-1-about{
+.rectangle-photo{
+    width: 30%;
+    height: 100%;
+    background: #F3F2F9;
     position: absolute;
-    width: 18%;
-}
-.photo-2-about{
-    position: absolute;
-    width: 25%;
 }
 
 /* fin About us */
@@ -684,6 +658,7 @@ li{
 
 .section-projet{
     width: 100%;
+    padding-top: 7%;
     background-color: #F3F2F9;
 }
 
@@ -918,13 +893,62 @@ li{
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    z-index: 10;
     pointer-events: none;
     z-index: 100;
 }
 
+/* Contact section */
 
+.div-contact{
+    width: 100%;
+    background-color: #F3F2F9;
+    padding: 7% 5%;
+}
 
+.h4-contact{
+    padding-top: 2%;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.p-contact{
+    padding-top: 1%;
+    width: 90%;
+}
+
+.div-input{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1%;
+}
+
+.label-contact{
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.formulaire-contact{
+    padding: 3% 0;
+    width: 90%;
+}
+
+.input-contact{
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    font-size: 20px;
+}
+.input-contact:focus{
+    outline: none;
+}
+
+.flex-contact{
+    display: flex;
+}
+
+.div-50por{
+    width: 50%;
+}
 
 /* Media queries */
 
@@ -934,8 +958,7 @@ li{
         padding: 0 2rem;
     }
     .div-lien li a{
-        font-size: 25px;
-        color: white;
+        font-size: 35px;
     }
     .logo{
         width: 40%;
@@ -944,7 +967,7 @@ li{
         width: 80%;
     }
     .a-lien{
-        text-transform: uppercase;
+        color: transparent;
     }
     .div-reseau{
         right: 2rem;
@@ -981,7 +1004,32 @@ li{
         font-size: 1rem;
 
     }
-
+    .titre-principal{
+        font-size: 50px;
+        text-align: center;
+    }
+    .sous-titre-home{
+        font-size: 35px;
+        text-align: center;
+    }
+    .text1-about{
+        font-size: 2rem;
+    }
+    .photo-martin{
+        width: 55%;
+    }
+    .skills{
+        display: block;
+    }
+    .rectangle-photo{
+        width: 55%;
+    }
+    .section-tools{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
     /* about */
 
     
@@ -1047,16 +1095,7 @@ li{
     .div-story-projet{
         padding: 0;
     }
-    .texte-projet-view{
-        font-size: 1rem;
-    }
-    .texte2-projet-view{
-        font-size: 1rem;
-    }
-    .p-story-projet{
-        font-size: 1rem;
-    }
-    .lien-vers-site{
+    .texte-projet-view, .texte2-projet-view, .p-story-projet, .lien-vers-site{
         font-size: 1rem;
     }
     .div-photo-projet-view{
@@ -1067,5 +1106,15 @@ li{
     }
     .photo-projet1{
         border-radius: 10%;
+    }
+    /* contact */
+    .flex-contact{
+        display: block;
+    }
+    .h4-contact{
+        font-size: 1.3rem;
+    }
+    .p-contact, .formulaire-contact, .div-50por{
+        width: 100%;
     }
 }
