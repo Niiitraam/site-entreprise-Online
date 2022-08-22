@@ -220,25 +220,12 @@ let logo = document.querySelector('.div-logo')
 let divLien = document.querySelectorAll('.div-lien')
 let icone = document.querySelectorAll('.icone')
 
-let borderGauche = document.querySelector('.border-gauche-home')
-let borderDroite = document.querySelector('.border-droite-home')
-let borderGaucheBottom = document.querySelector('.border-gauche-bottom')
-let borderDroiteBottom = document.querySelector('.border-droite-bottom')
-let borderMilieu = document.querySelector('.border-milieu-home')
-
-let h1Home = document.querySelector('.h1-home');
-let h2Home = document.querySelector('.h2-home')
-let imgHome = document.querySelector('.img-home')
-let pCreative = document.querySelector('.p-creative')
-
 let TL = gsap.timeline({
     defaults: {
         duration: 1,
         ease: 'power4',
     }
 });
-
-
 
 if(window.matchMedia('(min-width:600px)').matches){
     TL
@@ -255,15 +242,6 @@ if(window.matchMedia('(min-width:600px)').matches){
     //debut home et navbar
     .to(logo, {y:0, opacity:1}, '<')
     .to(icone, {y:0, opacity:1},'<')
-    .to(h1Home, {y:0, opacity:1}, '-=0.75')
-    .to(h2Home, {y:0, opacity:1}, '-=0.75')
-    .to(imgHome, {y:'-50%', opacity:1}, '-=0.75')
-    .to(pCreative, {y:0, opacity:1}, '-=0.75')
-    .to(borderGauche, {duration:1, left:'0%', width:"50%", ease:'power4'}, '-=0.75')
-    .to(borderDroite, {duration:1, right:'0%', width:"50%", ease:'power4'}, '<')
-    .to(borderMilieu, {duration:1, height:'100%'}, '-=0.75')
-    .to(borderGaucheBottom, {duration:1, left:'0%', width:"50%", ease:'power4'}, '-=0.75')
-    .to(borderDroiteBottom, {duration:1, right:'0%', width:"50%", ease:'power4'}, '<')
 }else{
     TL
     .to(rondLoader1, {y:0, ease:'elastic', opacity:1})
@@ -279,15 +257,6 @@ if(window.matchMedia('(min-width:600px)').matches){
     //debut home et navbar
     .to(logo, {y:0, opacity:1}, '<')
     .to(icone, {y:0, opacity:1},'<')
-    .to(h1Home, {y:0, opacity:1}, '-=0.75')
-    .to(h2Home, {y:0, opacity:1}, '-=0.75')
-    .to(imgHome, {y:'-50%', opacity:1}, '-=0.75')
-    .to(pCreative, {y:0, opacity:1}, '-=0.75')
-    .to(borderGauche, {duration:1, left:'0%', width:"50%", ease:'power4'}, '-=0.75')
-    .to(borderDroite, {duration:1, right:'0%', width:"50%", ease:'power4'}, '<')
-    .to(borderMilieu, {duration:1, height:'100%'}, '-=0.75')
-    .to(borderGaucheBottom, {duration:1, left:'0%', width:"50%", ease:'power4'}, '-=0.75')
-    .to(borderDroiteBottom, {duration:1, right:'0%', width:"50%", ease:'power4'}, '<')
 }
 
 

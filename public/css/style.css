@@ -498,94 +498,6 @@ li{
     align-items: center;
 }
 
-.h1-home{
-    font-size: 5rem;
-    color: black;
-    text-align: center;
-    padding-top: 1%;
-    text-transform: uppercase;
-    transform: translateY(-30px);
-    opacity: 0;
-}
-
-.h2-home{
-    font-size: 5rem;
-    color: black;
-    text-align: center;
-    padding-top: 1%;
-    text-transform: uppercase;
-    transform: translateY(-30px);
-    opacity: 0;
-}
-
-.div-home-center{
-    display: flex;
-    width: 100%;
-    height: 65vh;
-    position: relative;
-}
-
-.div-gauche-home{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.div-droite-home{
-    width: 100%;
-}
-
-.border-droite-home,.border-droite-bottom{
-    width: 0%;
-    height: 100%;
-    border-top: 1px solid black;
-    position: absolute;
-    top: 0;
-    right: 50%;
-}
-
-.border-droite-bottom{
-    border-top: unset;
-    border-bottom: 1px solid black;
-}
-
-.border-gauche-home,.border-gauche-bottom{
-    width: 0%;
-    height: 100%;
-    border-top: 1px solid black;
-    position: absolute;
-    top: 0;
-    left: 50%;
-}
-
-.border-gauche-bottom{
-    border-top: unset;
-    border-bottom: 1px solid black;
-}
-
-.border-milieu-home{
-    height: 0%;
-    border-left: 1px solid black;
-}
-
-.img-home{
-    position: absolute;
-    width: 20%;
-    height: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -100%);
-    opacity: 0;
-}
-
-.p-creative{
-    width: 30%;
-    text-transform: uppercase;
-    transform: translateY(-30px);
-    opacity: 0;
-}
-
 /* fin home */
 
 /* About me */
@@ -982,27 +894,6 @@ li{
     /* Home */
     .cursor{
         display: none;
-    }
-    
-    .h1-home{
-        font-size: 25px;
-        text-align: center;
-        padding-top: 20%;
-    }
-    .h2-home{
-        font-size: 25px;
-    }
-    .img-home{
-        width: 45%;
-    }
-    .p-creative{
-        position: absolute;
-        width:100%;
-        bottom: 5%;
-        text-align: center;
-        left: 0;
-        font-size: 1rem;
-
     }
     .titre-principal{
         font-size: 50px;
