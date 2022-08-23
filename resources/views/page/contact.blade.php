@@ -1,21 +1,18 @@
 <section class="div-contact">
-    <h3 class="text1-about test56 bleu">Contact me</h3>
+    <h3 class="text1-about test56 bleu"><span class="numero-titre">04</span> Contact me</h3>
     <div class="flex-contact">
         <div class="div-50por">
             <h4 class="h4-contact">Let's start the conversation !</h4>
             <p class="p-contact">Le web a pour but de connecter les utilisateurs des quatre coins du monde et éventuellement vous connecter aussi avec vos futurs clients. On sait le faire pour vous ! Dîtes bonjour :)</p>
             <form action="" method="" class="formulaire-contact">
                 <div class="div-input">
-                    <label for="name" class="label-contact">Name:</label>
-                    <input type="text" id="name" class="input-contact">
+                    <input type="text" id="name" class="input-contact" placeholder="Name">
                 </div>
                 <div class="div-input">
-                    <label for="name" class="label-contact">Mail:</label>
-                    <input type="text" id="mail" class="input-contact">
+                    <input type="text" id="mail" class="input-contact" placeholder="Mail">
                 </div>
                 <div class="div-input">
-                    <label for="name" class="label-contact">Message:</label>
-                    <textarea name="message" id="" cols="30" rows="10" class="input-contact"></textarea>
+                    <textarea name="message" id="" cols="30" rows="10" class="input-contact" placeholder="Message"></textarea>
                 </div>
             </form>
         </div>

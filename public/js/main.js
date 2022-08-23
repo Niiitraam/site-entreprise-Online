@@ -218,7 +218,6 @@ let rondLoader4 = document.querySelector('.rond4')
 
 let logo = document.querySelector('.div-logo')
 let divLien = document.querySelectorAll('.div-lien')
-let icone = document.querySelectorAll('.icone')
 
 let TL = gsap.timeline({
     defaults: {
@@ -241,7 +240,6 @@ if(window.matchMedia('(min-width:600px)').matches){
     //fin loader
     //debut home et navbar
     .to(logo, {y:0, opacity:1}, '<')
-    .to(icone, {y:0, opacity:1},'<')
 }else{
     TL
     .to(rondLoader1, {y:0, ease:'elastic', opacity:1})
@@ -256,7 +254,6 @@ if(window.matchMedia('(min-width:600px)').matches){
     //fin loader
     //debut home et navbar
     .to(logo, {y:0, opacity:1}, '<')
-    .to(icone, {y:0, opacity:1},'<')
 }
 
 
@@ -273,12 +270,12 @@ tableauLink = Array.from(navLink)
 
 let divProjet = document.querySelector('.element-projet')
 
-tableauLink.forEach(element => {
-    element.addEventListener('mouseover', () => {
-        divProjet.style.overflow = 'hidden'
-    })
+// tableauLink.forEach(element => {
+//     element.addEventListener('mouseover', () => {
+//         divProjet.style.overflow = 'hidden'
+//     })
    
-})
+// })
 
 function moveImg(e){
     let mouseX = e.clientX,
@@ -308,7 +305,7 @@ function linkHover(e){
         let tl = gsap.timeline();
         tl.to(imgWrap, {
             autoAlpha:0,
-            scale:0.3,
+            scale:0.3,            
         })
     }
 }
@@ -353,10 +350,10 @@ function scaleMin(i){
 }
 
 
-// 3 photos
+//  Photo about
 
 gsap.to('.rectangle-photo', {
-    y: "-101%",
+    y: "-100%",
     autoAlpha:1,
     scrollTrigger: {
         trigger: ".rectangle-photo",

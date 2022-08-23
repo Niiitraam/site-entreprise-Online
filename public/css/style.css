@@ -300,19 +300,6 @@ li{
     z-index: 20;
 }
 
-.div-reseau{
-    position: fixed;
-    right: 3rem;
-    bottom: 5%;
-}
-
-.icone{
-    font-size: 30px;
-    opacity: 0;
-    transform: translateY(30px);
-    color: black;
-}
-
 .ouvrir{
     width: 26px;
     height: 2px;
@@ -400,6 +387,10 @@ li{
     padding-bottom: 2%;
     color: transparent;
     -webkit-text-stroke: 1.5px black;
+}
+
+.numero-titre{
+    font-size: 1.75rem;
 }
 
 .ligne{
@@ -517,9 +508,8 @@ li{
 }
 
 .titre-skills{
-    font-size: 1.25rem;
+    font-size: 2rem;
     text-transform: uppercase;
-    font-family: 'poppinsmedium';
 }
 
 .skills{
@@ -530,8 +520,16 @@ li{
 
 .texte-about{
     text-transform: uppercase;
-    font-size: 1.5rem;
-    font-family: 'poppinsmedium';
+    font-size: 1.80rem;
+    font-weight: bold;
+    padding-bottom: 1.5%;
+}
+
+.texte-about-s{
+    text-transform: uppercase;
+    font-size: 1.40rem;
+    color: #414040;
+    padding-bottom: 2%;
 }
 
 .section-tools{
@@ -570,7 +568,7 @@ li{
 
 .section-projet{
     width: 100%;
-    padding-top: 7%;
+    padding-top: 5%;
     background-color: #F3F2F9;
 }
 
@@ -616,9 +614,9 @@ li{
 }
 
 .img-wrapper{
-    position: absolute;
-    left: -250px;
-    top: -400px;
+    position: fixed;
+    left: 50px;
+    top: -175px;
     width: 500px;
     height: 350px;
     overflow: hidden;
@@ -814,33 +812,28 @@ li{
 .div-contact{
     width: 100%;
     background-color: #F3F2F9;
-    padding: 7% 5%;
+    padding: 5% 5%;
 }
 
 .h4-contact{
-    padding-top: 2%;
+    padding-top: 5%;
     font-size: 2rem;
     text-transform: uppercase;
 }
 
 .p-contact{
-    padding-top: 1%;
+    padding-top: 3%;
     width: 90%;
 }
 
 .div-input{
     display: flex;
     flex-direction: column;
-    padding-bottom: 1%;
-}
-
-.label-contact{
-    font-weight: bold;
-    font-size: 1.25rem;
+    padding-bottom: 3%;
 }
 
 .formulaire-contact{
-    padding: 3% 0;
+    padding: 5% 0;
     width: 90%;
 }
 
@@ -850,6 +843,14 @@ li{
     background-color: transparent;
     font-size: 20px;
 }
+
+.input-contact::placeholder{
+    font-weight: bold;
+    font-size: 1.25rem;
+    color:black;
+    font-family: 'poppinsextralight';
+}
+
 .input-contact:focus{
     outline: none;
 }
@@ -860,6 +861,14 @@ li{
 
 .div-50por{
     width: 50%;
+}
+
+/* Service */
+
+.section-service{
+    width: 100%;
+    background-color: #F3F2F9;
+    padding: 5% 5%;
 }
 
 /* Media queries */
@@ -880,12 +889,6 @@ li{
     }
     .a-lien{
         color: transparent;
-    }
-    .div-reseau{
-        right: 2rem;
-    }
-    .icone{
-        font-size: 20px;
     }
     .ul-navbar{
         padding-top: 20%;
@@ -922,8 +925,19 @@ li{
         width: 100%;
     }
     /* about */
-
-    
+    .titre-skills{
+        font-size: 1.5rem;
+        padding-bottom: 2%;
+    }
+    .texte-about{
+        font-size: 1rem;
+    }
+    .section-tools{
+        display: block;
+    }
+    .texte-about-s{
+        font-size: 0.80rem;
+    }
 
     /* service */
     

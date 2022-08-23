@@ -31,21 +31,15 @@
             <div class="div-cache">
                 @include('page/about')
                 @include('page/projet')
+                @include('page/service')
                 @include('page/contact')
             </div>
     </div>
-        
-
-    
-    @include('partial/reseau')
-
     
     <script src="https://unpkg.com/@barba/core"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
 
-
-    
     <script src="{{secure_asset('js/main.js')}}"></script>
 </body>
 </html>
