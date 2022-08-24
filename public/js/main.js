@@ -89,7 +89,6 @@ function contentAnimation(){
 
 barba.hooks.enter(() => {
     window.scrollTo(0,0);
-    
 })
 
 // barba.hooks.after(() => {
