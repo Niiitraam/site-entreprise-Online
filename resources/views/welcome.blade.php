@@ -43,3 +43,5 @@
     <script src="{{secure_asset('js/main.js')}}"></script>
 </body>
 </html>
+
+{{-- https://greensock.com/forums/topic/22867-reset-timeline-after-barbajs-page-transition/ --}}
