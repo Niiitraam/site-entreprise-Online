@@ -1,3 +1,4 @@
+
 // cursor
 
 let cursor = document.querySelector('.cursor');
@@ -86,28 +87,37 @@ function contentAnimation(){
     document.querySelector('body').classList.remove('open')
 }
 
+barba.hooks.enter(() => {
+    window.scrollTo(0,0);
+    
+})
+
+// barba.hooks.after(() => {
+// 	$('.c-hamburger').on('click', function() {
+// 		$('.c-hamburger, .hamburger, .r-header').toggleClass('is-active');
+// 		tl_overlay_in.reversed() ? tl_overlay_in.play() : tl_overlay_in.reverse();
+// 	});
+// });
+
+
 barba.init({
     sync:true,
-
     transitions:[{
         async leave(data){
             let done = this.async();
-
             pageTransition();
             await delay(1500);
-
-            done();
+            done();  
         },
-
         async enter(data){
             contentAnimation()
         },
-
-        async once(date){
+        async once(data){
             contentAnimation()
-        }
+        },
     }]
 })
+
 // ouverture //navbar
 let body = document.querySelector('body')
 let rondNoir = document.querySelector('.rondAutour')
@@ -188,19 +198,6 @@ if(window.matchMedia('(min-width:600px)').matches){
 }else{
     gsap.to(svgBlanc, 0, {rotation:0, ease:'none', repeat:0})
 }
-
-
-
-//gsap pour changement de couleur
-
-// gsap.registerPlugin(ScrollTrigger)
-
-// gsap.to('header', {
-//     scrollTrigger: "header",
-//     backgroundColor:'black',
-//     duration:1
-// })
-
 
 // Greensock
 
@@ -376,9 +373,13 @@ gsap.to('.rectangle-photo', {
 //     pin: true,
 // })
 
-// Barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container) {
+// barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container) {
 //     eval(container.querySelector("script").innerHTML);
 // });
+
+// barba.Dispatcher.on('transitionCompleted', function(currentStatus, oldStatus, container) {
+//     console.log('YES')
+//   });
 
 //https://astrodigital.co/contact
 //https://verbalplusvisual.com/about

@@ -287,9 +287,9 @@ li{
 }
 
 .logo{
-    width: 30%;
-    height: 100%;
-    color: #ECFD18;
+    font-size: 3rem;
+    color: black;
+    font-weight: bold;
 }
 
 .div-logo{

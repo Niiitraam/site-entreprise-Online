@@ -1,7 +1,7 @@
 <header>
     <nav class="navbar-main">
         <div class="div-logo">
-            <img src="{{secure_asset('image/logo.webp')}}" class="logo" alt="">
+            <p class="logo">MM</p>
         </div>
         <div class="toggle rondAutour normal lien-cursor">
             <img src="{{secure_asset('image/rond-noir.webp')}}" class="rond-blanc" alt="">
