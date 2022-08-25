@@ -115,6 +115,34 @@ a{
     background-color: #020a59;
 }
 
+/* scrollbar  */
+
+::-webkit-scrollbar{
+    width: 0;
+    background: transparent;
+}
+
+.scrollbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 100%;
+    opacity: 0;
+    background: linear-gradient(to top, #ffffff, #000000);
+}
+
+/* .clickScrollbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 100%;
+    background: rgba(170,170,170,0.356);
+} */
+
+/* fin scrollbar */
+
 /* cursor */
 
 .cursor{

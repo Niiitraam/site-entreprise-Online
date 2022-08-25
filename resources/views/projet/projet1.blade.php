@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{secure_asset('css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
     
 
     <title>Document</title>
@@ -16,7 +16,7 @@
         <div class="cursor"></div>
         <section class="section-projet-unanime" id="projet1">
             <div class="div-photo-projet1">
-                <img src="{{secure_asset('image/projet/isabel-gomez.webp')}}" class="photo-projet1" alt="">
+                <img src="{{asset('image/projet/isabel-gomez.webp')}}" class="photo-projet1" alt="">
             </div>
     
             <div class="div-description">
@@ -51,19 +51,19 @@
             </div>
             <div class="div-photo-projet-view">
                 <p class="titre-projet-view">Page d'accueil</p>
-                <img src="{{secure_asset('image/projet/projet-isabel/isabel1.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <img src="{{asset('image/projet/projet-isabel/isabel1.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
                 <p class="titre-projet-view">Menu</p>
-                <img src="{{secure_asset('image/projet/projet-isabel/isabel2.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <img src="{{asset('image/projet/projet-isabel/isabel2.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
                 <p class="titre-projet-view">Contact</p>
-                <img src="{{secure_asset('image/projet/projet-isabel/isabel3.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <img src="{{asset('image/projet/projet-isabel/isabel3.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
                 <p class="titre-projet-view">Page Projet</p>
-                <img src="{{secure_asset('image/projet/projet-isabel/isabel4.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <img src="{{asset('image/projet/projet-isabel/isabel4.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
                 <p class="titre-projet-view">Page Boutique</p>
-                <img src="{{secure_asset('image/projet/projet-isabel/isabel5.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <img src="{{asset('image/projet/projet-isabel/isabel5.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
                 <p class="titre-projet-view">Page graphisme</p>
-                <img src="{{secure_asset('image/projet/projet-isabel/isabel6.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <img src="{{asset('image/projet/projet-isabel/isabel6.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
                 <p class="titre-projet-view">Footer</p>
-                <img src="{{secure_asset('image/projet/projet-isabel/isabel7.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <img src="{{asset('image/projet/projet-isabel/isabel7.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
             </div>
         </section>
     </div>
@@ -74,6 +74,6 @@
     <script src="https://unpkg.com/@barba/core"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-    <script src="{{secure_asset('js/main.js')}}"></script>
+    <script src="{{asset('js/main.js')}}"></script>
 </body>
 </html>
