@@ -76,10 +76,7 @@ function pageTransition(){
     .to('.deuxieme-slide', {
         y:'-100%',
         duration:0.1
-    }, '<')
-    
-    
-    
+    }, '<');
 }
 
 function contentAnimation(){
@@ -87,9 +84,18 @@ function contentAnimation(){
     document.querySelector('body').classList.remove('open')
 }
 
+// function beforeAnimation(){
+//     let script = document.createElement('script');
+//     script.src = 'test.js'; // location of your draggable js file that is responsible for that image loading and dragging functionality
+//     next.container.appendChild(script);
+//     console.log(script)
+// }
+
 barba.hooks.enter(() => {
     window.scrollTo(0,0);
 })
+
+
 
 // barba.hooks.after(() => {
 // 	$('.c-hamburger').on('click', function() {
@@ -110,11 +116,13 @@ barba.init({
         },
         async enter(data){
             contentAnimation()
+            console.log('enter')
         },
         async once(data){
             contentAnimation()
+            console.log('once')
         },
-    }]
+    }],
 })
 
 // ouverture //navbar
@@ -375,14 +383,12 @@ gsap.to('.rectangle-photo', {
 // barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container) {
 //     eval(container.querySelector("script").innerHTML);
 // });
-
-// barba.Dispatcher.on('transitionCompleted', function(currentStatus, oldStatus, container) {
-//     console.log('YES')
-//   });
+// console.log(barba.Dispatcher)
+// barba.Dispatcher.events()
 
 //https://astrodigital.co/contact
 //https://verbalplusvisual.com/about
 //https://www.bradypatterson.design/
-
+//https://barba.js.org/docs/advanced/third-party/
 
 
