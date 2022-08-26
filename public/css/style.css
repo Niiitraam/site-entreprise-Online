@@ -231,10 +231,8 @@ li{
 }
 
 .a-lien{
-    color: transparent;
-    transition: 0.5s;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    -webkit-text-stroke: 2px #F3F2F9;
+    color: white;
+    font-family: 'poppinsextralight';
 }
 
 .div-lien li a{
@@ -374,19 +372,17 @@ li{
 }
 
 .titre-principal{
-    font-family: 'poppinssemibold';
+    font-family: 'poppinsextralight';
     font-size: 100px;
     padding-bottom: 2%;
-    color: transparent;
-    -webkit-text-stroke: 2px black;
+    color: black;
 }
 
 .sous-titre-home{
-    font-family: 'poppinssemibold';
+    font-family: 'poppinsextralight';
     font-size: 40px;
     padding-bottom: 2%;
-    color: transparent;
-    -webkit-text-stroke: 1.5px black;
+    color: black;
 }
 
 .numero-titre{
@@ -401,7 +397,7 @@ li{
 }
 
 .titre-endroit{
-    font-family: cursive;
+    font-family: 'poppinsextralight';
     font-size: 20px;
     font-style: italic;
 }
@@ -613,6 +609,10 @@ li{
     font-family: 'poppinsthin';
 }
 
+.border-anne{
+    border: 2px solid black;
+}
+
 .img-wrapper{
     position: fixed;
     left: 50px;
@@ -690,6 +690,22 @@ li{
     background-color: #25FDE9;
 }
 
+.color-renovation{
+    color: #ce0e11;
+}
+
+.bg-color-renovation{
+    background-color: #ce0e11;
+}
+
+.color-anne{
+    color: black;
+}
+
+.bg-color-anne{
+    background-color: black;
+}
+
 .border-projet1{
     width: 80%;
     height: 2px;
@@ -718,11 +734,16 @@ li{
     font-size: 1.25rem;
 }
 
+.lien-skydoo{
+    color: #e95e0e;
+    text-decoration: none;
+}
+
 .lien-vers-site{
     text-decoration: none;
     color: black;
     font-size: 1.25rem;
-    padding-top: 5%;
+    margin-top: 5%;
     display: inline;
     max-width: max-content;
     position: relative;
@@ -813,6 +834,7 @@ li{
     width: 100%;
     background-color: #F3F2F9;
     padding: 5% 5%;
+    padding-bottom: 2%;
 }
 
 .h4-contact{
@@ -863,6 +885,16 @@ li{
     width: 50%;
 }
 
+svg{
+    width: 65%;
+}
+
+.svg-position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Service */
 
 .section-service{
@@ -886,9 +918,6 @@ li{
     }
     .div-logo{
         width: 80%;
-    }
-    .a-lien{
-        color: transparent;
     }
     .ul-navbar{
         padding-top: 20%;
@@ -937,6 +966,9 @@ li{
     }
     .texte-about-s{
         font-size: 0.80rem;
+    }
+    .skills{
+        padding-top: 10%;
     }
 
     /* service */
@@ -1003,9 +1035,6 @@ li{
     .texte-projet-view, .texte2-projet-view, .p-story-projet, .lien-vers-site{
         font-size: 1rem;
     }
-    .div-photo-projet-view{
-        padding-top: 5%;
-    }
     .div-photo-projet1{
         padding: 40% 10% 10% 10%;
     }
@@ -1018,8 +1047,12 @@ li{
     }
     .h4-contact{
         font-size: 1.3rem;
+        padding-top: 10%;
     }
     .p-contact, .formulaire-contact, .div-50por{
         width: 100%;
+    }
+    .div-input, .p-contact, .div-photo-projet-view{
+        padding-top: 5%;
     }
 }

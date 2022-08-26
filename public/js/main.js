@@ -125,6 +125,7 @@ barba.init({
     }],
 })
 
+
 // ouverture //navbar
 let body = document.querySelector('body')
 let rondNoir = document.querySelector('.rondAutour')
@@ -392,3 +393,41 @@ gsap.to('.rectangle-photo', {
 //https://barba.js.org/docs/advanced/third-party/
 
 
+// Ancre
+
+let lien = document.querySelectorAll('.a-lien');
+let tableauLien = Array.from(lien)
+
+tableauLien.forEach(element=> {
+    element.addEventListener('click', function(){
+        if(rondNoir.classList.contains('normal') == true){
+            let tl = gsap.timeline();
+            tl
+            .to(ouvrirTest, {display:'none',duration:0.01})
+            .to(fermerTest, {display:'flex', justifyContent:'center', alignItems:'center'}, '<')
+            .to('.deuxieme-slide', {y:0, ease:'Expo.easeInOut', duration:1}, '<') 
+            .to('.ul-navbar', {y:0, ease:'Expo.easeInOut', duration:1.2},'-=0.75')
+            
+            .to(divLien, {y:0, ease:'Expo.easeInOut', opacity:1, stagger:{
+                each:0.15
+            }}, '-=0.50')
+            rondNoir.classList.remove('normal')
+            body.classList.add('overflow');
+            
+        }else{
+            let tl = gsap.timeline();
+            tl
+            .to(fermerTest, {display:'none', duration:0.01})
+            .to(ouvrirTest, {display:'block'}, '<')
+            .to(divLien, {y:'-200px', ease:'Expo.easeInOut', opacity:0, stagger:{
+                each:0.15
+            }}, '-=0.50')
+            .to('.ul-navbar', {y:'-100%', ease:'Expo.easeInOut', duration:1.2},'<')
+            .to('.deuxieme-slide', {y:'-100%', ease:'Expo.easeInOut', duration:1}, '-=0.75') 
+            rondNoir.classList.add('normal')
+            body.classList.remove('overflow')
+    
+        }
+        
+    })
+})
