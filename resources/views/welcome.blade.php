@@ -32,21 +32,22 @@
             @include('page/home')
             <div class="div-cache">
                 @include('page/about')
-                @include('page/service')
                 @include('page/projet')
+                @include('page/service')
+                @include('page/contact')
             </div>
     </div>
-        
-
     
-    @include('partial/reseau')
 
-    
-    <script src="https://unpkg.com/@barba/core"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+    {{-- <script src="https://unpkg.com/@barba/core"></script> --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
 
-    
     <script src="{{asset('js/main.js')}}"></script>
 </body>
 </html>
+
+{{-- https://greensock.com/forums/topic/22867-reset-timeline-after-barbajs-page-transition/ --}}
+{{-- https://github.com/barbajs/barba/issues/485 --}}
+{{-- https://greensock.com/forums/topic/33292-gsap-and-barbajs/#comment-166928 --}}

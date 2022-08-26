@@ -1,3 +1,4 @@
+
 // cursor
 
 let cursor = document.querySelector('.cursor');
@@ -75,10 +76,7 @@ function pageTransition(){
     .to('.deuxieme-slide', {
         y:'-100%',
         duration:0.1
-    }, '<')
-    
-    
-    
+    }, '<');
 }
 
 function contentAnimation(){
@@ -86,28 +84,47 @@ function contentAnimation(){
     document.querySelector('body').classList.remove('open')
 }
 
+// function beforeAnimation(){
+//     let script = document.createElement('script');
+//     script.src = 'test.js'; // location of your draggable js file that is responsible for that image loading and dragging functionality
+//     next.container.appendChild(script);
+//     console.log(script)
+// }
+
+barba.hooks.enter(() => {
+    window.scrollTo(0,0);
+})
+
+
+
+// barba.hooks.after(() => {
+// 	$('.c-hamburger').on('click', function() {
+// 		$('.c-hamburger, .hamburger, .r-header').toggleClass('is-active');
+// 		tl_overlay_in.reversed() ? tl_overlay_in.play() : tl_overlay_in.reverse();
+// 	});
+// });
+
+
 barba.init({
     sync:true,
-
     transitions:[{
         async leave(data){
             let done = this.async();
-
             pageTransition();
             await delay(1500);
-
-            done();
+            done();  
         },
-
         async enter(data){
             contentAnimation()
+            console.log('enter')
         },
-
-        async once(date){
+        async once(data){
             contentAnimation()
-        }
-    }]
+            console.log('once')
+        },
+    }],
 })
+
 // ouverture //navbar
 let body = document.querySelector('body')
 let rondNoir = document.querySelector('.rondAutour')
@@ -175,56 +192,7 @@ fermerTourne.forEach((element, index) =>{
 
 
 // lien navbar slide
-let lienImpair = document.querySelectorAll('.s1')
-let tableauImpair = Array.from(lienImpair)
 
-let lienPair = document.querySelectorAll('.s2')
-let tableauPair = Array.from(lienPair)
-
-let lienColor = document.querySelectorAll('.s1-color')
-let tableauColor = Array.from(lienColor)
-
-let lienColor2 = document.querySelectorAll('.s2-color')
-let tableauColor2 = Array.from(lienColor2)
-
-
-tableauImpair.forEach((element, index) =>{
-    element.addEventListener('mouseover', function(){
-        s1In(index)
-    })
-    element.addEventListener('mouseout', function(){
-        s1Out(index)
-    })
-})
-
-function s1In(i){
-    tableauColor[i].style.color = 'black';
-    gsap.to(tableauColor[i], {paddingLeft:200, duration:.1})
-}
-
-function s1Out(i){
-    tableauColor[i].style.color = 'white';
-    gsap.to(tableauColor[i], {paddingLeft:0, duration:.1})
-}
-
-tableauPair.forEach((element, index) =>{
-    element.addEventListener('mouseover', function(){
-        s2In(index)
-    })
-    element.addEventListener('mouseout', function(){
-        s2Out(index)
-    })
-})
-
-function s2In(i){
-    tableauColor2[i].style.color = 'black';
-    gsap.to(tableauColor2[i], {paddingRight:200, ease:'power1', duration:.1})
-}
-
-function s2Out(i){
-    tableauColor2[i].style.color = 'white';
-    gsap.to(tableauColor2[i], {paddingRight:0, ease:'power1', duration:.1})
-}
 
 
 // rond qui tourne autour du menu burger
@@ -237,19 +205,6 @@ if(window.matchMedia('(min-width:600px)').matches){
 }else{
     gsap.to(svgBlanc, 0, {rotation:0, ease:'none', repeat:0})
 }
-
-
-
-//gsap pour changement de couleur
-
-// gsap.registerPlugin(ScrollTrigger)
-
-// gsap.to('header', {
-//     scrollTrigger: "header",
-//     backgroundColor:'black',
-//     duration:1
-// })
-
 
 // Greensock
 
@@ -267,18 +222,6 @@ let rondLoader4 = document.querySelector('.rond4')
 
 let logo = document.querySelector('.div-logo')
 let divLien = document.querySelectorAll('.div-lien')
-let icone = document.querySelectorAll('.icone')
-
-let borderGauche = document.querySelector('.border-gauche-home')
-let borderDroite = document.querySelector('.border-droite-home')
-let borderGaucheBottom = document.querySelector('.border-gauche-bottom')
-let borderDroiteBottom = document.querySelector('.border-droite-bottom')
-let borderMilieu = document.querySelector('.border-milieu-home')
-
-let h1Home = document.querySelector('.h1-home');
-let h2Home = document.querySelector('.h2-home')
-let imgHome = document.querySelector('.img-home')
-let pCreative = document.querySelector('.p-creative')
 
 let TL = gsap.timeline({
     defaults: {
@@ -286,8 +229,6 @@ let TL = gsap.timeline({
         ease: 'power4',
     }
 });
-
-
 
 if(window.matchMedia('(min-width:600px)').matches){
     TL
@@ -303,16 +244,6 @@ if(window.matchMedia('(min-width:600px)').matches){
     //fin loader
     //debut home et navbar
     .to(logo, {y:0, opacity:1}, '<')
-    .to(icone, {y:0, opacity:1},'<')
-    .to(h1Home, {y:0, opacity:1}, '-=0.75')
-    .to(h2Home, {y:0, opacity:1}, '-=0.75')
-    .to(imgHome, {y:'-50%', opacity:1}, '-=0.75')
-    .to(pCreative, {y:0, opacity:1}, '-=0.75')
-    .to(borderGauche, {duration:1, left:'0%', width:"50%", ease:'power4'}, '-=0.75')
-    .to(borderDroite, {duration:1, right:'0%', width:"50%", ease:'power4'}, '<')
-    .to(borderMilieu, {duration:1, height:'100%'}, '-=0.75')
-    .to(borderGaucheBottom, {duration:1, left:'0%', width:"50%", ease:'power4'}, '-=0.75')
-    .to(borderDroiteBottom, {duration:1, right:'0%', width:"50%", ease:'power4'}, '<')
 }else{
     TL
     .to(rondLoader1, {y:0, ease:'elastic', opacity:1})
@@ -327,16 +258,6 @@ if(window.matchMedia('(min-width:600px)').matches){
     //fin loader
     //debut home et navbar
     .to(logo, {y:0, opacity:1}, '<')
-    .to(icone, {y:0, opacity:1},'<')
-    .to(h1Home, {y:0, opacity:1}, '-=0.75')
-    .to(h2Home, {y:0, opacity:1}, '-=0.75')
-    .to(imgHome, {y:'-50%', opacity:1}, '-=0.75')
-    .to(pCreative, {y:0, opacity:1}, '-=0.75')
-    .to(borderGauche, {duration:1, left:'0%', width:"50%", ease:'power4'}, '-=0.75')
-    .to(borderDroite, {duration:1, right:'0%', width:"50%", ease:'power4'}, '<')
-    .to(borderMilieu, {duration:1, height:'100%'}, '-=0.75')
-    .to(borderGaucheBottom, {duration:1, left:'0%', width:"50%", ease:'power4'}, '-=0.75')
-    .to(borderDroiteBottom, {duration:1, right:'0%', width:"50%", ease:'power4'}, '<')
 }
 
 
@@ -353,21 +274,19 @@ tableauLink = Array.from(navLink)
 
 let divProjet = document.querySelector('.element-projet')
 
-tableauLink.forEach(element => {
-    element.addEventListener('mouseover', () => {
-        divProjet.style.overflow = 'hidden'
-    })
-    element.addEventListener('mouseout', () => {
-        divProjet.style.overflow = 'unset'
-    })
-})
+// tableauLink.forEach(element => {
+//     element.addEventListener('mouseover', () => {
+//         divProjet.style.overflow = 'hidden'
+//     })
+   
+// })
 
 function moveImg(e){
     let mouseX = e.clientX,
         mouseY = e.clientY
     tl = gsap.timeline();
     tl.to(imgWrap, {
-        duration:1,
+        duration:0.5,
         x: mouseX,
         y: mouseY,
         ease: Expo.ease,
@@ -390,7 +309,7 @@ function linkHover(e){
         let tl = gsap.timeline();
         tl.to(imgWrap, {
             autoAlpha:0,
-            scale:0.3,
+            scale:0.3,            
         })
     }
 }
@@ -412,26 +331,64 @@ window.addEventListener('load', function(){
 })
 // fin  section projet
 
+// About us
 
-// scrollbar
+let rondIcone = document.querySelectorAll('.icone-about')
+let iconeAbout = Array.from(rondIcone)
 
-let progressBar = document.querySelector('.scrollbar')
-
-let totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-
-window.addEventListener('scroll', () => {
-    let progress = (document.documentElement.scrollTop / totalHeight) * 100;
-
-    progressBar.style.height =  `${progress}%`;
-    progressBar.style.opacity = `${progress}%`;
+iconeAbout.forEach((element, index) =>{
+    element.addEventListener('mouseover', function(){
+        scaleAbout(index)
+    })
+    element.addEventListener('mouseout', function(){
+        scaleMin(index)
+    })
 })
 
-// fin scrollbar
+function scaleAbout(i){
+    gsap.to(iconeAbout[i], {scale:3})
+}
+
+function scaleMin(i){
+    gsap.to(iconeAbout[i], {scale:1})
+}
 
 
-// Barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container) {
+//  Photo about
+
+gsap.to('.rectangle-photo', {
+    y: "-100%",
+    autoAlpha:1,
+    scrollTrigger: {
+        trigger: ".rectangle-photo",
+        // avoir les markers
+        // markers:true,
+        // Trigger scroller
+        start: "top center",
+        end: "bottom bottom",
+        // onEnter onLeave onEnterBack onLeaveBack
+        toggleActions: "play pause reverse reset",
+        // onEnter: () => console.log('test'),
+        // Faire que l'animation se déroule pendant le scroll
+        scrub:1,
+    }
+})
+
+// Faire que la div reste fixed pendant un certain temps
+// ScrollTrigger.create({
+//     trigger: ".div-about",
+//     pin: true,
+// })
+
+// barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container) {
 //     eval(container.querySelector("script").innerHTML);
 // });
+// console.log(barba.Dispatcher)
+// barba.Dispatcher.events()
 
+//https://astrodigital.co/contact
+//https://verbalplusvisual.com/about
+//https://www.bradypatterson.design/
+//https://barba.js.org/docs/advanced/third-party/
 
 

@@ -1,7 +1,7 @@
 <header>
     <nav class="navbar-main">
         <div class="div-logo">
-            <img src="{{asset('image/logo.webp')}}" class="logo" alt="">
+            <p class="logo">MM</p>
         </div>
         <div class="toggle rondAutour normal lien-cursor">
             <img src="{{asset('image/rond-noir.webp')}}" class="rond-blanc" alt="">
@@ -12,14 +12,11 @@
             <div class="div-lien s1 lien-cursor">
                 <li><a href="/" class="a-lien s1-color">Home</a></li>
             </div>
-            <div class="div-lien s2 lien-cursor">
-                <li><a href="/projet1#projet1" class="a-lien s2-color">About us</a></li>
+            <div class="div-lien s1 lien-cursor">
+                <li><a href="/" class="a-lien s1-color">About me</a></li>
             </div>
             <div class="div-lien s1 lien-cursor">
-                <li><a href="/" class="a-lien s1-color">Our services</a></li>
-            </div>
-            <div class="div-lien s2 lien-cursor">
-                <li><a href="" class="a-lien s2-color">Projects</a></li>
+                <li><a href="#project" class="a-lien s1-color">Projects</a></li>
             </div>
             <div class="div-lien s1 lien-cursor">
                 <li><a href="" class="a-lien s1-color">Contact us</a></li>
