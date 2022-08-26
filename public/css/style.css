@@ -611,6 +611,7 @@ li{
 
 .border-anne{
     border: 2px solid black;
+    border-top: 0;
 }
 
 .img-wrapper{

@@ -45,8 +45,8 @@
                     
                 </div>
                 <div class="div-story-projet">
-                    <p class="p-story-projet">En sortant de ma formation, j'ai voulu me faire un site vitrine avec mes projets.Quand je regarde ce site maintenant, je vois mon évolution dans le domaine.</p>
-                    <a href="http://infinite-journey-94662.herokuapp.com/fr" class="lien-vers-site" target="__blank">voir le site</a>
+                    <p class="p-story-projet">En arrivant chez Skydoo, j'ai développé ce premier site pour un client à eux. Anne Thiry est une dame qui fait des cours de chevaux et des formations.</p>
+                    <a href="https://annethiry-papelotte.be/" class="lien-vers-site" target="__blank">voir le site</a>
                 </div>
             </div>
             <div class="div-photo-projet-view">
@@ -65,7 +65,6 @@
     </div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js" ></script>
-    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
     {{-- <script src="https://unpkg.com/@barba/core"></script> --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
 

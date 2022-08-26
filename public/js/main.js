@@ -82,30 +82,22 @@ function pageTransition(){
 function contentAnimation(){
     document.querySelector('body').classList.remove('overflow')
     document.querySelector('body').classList.remove('open')
+    // document.querySelector('.div-cache').style.display = "block"
 }
-
-// function beforeAnimation(){
-//     let script = document.createElement('script');
-//     script.src = 'test.js'; // location of your draggable js file that is responsible for that image loading and dragging functionality
-//     next.container.appendChild(script);
-//     console.log(script)
-// }
 
 barba.hooks.enter(() => {
     window.scrollTo(0,0);
 })
 
-
-
-// barba.hooks.after(() => {
-// 	$('.c-hamburger').on('click', function() {
-// 		$('.c-hamburger, .hamburger, .r-header').toggleClass('is-active');
-// 		tl_overlay_in.reversed() ? tl_overlay_in.play() : tl_overlay_in.reverse();
-// 	});
-// });
+// barba.hooks.afterEnter( ( data, next ) => {
+//     let script = document.createElement('script');
+//         script.src = 'main.js';
+//         next.container.appendChild(script);
+//   } );
 
 
 barba.init({
+    debug:true,
     sync:true,
     transitions:[{
         async leave(data){
@@ -113,6 +105,7 @@ barba.init({
             pageTransition();
             await delay(1500);
             done();  
+            console.log(data.current.next)
         },
         async enter(data){
             contentAnimation()
@@ -120,9 +113,24 @@ barba.init({
         },
         async once(data){
             contentAnimation()
-            console.log('once')
         },
+        // beforeEnter(data, next){
+        //     let script = document.createElement('script');
+        //     script.src = "{{asset('js/main.js')}}";
+        //     document.body.appendChild(script.src);
+        // },
     }],
+    // views: [{
+    //     namespace: 'home-section',
+    //     beforeEnter({ next }) {
+    //         // load the Google Map API script
+    //         let script = document.createElement('script');
+    //         script.src = "<script src='{{asset('js/main.js')}}'></script>";
+    //         console.log(script)
+    //         next.container.appendChild(script.src);
+    //       }
+    //     }
+    //   ]
 })
 
 
@@ -298,13 +306,11 @@ function linkHover(e){
     if(e.type === 'mouseenter'){
         let imgSrc = e.target.dataset.src;
         let tl = gsap.timeline();
-        
         tl.set(imgItem, {
             attr: {src: imgSrc}
         }).to(imgWrap, {
             autoAlpha: 1,
             scale:1,
-            
         })
     }else if(e.type === 'mouseleave'){
         let tl = gsap.timeline();

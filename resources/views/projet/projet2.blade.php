@@ -67,7 +67,6 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js" ></script>
-    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
     {{-- <script src="https://unpkg.com/@barba/core"></script> --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
 
