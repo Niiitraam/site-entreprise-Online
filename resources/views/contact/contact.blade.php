@@ -4,7 +4,8 @@
         <div class="div-50por">
             <h4 class="h4-contact">Let's start the conversation !</h4>
             <p class="p-contact">Le web a pour but de connecter les utilisateurs des quatre coins du monde et éventuellement vous connecter aussi avec vos futurs clients. On sait le faire pour vous ! Dîtes bonjour :)</p>
-            <form action="" method="" class="formulaire-contact">
+            <form action="/" method="POST" class="formulaire-contact">
+                @csrf
                 <div class="div-input">
                     <input type="text" id="name" class="input-contact" placeholder="Name">
                 </div>
@@ -14,6 +15,7 @@
                 <div class="div-input">
                     <textarea name="message" id="" cols="30" rows="10" class="input-contact" placeholder="Message"></textarea>
                 </div>
+                <button type="submit" class="btn">Envoyer un message</button>
             </form>
         </div>
         <div class="div-50por svg-position">

@@ -31,7 +31,7 @@
             <div class="div-cache">
                 @include('page/about')
                 @include('page/projet')
-                @include('page/contact')
+                @include('contact/contact')
             </div>
     </div>
     
@@ -46,3 +46,5 @@
 {{-- https://greensock.com/forums/topic/22867-reset-timeline-after-barbajs-page-transition/ --}}
 {{-- https://github.com/barbajs/barba/issues/485 --}}
 {{-- https://greensock.com/forums/topic/33292-gsap-and-barbajs/#comment-166928 --}}
+
+https://www.youtube.com/watch?v=4TkOyoLEpd0 8min58

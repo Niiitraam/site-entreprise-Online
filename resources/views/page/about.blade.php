@@ -15,6 +15,8 @@
             <p class="texte-about">Greensock</p>
             <p class="texte-about">Laravel</p>
             <p class="texte-about">Github</p>
+            <p class="texte-about">Wordpress</p>
+            <p class="texte-about">Elementor</p>
         </div>
     </div>
     <div class="skills">
@@ -30,9 +32,9 @@
         <h4 class="titre-skills">Working experience</h4>
         <div class="section-tools">
             <p class="texte-about">Web Designer<br> at Skydoo Brussels</p>
-            <p class="texte-about-s">2022 - Present</p>
-            <p class="texte-about">Independent</p>
             <p class="texte-about-s">2021 - 2022</p>
+            <p class="texte-about">Independent</p>
+            <p class="texte-about-s">2020 - 2021</p>
         </div>
     </div>
 </section>

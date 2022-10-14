@@ -46,7 +46,7 @@
                 </div>
                 <div class="div-story-projet">
                     <p class="p-story-projet">Durant ma période de travail chez Skydoo, j'ai développé ce site grâce à wordpress et ses fonctionnalités. Le client voulait une refonte de son site.</p>
-                    <a href="https://renovation-dr.be/" class="lien-vers-site" target="__blank">voir le site</a>
+                    <a href="https://renovationdr.be/" class="lien-vers-site" target="__blank">voir le site</a>
                 </div>
             </div>
             <div class="div-photo-projet-view">

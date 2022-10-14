@@ -31,7 +31,7 @@
                     </div>
                     <div class="ligne-projet">
                         <p class="texte-projet-view color-anne">Year</p>
-                        <p class="texte2-projet-view">2021</p>
+                        <p class="texte2-projet-view">2022</p>
                     </div>
                     <div class="ligne-projet">
                         <p class="texte-projet-view color-anne">Team</p>
@@ -39,13 +39,13 @@
                     </div>
                     <div class="ligne-projet">
                         <p class="texte-projet-view color-anne">Client</p>
-                        <p class="texte2-projet-view">/</p>
+                        <p class="texte2-projet-view">Anne Thiry Papelotte</p>
                     </div>
                     
                     
                 </div>
                 <div class="div-story-projet">
-                    <p class="p-story-projet">En arrivant chez Skydoo, j'ai développé ce premier site pour un client à eux. Anne Thiry est une dame qui fait des cours de chevaux et des formations.</p>
+                    <p class="p-story-projet">Voici le premier site que j'ai créé chez Skydoo. Anne Thiry est une formatrice indépendante et passionée par les chevaux qui propose des cours et des formations.</p>
                     <a href="https://annethiry-papelotte.be/" class="lien-vers-site" target="__blank">voir le site</a>
                 </div>
             </div>

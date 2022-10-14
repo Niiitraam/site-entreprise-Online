@@ -18,12 +18,12 @@
             </a>
             <a href="/Anne-Thiry" class="lien-projet" data-src="{{asset('image/projet/anne-thiry.png')}}">
                 <p class="p1-projet">Anne Thiry</p>
-                <p class="p2-projet">Web Development</p>
+                <p class="p2-projet">Web Design / Web Development</p>
             </a>
-            <a href="/M-M" class="lien-projet" data-src="{{asset('image/projet/mm.png')}}">
+            {{-- <a href="/M-M" class="lien-projet" data-src="{{asset('image/projet/mm.png')}}">
                 <p class="p1-projet">M.M.</p>
                 <p class="p2-projet">Web Design / Web development</p>
-            </a>
+            </a> --}}
             <a href="/Martin-Manderveld" class="lien-projet" data-src="{{asset('image/projet/martin-design.webp')}}">
                 <p class="p1-projet">Martin Manderveld</p>
                 <p class="p2-projet">Intégration Web</p>
