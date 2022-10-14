@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{secure_asset('css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
     
 
     <title>Document</title>
@@ -16,7 +16,7 @@
     <div data-barba="container" date-barba-namespace="projet1-section">
         <section class="section-projet-unanime" id="projet1">
             <div class="div-photo-projet1">
-                <img src="{{secure_asset('image/projet/renovation.png')}}" class="photo-projet1" alt="">
+                <img src="{{asset('image/projet/renovation.png')}}" class="photo-projet1" alt="">
             </div>
     
             <div class="div-description">
@@ -51,26 +51,25 @@
             </div>
             <div class="div-photo-projet-view">
                 <p class="titre-projet-view">Menu</p>
-                <img src="{{secure_asset('image/projet/projet-renovation/photo6.png')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <img src="{{asset('image/projet/projet-renovation/photo6.png')}}" alt="photo 1 isabel" class="photo-taille-projet">
                 <p class="titre-projet-view">Home</p>
-                <img src="{{secure_asset('image/projet/projet-renovation/photo1.png')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <img src="{{asset('image/projet/projet-renovation/photo1.png')}}" alt="photo 1 isabel" class="photo-taille-projet">
                 <p class="titre-projet-view">About Us</p>
-                <img src="{{secure_asset('image/projet/projet-renovation/photo2.png')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <img src="{{asset('image/projet/projet-renovation/photo2.png')}}" alt="photo 1 isabel" class="photo-taille-projet">
                 <p class="titre-projet-view">Big work</p>
-                <img src="{{secure_asset('image/projet/projet-renovation/photo3.png')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <img src="{{asset('image/projet/projet-renovation/photo3.png')}}" alt="photo 1 isabel" class="photo-taille-projet">
                 <p class="titre-projet-view">Contact</p>
-                <img src="{{secure_asset('image/projet/projet-renovation/photo4.png')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <img src="{{asset('image/projet/projet-renovation/photo4.png')}}" alt="photo 1 isabel" class="photo-taille-projet">
                 <p class="titre-projet-view">Footer</p>
-                <img src="{{secure_asset('image/projet/projet-renovation/photo5.png')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <img src="{{asset('image/projet/projet-renovation/photo5.png')}}" alt="photo 1 isabel" class="photo-taille-projet">
             </div>
         </section>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js" ></script>
-    {{-- <script src="https://unpkg.com/@barba/core"></script> --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
 
-    <script src="{{secure_asset('js/main.js')}}"></script>
+    <script src="{{asset('js/main.js')}}"></script>
     
 </body>
 </html>

@@ -40,54 +40,54 @@ tableauCursor.forEach(element=> {
 
 // changement de page
 
-function delay(n){
-    n = n || 2000;
-    return new Promise((done) => {
-        setTimeout(() => {
-            done();
-        }, n)
-    })
-}
+// function delay(n){
+//     n = n || 2000;
+//     return new Promise((done) => {
+//         setTimeout(() => {
+//             done();
+//         }, n)
+//     })
+// }
 
 
-function pageTransition(){
-    let tl = gsap.timeline();
+// function pageTransition(){
+//     let tl = gsap.timeline();
     
-    tl
-    .to(fermerTest, {display:'none', duration:0.01})
-    .to(ouvrirTest, {display:'block'}, '<')
-    .to('.loading-screen', {
-        duration:1.2,
-        height:"100%",
-        top:'0%',
-        ease:'Expo.easeInOut',
-    },'<')
-    .to('.loading-screen', {
-        duration:1,
-        height:"100%",
-        top:"100%",
-        ease:'Expo.easeInOut',
-        delay:0.3,
-    })
-    .to('.ul-navbar', {
-        y:'-100%',
-        duration:0.1,
-    }, '-=0.90')
-    .to('.deuxieme-slide', {
-        y:'-100%',
-        duration:0.1
-    }, '<');
-}
+//     tl
+//     .to(fermerTest, {display:'none', duration:0.01})
+//     .to(ouvrirTest, {display:'block'}, '<')
+//     .to('.loading-screen', {
+//         duration:1.2,
+//         height:"100%",
+//         top:'0%',
+//         ease:'Expo.easeInOut',
+//     },'<')
+//     .to('.loading-screen', {
+//         duration:1,
+//         height:"100%",
+//         top:"100%",
+//         ease:'Expo.easeInOut',
+//         delay:0.3,
+//     })
+//     .to('.ul-navbar', {
+//         y:'-100%',
+//         duration:0.1,
+//     }, '-=0.90')
+//     .to('.deuxieme-slide', {
+//         y:'-100%',
+//         duration:0.1
+//     }, '<');
+// }
 
-function contentAnimation(){
-    document.querySelector('body').classList.remove('overflow')
-    document.querySelector('body').classList.remove('open')
-    // document.querySelector('.div-cache').style.display = "block"
-}
+// function contentAnimation(){
+//     document.querySelector('body').classList.remove('overflow')
+//     document.querySelector('body').classList.remove('open')
+//     // document.querySelector('.div-cache').style.display = "block"
+// }
 
-barba.hooks.enter(() => {
-    window.scrollTo(0,0);
-})
+// barba.hooks.enter(() => {
+//     window.scrollTo(0,0);
+// })
 
 // barba.hooks.afterEnter( ( data, next ) => {
 //     let script = document.createElement('script');
@@ -96,42 +96,42 @@ barba.hooks.enter(() => {
 //   } );
 
 
-barba.init({
-    debug:true,
-    sync:true,
-    transitions:[{
-        async leave(data){
-            let done = this.async();
-            pageTransition();
-            await delay(1500);
-            done();  
-            console.log(data.current.next)
-        },
-        async enter(data){
-            contentAnimation()
-            console.log('enter')
-        },
-        async once(data){
-            contentAnimation()
-        },
-        // beforeEnter(data, next){
-        //     let script = document.createElement('script');
-        //     script.src = "{{asset('js/main.js')}}";
-        //     document.body.appendChild(script.src);
-        // },
-    }],
-    // views: [{
-    //     namespace: 'home-section',
-    //     beforeEnter({ next }) {
-    //         // load the Google Map API script
-    //         let script = document.createElement('script');
-    //         script.src = "<script src='{{asset('js/main.js')}}'></script>";
-    //         console.log(script)
-    //         next.container.appendChild(script.src);
-    //       }
-    //     }
-    //   ]
-})
+// barba.init({
+//     debug:true,
+//     sync:true,
+//     transitions:[{
+//         async leave(data){
+//             let done = this.async();
+//             pageTransition();
+//             await delay(1500);
+//             done();  
+//             console.log(data.current.next)
+//         },
+//         async enter(data){
+//             contentAnimation()
+//             console.log('enter')
+//         },
+//         async once(data){
+//             contentAnimation()
+//         },
+//         // beforeEnter(data, next){
+//         //     let script = document.createElement('script');
+//         //     script.src = "{{asset('js/main.js')}}";
+//         //     document.body.appendChild(script.src);
+//         // },
+//     }],
+//     // views: [{
+//     //     namespace: 'home-section',
+//     //     beforeEnter({ next }) {
+//     //         // load the Google Map API script
+//     //         let script = document.createElement('script');
+//     //         script.src = "<script src='{{asset('js/main.js')}}'></script>";
+//     //         console.log(script)
+//     //         next.container.appendChild(script.src);
+//     //       }
+//     //     }
+//     //   ]
+// })
 
 
 // ouverture //navbar
