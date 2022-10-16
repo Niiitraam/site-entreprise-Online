@@ -6,6 +6,9 @@ use App\Http\Controllers\Projet2Controller;
 use App\Http\Controllers\Projet3Controller;
 use App\Http\Controllers\Projet4Controller;
 use App\Http\Controllers\Projet5Controller;
+use App\Http\Controllers\HomeController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,9 +20,11 @@ use App\Http\Controllers\Projet5Controller;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::resource('/', HomeController::class);
 
 Route::resource('/Isabel-Gomez', Projet1Controller::class);
 Route::resource('/Martin-Manderveld', Projet2Controller::class);

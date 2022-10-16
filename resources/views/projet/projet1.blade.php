@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <link rel="stylesheet" href="{{secure_asset('css/style.css')}}">
     
 
     <title>Document</title>
@@ -16,7 +16,7 @@
     <div data-barba="container" date-barba-namespace="projet1-section">
         <section class="section-projet-unanime" id="projet1">
             <div class="div-photo-projet1">
-                <img src="{{asset('image/projet/isabel-gomez.webp')}}" class="photo-projet1" alt="">
+                <img src="{{secure_asset('image/projet/isabel-gomez.webp')}}" class="photo-projet1" alt="">
             </div>
     
             <div class="div-description">
@@ -45,34 +45,34 @@
                     
                 </div>
                 <div class="div-story-projet">
-                    <p class="p-story-projet">Isabel Gomez Interiors est une entreprise belge d'architecte d'interieur. Leur but est de créer des intérieurs qui sont à la fois sophistiqués et détendus. L'objectif était de refondre le site belge en mettant l'accent sur le design.</p>
+                    <p class="p-story-projet">Isabel Gomez Interiors est une entreprise belge d'architecture d'interieur. Son but est de créer des intérieurs à la fois sophistiqués et confortables. Ma mission a été d'intégrer la maquette du site dans un environnement web.</p>
                     <a href="https://isabelgomezinteriors.com/" class="lien-vers-site" target="__blank">voir le site</a>
                 </div>
             </div>
             <div class="div-photo-projet-view">
                 <p class="titre-projet-view">Page d'accueil</p>
-                <img src="{{asset('image/projet/projet-isabel/isabel1.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <img src="{{secure_asset('image/projet/projet-isabel/isabel1.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
                 <p class="titre-projet-view">Menu</p>
-                <img src="{{asset('image/projet/projet-isabel/isabel2.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <img src="{{secure_asset('image/projet/projet-isabel/isabel2.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
                 <p class="titre-projet-view">Contact</p>
-                <img src="{{asset('image/projet/projet-isabel/isabel3.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <img src="{{secure_asset('image/projet/projet-isabel/isabel3.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
                 <p class="titre-projet-view">Page Projet</p>
-                <img src="{{asset('image/projet/projet-isabel/isabel4.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <img src="{{secure_asset('image/projet/projet-isabel/isabel4.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
                 <p class="titre-projet-view">Page Boutique</p>
-                <img src="{{asset('image/projet/projet-isabel/isabel5.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <img src="{{secure_asset('image/projet/projet-isabel/isabel5.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
                 <p class="titre-projet-view">Page graphisme</p>
-                <img src="{{asset('image/projet/projet-isabel/isabel6.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <img src="{{secure_asset('image/projet/projet-isabel/isabel6.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
                 <p class="titre-projet-view">Footer</p>
-                <img src="{{asset('image/projet/projet-isabel/isabel7.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <img src="{{secure_asset('image/projet/projet-isabel/isabel7.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
             </div>
         </section>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js" ></script>
-    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
-    <script class="main-script" src="{{asset('js/main.js')}}"></script>
+    <script class="main-script" src="{{secure_asset('js/main.js')}}"></script>
 
+    <script src="{{secure_asset('js/main.js')}}"></script>
     
 </body>
 </html>

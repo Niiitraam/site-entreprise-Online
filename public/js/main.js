@@ -81,14 +81,23 @@ tableauCursor.forEach(element=> {
 
 // function contentAnimation(){
 //     document.querySelector('body').classList.remove('overflow')
-//     document.querySelector('body').classList.remove('open')”
+//     document.querySelector('body').classList.remove('open')
+//     // document.querySelector('.div-cache').style.display = "block"
 // }
 
 // barba.hooks.enter(() => {
 //     window.scrollTo(0,0);
 // })
 
+// barba.hooks.afterEnter( ( data, next ) => {
+//     let script = document.createElement('script');
+//         script.src = 'main.js';
+//         next.container.appendChild(script);
+//   } );
+
+
 // barba.init({
+//     debug:true,
 //     sync:true,
 //     transitions:[{
 //         async leave(data){
@@ -96,14 +105,32 @@ tableauCursor.forEach(element=> {
 //             pageTransition();
 //             await delay(1500);
 //             done();  
+//             console.log(data.current.next)
 //         },
 //         async enter(data){
 //             contentAnimation()
+//             console.log('enter')
 //         },
 //         async once(data){
 //             contentAnimation()
 //         },
+//         // beforeEnter(data, next){
+//         //     let script = document.createElement('script');
+//         //     script.src = "{{asset('js/main.js')}}";
+//         //     document.body.appendChild(script.src);
+//         // },
 //     }],
+//     // views: [{
+//     //     namespace: 'home-section',
+//     //     beforeEnter({ next }) {
+//     //         // load the Google Map API script
+//     //         let script = document.createElement('script');
+//     //         script.src = "<script src='{{asset('js/main.js')}}'></script>";
+//     //         console.log(script)
+//     //         next.container.appendChild(script.src);
+//     //       }
+//     //     }
+//     //   ]
 // })
 
 
@@ -139,7 +166,6 @@ rondNoir.addEventListener('click', function(){
         .to('.deuxieme-slide', {y:'-100%', ease:'Expo.easeInOut', duration:1}, '-=0.75') 
         rondNoir.classList.add('normal')
         body.classList.remove('overflow')
-
     }
     
 })
@@ -221,7 +247,6 @@ if(window.matchMedia('(min-width:600px)').matches){
     .to(divGauche, {y:'100%', ease:'Expo.easeInOut'})
     .to(divLoader, {display: 'none', duration:.1})
     .to(divCache, {display:'block'}, '-=0.01')
-
     //fin loader
     //debut home et navbar
     .to(logo, {y:0, opacity:1}, '<')
