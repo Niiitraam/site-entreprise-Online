@@ -33,7 +33,6 @@
             <div class="div-cache">
                 @include('page/about')
                 @include('page/projet')
-                @include('page/service')
                 @include('page/contact')
             </div>
     </div>
@@ -41,10 +40,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js" ></script>
     <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
-    {{-- <script src="https://unpkg.com/@barba/core"></script> --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
-
-    <script src="{{asset('js/main.js')}}"></script>
+    <script class="main-script" src="{{asset('js/main.js')}}"></script>
 </body>
 </html>
 

@@ -1,4 +1,4 @@
-<section class="div-home">
+<section class="div-home" id="home">
     <div class="box">
         <div class="circle"></div>
     </div>

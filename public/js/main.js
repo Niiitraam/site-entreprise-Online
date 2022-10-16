@@ -40,90 +40,72 @@ tableauCursor.forEach(element=> {
 
 // changement de page
 
-function delay(n){
-    n = n || 2000;
-    return new Promise((done) => {
-        setTimeout(() => {
-            done();
-        }, n)
-    })
-}
-
-
-function pageTransition(){
-    let tl = gsap.timeline();
-    
-    tl
-    .to(fermerTest, {display:'none', duration:0.01})
-    .to(ouvrirTest, {display:'block'}, '<')
-    .to('.loading-screen', {
-        duration:1.2,
-        height:"100%",
-        top:'0%',
-        ease:'Expo.easeInOut',
-    },'<')
-    .to('.loading-screen', {
-        duration:1,
-        height:"100%",
-        top:"100%",
-        ease:'Expo.easeInOut',
-        delay:0.3,
-    })
-    .to('.ul-navbar', {
-        y:'-100%',
-        duration:0.1,
-    }, '-=0.90')
-    .to('.deuxieme-slide', {
-        y:'-100%',
-        duration:0.1
-    }, '<');
-}
-
-function contentAnimation(){
-    document.querySelector('body').classList.remove('overflow')
-    document.querySelector('body').classList.remove('open')
-}
-
-// function beforeAnimation(){
-//     let script = document.createElement('script');
-//     script.src = 'test.js'; // location of your draggable js file that is responsible for that image loading and dragging functionality
-//     next.container.appendChild(script);
-//     console.log(script)
+// function delay(n){
+//     n = n || 2000;
+//     return new Promise((done) => {
+//         setTimeout(() => {
+//             done();
+//         }, n)
+//     })
 // }
 
-barba.hooks.enter(() => {
-    window.scrollTo(0,0);
-})
 
+// function pageTransition(){
+//     let tl = gsap.timeline();
+    
+//     tl
+//     .to(fermerTest, {display:'none', duration:0.01})
+//     .to(ouvrirTest, {display:'block'}, '<')
+//     .to('.loading-screen', {
+//         duration:1.2,
+//         height:"100%",
+//         top:'0%',
+//         ease:'Expo.easeInOut',
+//     },'<')
+//     .to('.loading-screen', {
+//         duration:1,
+//         height:"100%",
+//         top:"100%",
+//         ease:'Expo.easeInOut',
+//         delay:0.3,
+//     })
+//     .to('.ul-navbar', {
+//         y:'-100%',
+//         duration:0.1,
+//     }, '-=0.90')
+//     .to('.deuxieme-slide', {
+//         y:'-100%',
+//         duration:0.1
+//     }, '<');
+// }
 
+// function contentAnimation(){
+//     document.querySelector('body').classList.remove('overflow')
+//     document.querySelector('body').classList.remove('open')”
+// }
 
-// barba.hooks.after(() => {
-// 	$('.c-hamburger').on('click', function() {
-// 		$('.c-hamburger, .hamburger, .r-header').toggleClass('is-active');
-// 		tl_overlay_in.reversed() ? tl_overlay_in.play() : tl_overlay_in.reverse();
-// 	});
-// });
+// barba.hooks.enter(() => {
+//     window.scrollTo(0,0);
+// })
 
+// barba.init({
+//     sync:true,
+//     transitions:[{
+//         async leave(data){
+//             let done = this.async();
+//             pageTransition();
+//             await delay(1500);
+//             done();  
+//         },
+//         async enter(data){
+//             contentAnimation()
+//         },
+//         async once(data){
+//             contentAnimation()
+//         },
+//     }],
+// })
 
-barba.init({
-    sync:true,
-    transitions:[{
-        async leave(data){
-            let done = this.async();
-            pageTransition();
-            await delay(1500);
-            done();  
-        },
-        async enter(data){
-            contentAnimation()
-            console.log('enter')
-        },
-        async once(data){
-            contentAnimation()
-            console.log('once')
-        },
-    }],
-})
 
 // ouverture //navbar
 let body = document.querySelector('body')
@@ -139,7 +121,6 @@ rondNoir.addEventListener('click', function(){
         .to(fermerTest, {display:'flex', justifyContent:'center', alignItems:'center'}, '<')
         .to('.deuxieme-slide', {y:0, ease:'Expo.easeInOut', duration:1}, '<') 
         .to('.ul-navbar', {y:0, ease:'Expo.easeInOut', duration:1.2},'-=0.75')
-        
         .to(divLien, {y:0, ease:'Expo.easeInOut', opacity:1, stagger:{
             each:0.15
         }}, '-=0.50')
@@ -236,7 +217,7 @@ if(window.matchMedia('(min-width:600px)').matches){
     .to(rondLoader2, {y:0, ease:'elastic', opacity:1}, '-=0.75')
     .to(rondLoader3, {y:0, ease:'elastic', opacity:1}, '-=0.75')
     .to(rondLoader4, {y:0, ease:'elastic', opacity:1}, '-=0.75')
-    .to(divAccueil, {display:'flex'})
+    // .to(divAccueil, {display:'flex'})
     .to(divGauche, {y:'100%', ease:'Expo.easeInOut'})
     .to(divLoader, {display: 'none', duration:.1})
     .to(divCache, {display:'block'}, '-=0.01')
@@ -250,7 +231,7 @@ if(window.matchMedia('(min-width:600px)').matches){
     .to(rondLoader2, {y:0, ease:'elastic', opacity:1}, '-=0.75')
     .to(rondLoader3, {y:0, ease:'elastic', opacity:1}, '-=0.75')
     .to(rondLoader4, {y:0, ease:'elastic', opacity:1}, '-=0.75')
-    .to(divAccueil, {display:'flex'})
+    // .to(divAccueil, {display:'flex'})
     .to(divGauche, {y:'100%'})
     .to(divLoader, {display: 'none', duration:.1})
     .to(divCache, {display:'block'}, '<')
@@ -259,7 +240,6 @@ if(window.matchMedia('(min-width:600px)').matches){
     //debut home et navbar
     .to(logo, {y:0, opacity:1}, '<')
 }
-
 
 //fin home et navbar
 
@@ -297,13 +277,11 @@ function linkHover(e){
     if(e.type === 'mouseenter'){
         let imgSrc = e.target.dataset.src;
         let tl = gsap.timeline();
-        
         tl.set(imgItem, {
             attr: {src: imgSrc}
         }).to(imgWrap, {
             autoAlpha: 1,
             scale:1,
-            
         })
     }else if(e.type === 'mouseleave'){
         let tl = gsap.timeline();
@@ -392,3 +370,41 @@ gsap.to('.rectangle-photo', {
 //https://barba.js.org/docs/advanced/third-party/
 
 
+// Ancre
+
+let lien = document.querySelectorAll('.a-lien');
+let tableauLien = Array.from(lien)
+
+tableauLien.forEach(element=> {
+    element.addEventListener('click', function(){
+        if(rondNoir.classList.contains('normal') == true){
+            let tl = gsap.timeline();
+            tl
+            .to(ouvrirTest, {display:'none',duration:0.01})
+            .to(fermerTest, {display:'flex', justifyContent:'center', alignItems:'center'}, '<')
+            .to('.deuxieme-slide', {y:0, ease:'Expo.easeInOut', duration:1}, '<') 
+            .to('.ul-navbar', {y:0, ease:'Expo.easeInOut', duration:1.2},'-=0.75')
+            
+            .to(divLien, {y:0, ease:'Expo.easeInOut', opacity:1, stagger:{
+                each:0.15
+            }}, '-=0.50')
+            rondNoir.classList.remove('normal')
+            body.classList.add('overflow');
+            
+        }else{
+            let tl = gsap.timeline();
+            tl
+            .to(fermerTest, {display:'none', duration:0.01})
+            .to(ouvrirTest, {display:'block'}, '<')
+            .to(divLien, {y:'-200px', ease:'Expo.easeInOut', opacity:0, stagger:{
+                each:0.15
+            }}, '-=0.50')
+            .to('.ul-navbar', {y:'-100%', ease:'Expo.easeInOut', duration:1.2},'<')
+            .to('.deuxieme-slide', {y:'-100%', ease:'Expo.easeInOut', duration:1}, '-=0.75') 
+            rondNoir.classList.add('normal')
+            body.classList.remove('overflow')
+    
+        }
+        
+    })
+})

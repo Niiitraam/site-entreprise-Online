@@ -11,6 +11,7 @@
 </head>
 
 <body data-barba="wrapper">
+    <div class="cursor"></div>
     @include('partial/navbar')
     <div data-barba="container" date-barba-namespace="projet1-section">
         <section class="section-projet-unanime" id="projet1">
@@ -44,7 +45,7 @@
                     
                 </div>
                 <div class="div-story-projet">
-                    <p class="p-story-projet">En sortant de ma formation, j'ai voulu me faire un site vitrine avec mes projets.Quand je regarde ce site maintenant, je vois mon évolution dans le domaine.</p>
+                    <p class="p-story-projet">En sortant de ma formation, j'ai voulu me faire un site vitrine avec mes projets. Quand je regarde ce site maintenant, je vois mon évolution dans le domaine.</p>
                     <a href="http://infinite-journey-94662.herokuapp.com/fr" class="lien-vers-site" target="__blank">voir le site</a>
                 </div>
             </div>
@@ -64,6 +65,11 @@
             </div>
         </section>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+    <script class="main-script" src="{{asset('js/main.js')}}"></script>
     
 </body>
 </html>

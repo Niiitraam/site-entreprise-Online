@@ -1,4 +1,4 @@
-<section class="div-about">
+<section class="div-about" id="about-me">
     <h3 class="text1-about bleu"><span class="numero-titre">01</span> About me</h3>
     <div class="skills">
         <div class="image-photo-about">
@@ -30,9 +30,9 @@
         <h4 class="titre-skills">Working experience</h4>
         <div class="section-tools">
             <p class="texte-about">Web Designer<br> at Skydoo Brussels</p>
-            <p class="texte-about-s">2022 - Present</p>
+            <p class="texte-about-s">2021 - Present</p>
             <p class="texte-about">Independent</p>
-            <p class="texte-about-s">2021 - 2022</p>
+            <p class="texte-about-s">2020 - 2021</p>
         </div>
     </div>
 </section>
