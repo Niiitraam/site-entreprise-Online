@@ -28,10 +28,6 @@
                 <p class="p1-projet">Scheerlinck</p>
                 <p class="p2-projet">Développement Web</p>
             </a>
-            <a href="/Martin-Manderveld" class="lien-projet" data-src="{{secure_asset('image/projet/martin-design.webp')}}">
-                <p class="p1-projet">Martin Manderveld</p>
-                <p class="p2-projet">Intégration Web</p>
-            </a>
         </ul>
     </div>
 </section>
