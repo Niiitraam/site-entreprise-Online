@@ -30,4 +30,4 @@ Route::resource('/Isabel-Gomez', Projet1Controller::class);
 Route::resource('/Martin-Manderveld', Projet2Controller::class);
 Route::resource('/Renovation-DR', Projet3Controller::class);
 Route::resource('/Anne-Thiry', Projet4Controller::class);
-Route::resource('/M-M', Projet4Controller::class);
+Route::resource('/Scheerlinck', Projet5Controller::class);
