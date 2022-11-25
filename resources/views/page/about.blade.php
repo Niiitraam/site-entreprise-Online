@@ -2,7 +2,7 @@
     <h3 class="text1-about bleu"><span class="numero-titre">01</span> About me</h3>
     <div class="skills">
         <div class="image-photo-about">
-            <img src="{{asset('image/photo-martin.webp')}}" alt="photo martin" class="photo-martin">
+            <img src="{{secure_asset('image/photo-martin.webp')}}" alt="photo martin" class="photo-martin">
             <div class="rectangle-photo"></div>
         </div>
     </div>

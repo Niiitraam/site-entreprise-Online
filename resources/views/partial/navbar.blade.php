@@ -4,7 +4,7 @@
             <p class="logo">MM</p>
         </div>
         <div class="toggle rondAutour normal lien-cursor">
-            <img src="{{asset('image/rond-noir.webp')}}" class="rond-blanc" alt="">
+            <img src="{{secure_asset('image/rond-noir.webp')}}" class="rond-blanc" alt="">
             <i class="ouvrir"></i>
             <i class="fermer"></i>
         </div>
