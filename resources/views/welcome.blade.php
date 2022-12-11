@@ -40,6 +40,7 @@
             @include('page/home')
             <div class="div-cache">
                 @include('page/about')
+                @include('page/service')
                 @include('page/projet')
                 @include('contact/contact')
             </div>

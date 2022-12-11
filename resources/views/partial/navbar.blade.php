@@ -16,6 +16,9 @@
                 <li><a href="/#about-me" class="a-lien s1-color">About me</a></li>
             </div>
             <div class="div-lien s1 lien-cursor">
+                <li><a href="/#services" class="a-lien s1-color">Services</a></li>
+            </div>
+            <div class="div-lien s1 lien-cursor">
                 <li><a href="/#project" class="a-lien s1-color">Projects</a></li>
             </div>
             <div class="div-lien s1 lien-cursor">

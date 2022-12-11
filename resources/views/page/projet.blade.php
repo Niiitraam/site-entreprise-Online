@@ -4,8 +4,8 @@
             <div class="img-placeholder"><img src="{{secure_asset('image/projet/isabel-gomez.webp')}}" alt=""></div>
         </div>
         <div class="titre-projet">
-            <h3 class="h3-projet-div"><span class="numero-titre">02</span> Projects</h3>
-            <p class="p4-projet">5</p>
+            <h3 class="h3-projet-div"><span class="numero-titre">03</span> Projects</h3>
+            <p class="p4-projet">4</p>
         </div>
         <ul>
             <a href="/Isabel-Gomez" class="lien-projet" data-src="{{secure_asset('image/projet/isabel-gomez.webp')}}">

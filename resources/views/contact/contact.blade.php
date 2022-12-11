@@ -1,5 +1,5 @@
 <section class="div-contact" id="contact">
-    <h3 class="text1-about test56 bleu"><span class="numero-titre">03</span> Contact me</h3>
+    <h3 class="text1-about test56 bleu"><span class="numero-titre">04</span> Contact me</h3>
     <div class="flex-contact">
         <div class="div-50por">
             <h4 class="h4-contact">Let's start the conversation !</h4>
@@ -15,7 +15,7 @@
                 <div class="div-input">
                     <textarea name="message" id="" cols="30" rows="10" class="input-contact" placeholder="Message"></textarea>
                 </div>
-                <button type="submit" class="btn">Envoyer un message</button>
+                <button type="submit" class="btn lien-vers-site">Envoyer un message</button>
             </form>
         </div>
         <div class="div-50por svg-position">
