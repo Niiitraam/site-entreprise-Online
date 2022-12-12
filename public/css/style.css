@@ -876,6 +876,7 @@ li{
 .btn{
     border: 0;
     text-decoration: none;
+    background-color: transparent;
 }
 
 .input-contact::placeholder{
