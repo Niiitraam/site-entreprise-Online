@@ -279,13 +279,6 @@ tableauLink = Array.from(navLink)
 
 let divProjet = document.querySelector('.element-projet')
 
-// tableauLink.forEach(element => {
-//     element.addEventListener('mouseover', () => {
-//         divProjet.style.overflow = 'hidden'
-//     })
-   
-// })
-
 function moveImg(e){
     let mouseX = e.clientX,
         mouseY = e.clientY

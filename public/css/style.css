@@ -51,6 +51,7 @@ body{
 
 body {
     font-family: 'poppinsextralight';
+    font-display: block;
     position: absolute;
     top: 0%;
     left: 0;
@@ -233,6 +234,7 @@ li{
 .a-lien{
     color: white;
     font-family: 'poppinsextralight';
+    font-display: block;
 }
 
 .div-lien li a{
@@ -373,6 +375,7 @@ li{
 
 .titre-principal{
     font-family: 'poppinsextralight';
+    font-display: block;
     font-size: 100px;
     padding-bottom: 2%;
     color: black;
@@ -380,6 +383,7 @@ li{
 
 .sous-titre-home{
     font-family: 'poppinsextralight';
+    font-display: block;
     font-size: 40px;
     padding-bottom: 2%;
     color: black;
@@ -398,6 +402,7 @@ li{
 
 .titre-endroit{
     font-family: 'poppinsextralight';
+    font-display: block;
     font-size: 20px;
     font-style: italic;
 }
@@ -449,8 +454,8 @@ li{
 
 @media screen and (max-width: 700px) {
     .circle {
-        width: 37vh;
-        height: 37vh;
+        width: 350px;
+        height: 350px;
         padding-top: 105px;
         border: 3px solid black;
         filter: blur(1px);
@@ -614,6 +619,7 @@ li{
     text-align: end;
     font-size: 2.5rem;
     font-family: 'poppinsthin';
+    font-display: block;
 }
 
 .border-anne{
@@ -706,6 +712,14 @@ li{
     background-color: #ce0e11;
 }
 
+.color-simon{
+    color: #ad9961;
+}
+
+.bg-color-simon{
+    background-color: #ad9961;
+}
+
 .color-anne{
     color: black;
 }
@@ -781,6 +795,7 @@ li{
     padding-bottom: 5%;
     text-transform: uppercase;
     font-family: 'poppinsmedium';
+    font-display: block;
 }
 
 .texte2-projet-view{
@@ -884,6 +899,7 @@ li{
     font-size: 1.25rem;
     color:black;
     font-family: 'poppinsextralight';
+    font-display: block;
 }
 
 .input-contact:focus{
@@ -938,6 +954,7 @@ svg{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    min-width: min-content;
 }
 
 .premier-service{
@@ -1061,7 +1078,7 @@ svg{
         padding: 3% 0%;
     }
     .premier-service{
-        justify-content: space-around;
+        justify-content: space-between;
     }
     .h4-service{
         font-size: 23px;
@@ -1104,6 +1121,7 @@ svg{
     .p2-projet{
         font-size: 1rem;
         font-family: 'poppinsextralight';
+        font-display: block;
     }
     .lien-projet{
         padding: 1.5rem 0;

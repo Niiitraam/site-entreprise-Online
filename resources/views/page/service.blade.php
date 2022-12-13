@@ -6,7 +6,7 @@
             <div class="premier-service">
                 <h4 class="h4-service">Design</h4>
                 <div class="div-rond-service">
-                    <img src="{{asset('image/rond-service.png')}}" alt="">
+                    <img src="{{secure_asset('image/rond-service.png')}}" alt="">
                     <p class="p-rond-service">1</p>
                 </div>
             </div>
@@ -16,7 +16,7 @@
             <div class="premier-service">
                 <h4 class="h4-service">Developpement <br>Site Web</h4>
                 <div class="div-rond-service">
-                    <img src="{{asset('image/rond-service.png')}}" alt="">
+                    <img src="{{secure_asset('image/rond-service.png')}}" alt="">
                     <p class="p-rond-service">2</p>
                 </div>
             </div>
@@ -26,7 +26,7 @@
             <div class="premier-service">
                 <h4 class="h4-service">Refonte De Site</h4>
                 <div class="div-rond-service">
-                    <img src="{{asset('image/rond-service.png')}}" alt="">
+                    <img src="{{secure_asset('image/rond-service.png')}}" alt="">
                     <p class="p-rond-service">3</p>
                 </div>
             </div>
@@ -36,7 +36,7 @@
             <div class="premier-service">
                 <h4 class="h4-service">Création De Logo</h4>
                 <div class="div-rond-service">
-                    <img src="{{asset('image/rond-service.png')}}" alt="">
+                    <img src="{{secure_asset('image/rond-service.png')}}" alt="">
                     <p class="p-rond-service">4</p>
                 </div>
             </div>

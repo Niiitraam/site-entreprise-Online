@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <link rel="stylesheet" href="{{secure_asset('css/style.css')}}">
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-M6Q46GFXCL"></script>
 <script>
@@ -24,29 +24,29 @@
     <div data-barba="container" date-barba-namespace="projet1-section">
         <section class="section-projet-unanime" id="projet1">
             <div class="div-photo-projet1">
-                <img src="{{asset('image/projet/renovation.webp')}}" class="photo-projet1" alt="">
+                <img src="{{secure_asset('image/projet/funeraillessimon&fils.webp')}}" class="photo-projet1" alt="">
             </div>
     
             <div class="div-description">
-                <h3 class="h3-projet color-renovation">Funérailles Simon & Fils</h3>
-                <div class="border-projet1 bg-color-renovation"></div>
+                <h3 class="h3-projet color-simon">Funérailles Simon & Fils</h3>
+                <div class="border-projet1 bg-color-simon"></div>
             </div>
             <div class="category-projet">
                 <div class="li-projet-view">
                     <div class="ligne-projet">
-                        <p class="texte-projet-view color-renovation">Category</p>
+                        <p class="texte-projet-view color-simon">Category</p>
                         <p class="texte2-projet-view">Web development<br>UX/UI Design</p>
                     </div>
                     <div class="ligne-projet">
-                        <p class="texte-projet-view color-renovation">Year</p>
+                        <p class="texte-projet-view color-simon">Year</p>
                         <p class="texte2-projet-view">2022</p>
                     </div>
                     <div class="ligne-projet">
-                        <p class="texte-projet-view color-renovation">Team</p>
+                        <p class="texte-projet-view color-simon">Team</p>
                         <p class="texte2-projet-view"><a href="https://skydoo.com/fr/" target="__blank" class="lien-skydoo lien-cursor">Skydoo</a><br>Martin Manderveld</p>
                     </div>
                     <div class="ligne-projet">
-                        <p class="texte-projet-view color-renovation">Client</p>
+                        <p class="texte-projet-view color-simon">Client</p>
                         <p class="texte2-projet-view">Funérailles Simon & Fils</p>
                     </div>
                     
@@ -54,22 +54,24 @@
                 </div>
                 <div class="div-story-projet">
                     <p class="p-story-projet">Funérailles Simon & Fils est une entreprise de Pompes Funèbres situé à Liège. La cliente avait besoin d'une nouveau site incluant une boutique de vente de fleurs. C'est pourquoi, nous avons développé un E-commerce moderne.</p>
-                    <a href="https://renovationdr.be/" class="lien-vers-site" target="__blank">voir le site</a>
+                    <a href="https://funeraillessimon.be/" class="lien-vers-site" target="__blank">voir le site</a>
                 </div>
             </div>
             <div class="div-photo-projet-view">
-                <p class="titre-projet-view">Menu</p>
-                <img src="{{asset('image/projet/projet-renovation/photo6.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
                 <p class="titre-projet-view">Home</p>
-                <img src="{{asset('image/projet/projet-renovation/photo1.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
-                <p class="titre-projet-view">About Us</p>
-                <img src="{{asset('image/projet/projet-renovation/photo2.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
-                <p class="titre-projet-view">Big work</p>
-                <img src="{{asset('image/projet/projet-renovation/photo3.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
-                <p class="titre-projet-view">Contact</p>
-                <img src="{{asset('image/projet/projet-renovation/photo4.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <img src="{{secure_asset('image/projet/projet-simon&fils/home.webp')}}" alt="photo 1 home" class="photo-taille-projet">
+                <img src="{{secure_asset('image/projet/projet-simon&fils/home-2.webp')}}" alt="photo 2 home" class="photo-taille-projet">
+                <img src="{{secure_asset('image/projet/projet-simon&fils/video-home.webp')}}" alt="Vidéo" class="photo-taille-projet">
+                <p class="titre-projet-view">Page Service</p>
+                <img src="{{secure_asset('image/projet/projet-simon&fils/service.webp')}}" alt="Photo service" class="photo-taille-projet">
+                <p class="titre-projet-view">Page Assistance</p>
+                <img src="{{secure_asset('image/projet/projet-simon&fils/page-assistance.webp')}}" alt="photo assistance" class="photo-taille-projet">
+                <p class="titre-projet-view">Page Boutique</p>
+                <img src="{{secure_asset('image/projet/projet-simon&fils/boutique.webp')}}" alt="photo boutique" class="photo-taille-projet">
                 <p class="titre-projet-view">Footer</p>
-                <img src="{{asset('image/projet/projet-renovation/photo5.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <img src="{{secure_asset('image/projet/projet-simon&fils/footer.webp')}}" alt="footer" class="photo-taille-projet">
+                <p class="titre-projet-view">Page Contact</p>
+                <img src="{{secure_asset('image/projet/projet-simon&fils/contact.webp')}}" alt="photo contact" class="photo-taille-projet">
             </div>
         </section>
     </div>
@@ -77,7 +79,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
 
-    <script src="{{asset('js/main.js')}}"></script>
+    <script src="{{secure_asset('js/main.js')}}"></script>
     
 </body>
 </html>

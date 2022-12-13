@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <link rel="stylesheet" href="{{secure_asset('css/style.css')}}">
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-M6Q46GFXCL"></script>
 <script>
@@ -24,7 +24,7 @@
     <div data-barba="container" date-barba-namespace="projet1-section">
         <section class="section-projet-unanime" id="projet1">
             <div class="div-photo-projet1">
-                <img src="{{asset('image/projet/scheerlinck.webp')}}" class="photo-projet1 border-anne" alt="">
+                <img src="{{secure_asset('image/projet/scheerlinck.webp')}}" class="photo-projet1 border-anne" alt="">
             </div>
     
             <div class="div-description">
@@ -59,13 +59,13 @@
             </div>
             <div class="div-photo-projet-view">
                 <p class="titre-projet-view">Home</p>
-                <img src="{{asset('image/projet/projet-scheerlinck/projet1-scheerlinck.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <img src="{{secure_asset('image/projet/projet-scheerlinck/projet1-scheerlinck.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
                 <p class="titre-projet-view">Renovation</p>
-                <img src="{{asset('image/projet/projet-scheerlinck/projet3-scheerlinck.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <img src="{{secure_asset('image/projet/projet-scheerlinck/projet3-scheerlinck.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
                 <p class="titre-projet-view">Contact</p>
-                <img src="{{asset('image/projet/projet-scheerlinck/projet4-scheerlinck.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <img src="{{secure_asset('image/projet/projet-scheerlinck/projet4-scheerlinck.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
                 <p class="titre-projet-view">Footer</p>
-                <img src="{{asset('image/projet/projet-scheerlinck/projet2-scheerlinck.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <img src="{{secure_asset('image/projet/projet-scheerlinck/projet2-scheerlinck.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
             </div>
         </section>
     </div>
@@ -73,7 +73,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
 
-    <script src="{{asset('js/main.js')}}"></script>
+    <script src="{{secure_asset('js/main.js')}}"></script>
 
 </body>
 </html>
