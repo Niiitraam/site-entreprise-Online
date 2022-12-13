@@ -53,7 +53,7 @@
                     
                 </div>
                 <div class="div-story-projet">
-                    <p class="p-story-projet">Funérailles Simon & Fils est une entreprise de Pompes Funèbres situé à Liège. La cliente avait besoin d'une nouveau site incluant une boutique de vente de fleurs. C'est pourquoi, nous avons développé un E-commerce moderne.</p>
+                    <p class="p-story-projet">Funérailles Simon & Fils est une entreprise de Pompes Funèbres situé à Liège. La cliente avait besoin d'un nouveau site incluant une boutique de vente de fleurs. C'est pourquoi, nous avons développé un E-commerce moderne.</p>
                     <a href="https://funeraillessimon.be/" class="lien-vers-site" target="__blank">voir le site</a>
                 </div>
             </div>

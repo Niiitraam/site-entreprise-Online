@@ -950,7 +950,6 @@ svg{
     border-radius: 2em;
     padding: 2%;
     width: 23%;
-    height: 25vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
