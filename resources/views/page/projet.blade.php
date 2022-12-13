@@ -19,7 +19,7 @@
                 <p class="p1-projet">Rénovation DR</p>
                 <p class="p2-projet">Web Design / Web development</p>
             </a>
-            <a href="/Simon&Fils" class="lien-projet" data-src="{{secure_asset('image/projet/funeraillessimon&fils.jpg')}}">
+            <a href="/Simon&Fils" class="lien-projet" data-src="{{secure_asset('image/projet/funeraillessimon&fils.png')}}">
                 <p class="p1-projet">Funérailles Simon & Fils</p>
                 <p class="p2-projet">Web Design / Web development</p>
             </a>
@@ -27,7 +27,7 @@
                 <p class="p1-projet">Anne Thiry</p>
                 <p class="p2-projet">Web Design / Web Development</p>
             </a>
-            <a href="/Scheerlinck" class="lien-projet" data-src="{{secure_asset('image/projet/scheerlinck.jpg')}}">
+            <a href="/Scheerlinck" class="lien-projet" data-src="{{secure_asset('image/projet/scheerlinck.png')}}">
                 <p class="p1-projet">Scheerlinck</p>
                 <p class="p2-projet">Web Développement</p>
             </a>
