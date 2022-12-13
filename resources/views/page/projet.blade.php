@@ -1,10 +1,12 @@
 <section class="section-projet" id="project">
     <div class="element-projet">
         <div class="img-wrapper">
-            <picture class="img-placeholder">
-                <source type="image/webp" srcset="{{secure_asset('image/projet/isabel-gomez.webp')}}">
-                <img src="{{secure_asset('image/projet/isabel-gomez.jpg')}}" alt="">
-            </picture>
+            <div class="img-placeholder">
+                <picture>
+                    <source type="image/webp" srcset="{{secure_asset('image/projet/isabel-gomez.webp')}}">
+                    <img src="{{secure_asset('image/projet/isabel-gomez.jpg')}}" alt="">
+                </picture>
+            </div>
         </div>
         <div class="titre-projet">
             <h3 class="h3-projet-div"><span class="numero-titre">03</span> Projects</h3>

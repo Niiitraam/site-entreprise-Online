@@ -273,7 +273,7 @@ if(window.matchMedia('(min-width:600px)').matches){
 
 let navLink = gsap.utils.toArray('.lien-projet'),
     imgWrap = document.querySelector('.img-wrapper'),
-    imgItem = document.querySelector('.img-placeholder source');
+    imgItem = document.querySelector('.img-placeholder picture img');
 
 tableauLink = Array.from(navLink)
 
