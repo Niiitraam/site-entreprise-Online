@@ -13,23 +13,23 @@
             <p class="p4-projet">5</p>
         </div>
         <ul>
-            <a href="/Isabel-Gomez" class="lien-projet" data-src="{{secure_asset('image/projet/isabel-gomez.jpg')}}">
+            <a href="/Isabel-Gomez" class="lien-projet" data-src="{{secure_asset('image/projet/isabel-gomez.jpg')}}" data-srcset="{{secure_asset('image/projet/isabel-gomez.webp')}}">
                 <p class="p1-projet">Isabel Gomez</p>
                 <p class="p2-projet">Web development</p>
             </a>
-            <a href="/Renovation-DR" class="lien-projet" data-src="{{secure_asset('image/projet/renovation.jpg')}}">
+            <a href="/Renovation-DR" class="lien-projet" data-src="{{secure_asset('image/projet/renovation.jpg')}}" data-srcset="{{secure_asset('image/projet/renovation.webp')}}">
                 <p class="p1-projet">Rénovation DR</p>
                 <p class="p2-projet">Web Design / Web development</p>
             </a>
-            <a href="/Simon&Fils" class="lien-projet" data-src="{{secure_asset('image/projet/funeraillessimon&fils.png')}}">
+            <a href="/Simon&Fils" class="lien-projet" data-src="{{secure_asset('image/projet/funeraillessimon&fils.png')}}" data-srcset="{{secure_asset('image/projet/funeraillessimon&fils.webp')}}">
                 <p class="p1-projet">Funérailles Simon & Fils</p>
                 <p class="p2-projet">Web Design / Web development</p>
             </a>
-            <a href="/Anne-Thiry" class="lien-projet" data-src="{{secure_asset('image/projet/anne-thiry.jpg')}}">
+            <a href="/Anne-Thiry" class="lien-projet" data-src="{{secure_asset('image/projet/anne-thiry.jpg')}}" data-srcset="{{secure_asset('image/projet/anne-thiry.webp')}}">
                 <p class="p1-projet">Anne Thiry</p>
                 <p class="p2-projet">Web Design / Web Development</p>
             </a>
-            <a href="/Scheerlinck" class="lien-projet" data-src="{{secure_asset('image/projet/scheerlinck.png')}}">
+            <a href="/Scheerlinck" class="lien-projet" data-src="{{secure_asset('image/projet/scheerlinck.png')}}" data-srcset="{{secure_asset('image/projet/scheerlinck.webp')}}">
                 <p class="p1-projet">Scheerlinck</p>
                 <p class="p2-projet">Web Développement</p>
             </a>
