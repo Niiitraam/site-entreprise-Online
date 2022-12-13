@@ -57,22 +57,30 @@
                     <a href="https://funeraillessimon.be/" class="lien-vers-site" target="__blank">voir le site</a>
                 </div>
             </div>
-            <div class="div-photo-projet-view">
+            <picture class="div-photo-projet-view">
                 <p class="titre-projet-view">Home</p>
-                <img src="{{secure_asset('image/projet/projet-simon&fils/home.webp')}}" alt="photo 1 home" class="photo-taille-projet">
-                <img src="{{secure_asset('image/projet/projet-simon&fils/home-2.webp')}}" alt="photo 2 home" class="photo-taille-projet">
-                <img src="{{secure_asset('image/projet/projet-simon&fils/video-home.webp')}}" alt="Vidéo" class="photo-taille-projet">
+                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-simon&fils/home.webp')}}" alt="photo 1 home" class="photo-taille-projet">
+                <img src="{{secure_asset('image/projet/projet-simon&fils/home.png')}}" alt="photo 1 home" class="photo-taille-projet">
+                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-simon&fils/home-2.webp')}}" alt="photo 1 home" class="photo-taille-projet">
+                <img src="{{secure_asset('image/projet/projet-simon&fils/home-2.png')}}" alt="photo 2 home" class="photo-taille-projet">
+                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-simon&fils/video-home.webp')}}" alt="photo 1 home" class="photo-taille-projet">
+                <img src="{{secure_asset('image/projet/projet-simon&fils/video-home.png')}}" alt="Vidéo" class="photo-taille-projet">
                 <p class="titre-projet-view">Page Service</p>
-                <img src="{{secure_asset('image/projet/projet-simon&fils/service.webp')}}" alt="Photo service" class="photo-taille-projet">
+                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-simon&fils/service.webp')}}" alt="photo 1 home" class="photo-taille-projet">
+                <img src="{{secure_asset('image/projet/projet-simon&fils/service.png')}}" alt="Photo service" class="photo-taille-projet">
                 <p class="titre-projet-view">Page Assistance</p>
-                <img src="{{secure_asset('image/projet/projet-simon&fils/page-assistance.webp')}}" alt="photo assistance" class="photo-taille-projet">
+                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-simon&fils/page-assistance.webp')}}" alt="photo 1 home" class="photo-taille-projet">
+                <img src="{{secure_asset('image/projet/projet-simon&fils/page-assistance.png')}}" alt="photo assistance" class="photo-taille-projet">
                 <p class="titre-projet-view">Page Boutique</p>
-                <img src="{{secure_asset('image/projet/projet-simon&fils/boutique.webp')}}" alt="photo boutique" class="photo-taille-projet">
+                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-simon&fils/boutique.webp')}}" alt="photo 1 home" class="photo-taille-projet">
+                <img src="{{secure_asset('image/projet/projet-simon&fils/boutique.png')}}" alt="photo boutique" class="photo-taille-projet">
                 <p class="titre-projet-view">Footer</p>
-                <img src="{{secure_asset('image/projet/projet-simon&fils/footer.webp')}}" alt="footer" class="photo-taille-projet">
+                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-simon&fils/footer.webp')}}" alt="photo 1 home" class="photo-taille-projet">
+                <img src="{{secure_asset('image/projet/projet-simon&fils/footer.png')}}" alt="footer" class="photo-taille-projet">
                 <p class="titre-projet-view">Page Contact</p>
-                <img src="{{secure_asset('image/projet/projet-simon&fils/contact.webp')}}" alt="photo contact" class="photo-taille-projet">
-            </div>
+                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-simon&fils/contact.webp')}}" alt="photo 1 home" class="photo-taille-projet">
+                <img src="{{secure_asset('image/projet/projet-simon&fils/contact.png')}}" alt="photo contact" class="photo-taille-projet">
+            </picture>
         </section>
     </div>
 

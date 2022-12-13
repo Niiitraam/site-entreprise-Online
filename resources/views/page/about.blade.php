@@ -3,11 +3,11 @@
     <div class="skills">
         <div class="image-photo-about">
             <!-- <img src="{{secure_asset('image/photo-martin.webp')}}" alt="photo martin" class="photo-martin"> -->
-            <picture>
+            <picture class="image-photo-about">
                 <source type="image/webp" srcset="{{secure_asset('image/photo-martin.webp')}}" alt="photo martin" class="photo-martin">
                 <img src="{{secure_asset('image/photo-martin.jpg')}}" alt="photo martin" class="photo-martin">
+                <div class="rectangle-photo"></div>
             </picture>
-            <div class="rectangle-photo"></div>
         </div>
     </div>
     <div class="skills">
