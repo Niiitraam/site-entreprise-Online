@@ -661,11 +661,13 @@ li{
 .section-projet-unanime{
     width: 100%;
     background-color: #F3F2F9;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .div-photo-projet1{
-    padding-left: 25%;
-    padding-right: 25%;
+    padding-left: 18%;
+    padding-right: 18%;
 }
 
 .photo-projet1{
@@ -683,8 +685,6 @@ li{
 
 .h3-projet{
     width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
     font-size: 3rem;
 }
 
@@ -729,15 +729,14 @@ li{
 }
 
 .border-projet1{
-    width: 80%;
+    width: 100%;
     height: 2px;
 }
 
 .category-projet{
     display: flex;
     width: 100%;
-    padding: 3% 10%;
-
+    padding: 3% 0%;
 }
 
 .li-projet-view{
@@ -754,6 +753,7 @@ li{
 
 .p-story-projet{
     font-size: 1.25rem;
+    text-align: justify;
 }
 
 .lien-skydoo{
@@ -814,7 +814,7 @@ li{
 }
 
 .photo-taille-projet{
-    width: 80%;
+    width: 100%;
     padding-top: 1%;
     padding-bottom: 3%;
 }
@@ -1024,11 +1024,7 @@ svg{
         text-align: center;
     }
     .border-projet1{
-        width: 90%;
         height: 2px;
-    }
-    .p-story-projet{
-        text-align: justify;
     }
     .li-projet-view{
         padding-right: 0;
@@ -1055,9 +1051,6 @@ svg{
     .titre-skills{
         font-size: 1.5rem;
         padding-bottom: 2%;
-    }
-    .photo-taille-projet{
-        width: 90%;
     }
     .texte-about{
         font-size: 1rem;
@@ -1151,10 +1144,12 @@ svg{
     /* page projet */
     .category-projet{
         display: block;
-        padding: 5% 5%;
+        padding: 5% 0%;
     }
     .h3-projet{
         font-size: 2rem;
+    }
+    .section-projet-unanime{
         padding-left: 5%;
         padding-right: 5%;
     }
@@ -1165,7 +1160,7 @@ svg{
         font-size: 1rem;
     }
     .div-photo-projet1{
-        padding: 40% 5% 10% 5%;
+        padding: 40% 8% 10% 8%;
     }
     .photo-projet1{
         border-radius: 10%;

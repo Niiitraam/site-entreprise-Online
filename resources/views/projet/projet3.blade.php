@@ -12,7 +12,7 @@
 <body data-barba="wrapper">
     <div class="cursor"></div>
     @include('partial/navbar')
-    <div data-barba="container" date-barba-namespace="projet1-section">
+    <div data-barba="container" date-barba-namespace="projet1-section" class="div-padding">
         <section class="section-projet-unanime" id="projet1">
             <div class="div-photo-projet1">
                 <img src="{{secure_asset('image/projet/renovation.webp')}}" class="photo-projet1" alt="">
