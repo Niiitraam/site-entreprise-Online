@@ -57,22 +57,22 @@
                 </picture>
                 <picture>
                     <p class="titre-projet-view">About us</p>
-                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-anne-thiry/photo1-anne.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-anne-thiry/photo2-anne.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
                     <img src="{{secure_asset('image/projet/projet-anne-thiry/photo2-anne.jpg')}}" alt="photo 2 anne" class="photo-taille-projet">
                 </picture>
                 <picture>
                     <p class="titre-projet-view">Experience</p>
-                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-anne-thiry/photo1-anne.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-anne-thiry/photo3-anne.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
                     <img src="{{secure_asset('image/projet/projet-anne-thiry/photo3-anne.jpg')}}" alt="photo 3 anne" class="photo-taille-projet">
                 </picture>
                 <picture>
                     <p class="titre-projet-view">Classes and Formations</p>
-                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-anne-thiry/photo1-anne.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-anne-thiry/photo4-anne.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
                     <img src="{{secure_asset('image/projet/projet-anne-thiry/photo4-anne.jpg')}}" alt="photo 4 anne" class="photo-taille-projet">
                 </picture>
                 <picture>
                     <p class="titre-projet-view">Footer</p>
-                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-anne-thiry/photo1-anne.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-anne-thiry/photo5-anne.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
                     <img src="{{secure_asset('image/projet/projet-anne-thiry/photo5-anne.jpg')}}" alt="photo 5 anne" class="photo-taille-projet">
                 </picture>
             </div>
