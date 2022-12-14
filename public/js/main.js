@@ -37,103 +37,6 @@ tableauCursor.forEach(element=> {
     })
 })
 
-
-// changement de page
-
-// function delay(n){
-//     n = n || 2000;
-//     return new Promise((done) => {
-//         setTimeout(() => {
-//             done();
-//         }, n)
-//     })
-// }
-
-
-// function pageTransition(){
-//     let tl = gsap.timeline();
-    
-//     tl
-//     .to(fermerTest, {display:'none', duration:0.01})
-//     .to(ouvrirTest, {display:'block'}, '<')
-//     .to('.loading-screen', {
-//         duration:1.2,
-//         height:"100%",
-//         top:'0%',
-//         ease:'Expo.easeInOut',
-//     },'<')
-//     .to('.loading-screen', {
-//         duration:1,
-//         height:"100%",
-//         top:"100%",
-//         ease:'Expo.easeInOut',
-//         delay:0.3,
-//     })
-//     .to('.ul-navbar', {
-//         y:'-100%',
-//         duration:0.1,
-//     }, '-=0.90')
-//     .to('.deuxieme-slide', {
-//         y:'-100%',
-//         duration:0.1
-//     }, '<');
-// }
-
-// function contentAnimation(){
-//     document.querySelector('body').classList.remove('overflow')
-//     document.querySelector('body').classList.remove('open')
-//     // document.querySelector('.div-cache').style.display = "block"
-// }
-
-// barba.hooks.enter(() => {
-//     window.scrollTo(0,0);
-// })
-
-// barba.hooks.afterEnter( ( data, next ) => {
-//     let script = document.createElement('script');
-//         script.src = 'main.js';
-//         next.container.appendChild(script);
-//   } );
-
-
-// barba.init({
-//     debug:true,
-//     sync:true,
-//     transitions:[{
-//         async leave(data){
-//             let done = this.async();
-//             pageTransition();
-//             await delay(1500);
-//             done();  
-//             console.log(data.current.next)
-//         },
-//         async enter(data){
-//             contentAnimation()
-//             console.log('enter')
-//         },
-//         async once(data){
-//             contentAnimation()
-//         },
-//         // beforeEnter(data, next){
-//         //     let script = document.createElement('script');
-//         //     script.src = "{{asset('js/main.js')}}";
-//         //     document.body.appendChild(script.src);
-//         // },
-//     }],
-//     // views: [{
-//     //     namespace: 'home-section',
-//     //     beforeEnter({ next }) {
-//     //         // load the Google Map API script
-//     //         let script = document.createElement('script');
-//     //         script.src = "<script src='{{asset('js/main.js')}}'></script>";
-//     //         console.log(script)
-//     //         next.container.appendChild(script.src);
-//     //       }
-//     //     }
-//     //   ]
-// })
-
-
 // ouverture //navbar
 let body = document.querySelector('body')
 let rondNoir = document.querySelector('.rondAutour')
@@ -196,10 +99,6 @@ fermerTourne.forEach((element, index) =>{
         gsap.to(fermer, {rotate:0, y:30})
     })
 })
-
-
-// lien navbar slide
-
 
 
 // rond qui tourne autour du menu burger
@@ -357,30 +256,14 @@ gsap.to('.rectangle-photo', {
     autoAlpha:1,
     scrollTrigger: {
         trigger: ".rectangle-photo",
-        // avoir les markers
-        // markers:true,
-        // Trigger scroller
         start: "top center",
         end: "bottom bottom",
         // onEnter onLeave onEnterBack onLeaveBack
         toggleActions: "play pause reverse reset",
-        // onEnter: () => console.log('test'),
-        // Faire que l'animation se déroule pendant le scroll
         scrub:1,
     }
 })
 
-// Faire que la div reste fixed pendant un certain temps
-// ScrollTrigger.create({
-//     trigger: ".div-about",
-//     pin: true,
-// })
-
-// barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container) {
-//     eval(container.querySelector("script").innerHTML);
-// });
-// console.log(barba.Dispatcher)
-// barba.Dispatcher.events()
 
 //https://astrodigital.co/contact
 //https://verbalplusvisual.com/about
