@@ -49,20 +49,28 @@
                     <a href="https://loodgieter-js.be/" class="lien-vers-site" target="__blank">voir le site</a>
                 </div>
             </div>
-            <picture class="div-photo-projet-view">
-                <p class="titre-projet-view">Home</p>
-                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-scheerlinck/projet1-scheerlinck.webp')}}" alt="photo 1 scheerlinck" class="photo-taille-projet">
-                <img src="{{secure_asset('image/projet/projet-scheerlinck/projet1-scheerlinck.png')}}" alt="photo 2 isabel" class="photo-taille-projet">
-                <p class="titre-projet-view">Renovation</p>
-                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-scheerlinck/projet1-scheerlinck.webp')}}" alt="photo 1 scheerlinck" class="photo-taille-projet">
-                <img src="{{secure_asset('image/projet/projet-scheerlinck/projet3-scheerlinck.png')}}" alt="photo 3 isabel" class="photo-taille-projet">
-                <p class="titre-projet-view">Contact</p>
-                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-scheerlinck/projet1-scheerlinck.webp')}}" alt="photo 1 scheerlinck" class="photo-taille-projet">
-                <img src="{{secure_asset('image/projet/projet-scheerlinck/projet4-scheerlinck.png')}}" alt="photo 4 isabel" class="photo-taille-projet">
-                <p class="titre-projet-view">Footer</p>
-                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-scheerlinck/projet1-scheerlinck.webp')}}" alt="photo 1 scheerlinck" class="photo-taille-projet">
-                <img src="{{secure_asset('image/projet/projet-scheerlinck/projet2-scheerlinck.png')}}" alt="photo 5 isabel" class="photo-taille-projet">
-            </picture>
+            <div class="div-photo-projet-view">
+                <picture>
+                    <p class="titre-projet-view">Home</p>
+                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-scheerlinck/projet1-scheerlinck.webp')}}" alt="photo 1 scheerlinck" class="photo-taille-projet">
+                    <img src="{{secure_asset('image/projet/projet-scheerlinck/projet1-scheerlinck.png')}}" alt="photo 2 isabel" class="photo-taille-projet">
+                </picture>
+                <picture>
+                    <p class="titre-projet-view">Renovation</p>
+                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-scheerlinck/projet1-scheerlinck.webp')}}" alt="photo 1 scheerlinck" class="photo-taille-projet">
+                    <img src="{{secure_asset('image/projet/projet-scheerlinck/projet3-scheerlinck.png')}}" alt="photo 3 isabel" class="photo-taille-projet">
+                </picture>
+                <picture>
+                    <p class="titre-projet-view">Contact</p>
+                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-scheerlinck/projet1-scheerlinck.webp')}}" alt="photo 1 scheerlinck" class="photo-taille-projet">
+                    <img src="{{secure_asset('image/projet/projet-scheerlinck/projet4-scheerlinck.png')}}" alt="photo 4 isabel" class="photo-taille-projet">
+                </picture>
+                <picture>
+                    <p class="titre-projet-view">Footer</p>
+                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-scheerlinck/projet1-scheerlinck.webp')}}" alt="photo 1 scheerlinck" class="photo-taille-projet">
+                    <img src="{{secure_asset('image/projet/projet-scheerlinck/projet2-scheerlinck.png')}}" alt="photo 5 isabel" class="photo-taille-projet">
+                </picture>
+            </div>
         </section>
     </div>
     

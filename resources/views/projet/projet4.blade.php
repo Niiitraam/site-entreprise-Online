@@ -49,23 +49,33 @@
                     <a href="https://annethiry-papelotte.be/" class="lien-vers-site" target="__blank">voir le site</a>
                 </div>
             </div>
-            <picture class="div-photo-projet-view">
-                <p class="titre-projet-view">Home</p>
-                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-anne-thiry/photo1-anne.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
-                <img src="{{secure_asset('image/projet/projet-anne-thiry/photo1-anne.jpg')}}" alt="photo 1 anne" class="photo-taille-projet">
-                <p class="titre-projet-view">About us</p>
-                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-anne-thiry/photo1-anne.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
-                <img src="{{secure_asset('image/projet/projet-anne-thiry/photo2-anne.jpg')}}" alt="photo 2 anne" class="photo-taille-projet">
-                <p class="titre-projet-view">Experience</p>
-                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-anne-thiry/photo1-anne.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
-                <img src="{{secure_asset('image/projet/projet-anne-thiry/photo3-anne.jpg')}}" alt="photo 3 anne" class="photo-taille-projet">
-                <p class="titre-projet-view">Classes and Formations</p>
-                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-anne-thiry/photo1-anne.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
-                <img src="{{secure_asset('image/projet/projet-anne-thiry/photo4-anne.jpg')}}" alt="photo 4 anne" class="photo-taille-projet">
-                <p class="titre-projet-view">Footer</p>
-                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-anne-thiry/photo1-anne.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
-                <img src="{{secure_asset('image/projet/projet-anne-thiry/photo5-anne.jpg')}}" alt="photo 5 anne" class="photo-taille-projet">
-            </picture>
+            <div class="div-photo-projet-view">
+                <picture>
+                    <p class="titre-projet-view">Home</p>
+                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-anne-thiry/photo1-anne.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                    <img src="{{secure_asset('image/projet/projet-anne-thiry/photo1-anne.jpg')}}" alt="photo 1 anne" class="photo-taille-projet">
+                </picture>
+                <picture>
+                    <p class="titre-projet-view">About us</p>
+                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-anne-thiry/photo1-anne.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                    <img src="{{secure_asset('image/projet/projet-anne-thiry/photo2-anne.jpg')}}" alt="photo 2 anne" class="photo-taille-projet">
+                </picture>
+                <picture>
+                    <p class="titre-projet-view">Experience</p>
+                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-anne-thiry/photo1-anne.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                    <img src="{{secure_asset('image/projet/projet-anne-thiry/photo3-anne.jpg')}}" alt="photo 3 anne" class="photo-taille-projet">
+                </picture>
+                <picture>
+                    <p class="titre-projet-view">Classes and Formations</p>
+                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-anne-thiry/photo1-anne.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                    <img src="{{secure_asset('image/projet/projet-anne-thiry/photo4-anne.jpg')}}" alt="photo 4 anne" class="photo-taille-projet">
+                </picture>
+                <picture>
+                    <p class="titre-projet-view">Footer</p>
+                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-anne-thiry/photo1-anne.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                    <img src="{{secure_asset('image/projet/projet-anne-thiry/photo5-anne.jpg')}}" alt="photo 5 anne" class="photo-taille-projet">
+                </picture>
+            </div>
         </section>
     </div>
     

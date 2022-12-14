@@ -49,26 +49,38 @@
                     <a href="https://renovationdr.be/" class="lien-vers-site" target="__blank">voir le site</a>
                 </div>
             </div>
-            <picture class="div-photo-projet-view">
-                <p class="titre-projet-view">Menu</p>
-                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-renovation/photo6.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
-                <img src="{{secure_asset('image/projet/projet-renovation/photo6.jpg')}}" alt="photo 1 rénovation dr" class="photo-taille-projet">
-                <p class="titre-projet-view">Home</p>
-                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-renovation/photo1.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
-                <img src="{{secure_asset('image/projet/projet-renovation/photo1.jpg')}}" alt="photo 2 rénovation dr" class="photo-taille-projet">
-                <p class="titre-projet-view">About Us</p>
-                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-renovation/photo2.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
-                <img src="{{secure_asset('image/projet/projet-renovation/photo2.jpg')}}" alt="photo 3 rénovation dr" class="photo-taille-projet">
-                <p class="titre-projet-view">Big work</p>
-                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-renovation/photo3.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
-                <img src="{{secure_asset('image/projet/projet-renovation/photo3.jpg')}}" alt="photo 4 rénovation dr" class="photo-taille-projet">
-                <p class="titre-projet-view">Contact</p>
-                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-renovation/photo4.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
-                <img src="{{secure_asset('image/projet/projet-renovation/photo4.jpg')}}" alt="photo 5 rénovation dr" class="photo-taille-projet">
-                <p class="titre-projet-view">Footer</p>
-                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-renovation/photo5.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
-                <img src="{{secure_asset('image/projet/projet-renovation/photo5.jpg')}}" alt="photo 6 rénovation dr" class="photo-taille-projet">
-            </picture>
+            <div class="div-photo-projet-view">
+                <picture>
+                    <p class="titre-projet-view">Menu</p>
+                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-renovation/photo6.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                    <img src="{{secure_asset('image/projet/projet-renovation/photo6.jpg')}}" alt="photo 1 rénovation dr" class="photo-taille-projet">
+                </picture>
+                <picture>
+                    <p class="titre-projet-view">Home</p>
+                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-renovation/photo1.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                    <img src="{{secure_asset('image/projet/projet-renovation/photo1.jpg')}}" alt="photo 2 rénovation dr" class="photo-taille-projet">
+                </picture>
+                <picture>
+                    <p class="titre-projet-view">About Us</p>
+                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-renovation/photo2.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                    <img src="{{secure_asset('image/projet/projet-renovation/photo2.jpg')}}" alt="photo 3 rénovation dr" class="photo-taille-projet">
+                </picture>
+                <picture>
+                    <p class="titre-projet-view">Big work</p>
+                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-renovation/photo3.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                    <img src="{{secure_asset('image/projet/projet-renovation/photo3.jpg')}}" alt="photo 4 rénovation dr" class="photo-taille-projet">
+                </picture>
+                <picture>
+                    <p class="titre-projet-view">Contact</p>
+                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-renovation/photo4.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                    <img src="{{secure_asset('image/projet/projet-renovation/photo4.jpg')}}" alt="photo 5 rénovation dr" class="photo-taille-projet">
+                </picture>
+                <picture>
+                    <p class="titre-projet-view">Footer</p>
+                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-renovation/photo5.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                    <img src="{{secure_asset('image/projet/projet-renovation/photo5.jpg')}}" alt="photo 6 rénovation dr" class="photo-taille-projet">
+                </picture>
+            </div>
         </section>
     </div>
 
