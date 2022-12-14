@@ -565,6 +565,7 @@ li{
     height: 100%;
     background: #F3F2F9;
     position: absolute;
+    display: none;
 }
 
 /* fin About us */
@@ -666,8 +667,12 @@ li{
 }
 
 .div-photo-projet1{
-    padding-left: 18%;
-    padding-right: 18%;
+    /* padding-left: 18%;
+    padding-right: 18%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .photo-projet1{
@@ -1152,6 +1157,7 @@ svg{
     .section-projet-unanime{
         padding-left: 5%;
         padding-right: 5%;
+        /* padding-top: 40%; */
     }
     .div-story-projet{
         padding: 0;

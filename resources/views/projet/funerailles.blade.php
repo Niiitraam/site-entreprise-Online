@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{secure_asset('css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <title>MM - Funérailles Simon & Fils</title>
 </head>
 
@@ -14,8 +14,8 @@
     <div data-barba="container" date-barba-namespace="projet1-section">
         <section class="section-projet-unanime" id="projet1">
             <picture class="div-photo-projet1">
-                <source type="image/webp" srcset="{{secure_asset('image/projet/funeraillessimon&fils.webp')}}" alt="logo funerailes" class="photo-projet1">
-                <img src="{{secure_asset('image/projet/funeraillessimon&fils.png')}}" class="photo-projet1" alt="logo funerailles">
+                <source type="image/webp" srcset="{{asset('image/projet/funeraillessimon&fils.webp')}}" alt="logo funerailes" class="photo-projet1">
+                <img src="{{asset('image/projet/funeraillessimon&fils.png')}}" class="photo-projet1" alt="logo funerailles">
             </picture>
     
             <div class="div-description">
@@ -50,33 +50,33 @@
             </div>
             <picture class="div-photo-projet-view">
                 <p class="titre-projet-view">Home</p>
-                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-simon&fils/home.webp')}}" alt="photo 1 home" class="photo-taille-projet">
-                <img src="{{secure_asset('image/projet/projet-simon&fils/home.png')}}" alt="photo 1 home" class="photo-taille-projet">
-                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-simon&fils/home-2.webp')}}" alt="photo 1 home" class="photo-taille-projet">
-                <img src="{{secure_asset('image/projet/projet-simon&fils/home-2.png')}}" alt="photo 2 home" class="photo-taille-projet">
-                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-simon&fils/video-home.webp')}}" alt="photo 1 home" class="photo-taille-projet">
-                <img src="{{secure_asset('image/projet/projet-simon&fils/video-home.png')}}" alt="Vidéo" class="photo-taille-projet">
+                <source type="image/webp" srcset="{{asset('image/projet/projet-simon&fils/home.webp')}}" alt="photo 1 home" class="photo-taille-projet">
+                <img src="{{asset('image/projet/projet-simon&fils/home.png')}}" alt="photo 1 home" class="photo-taille-projet">
+                <source type="image/webp" srcset="{{asset('image/projet/projet-simon&fils/home-2.webp')}}" alt="photo 1 home" class="photo-taille-projet">
+                <img src="{{asset('image/projet/projet-simon&fils/home-2.png')}}" alt="photo 2 home" class="photo-taille-projet">
+                <source type="image/webp" srcset="{{asset('image/projet/projet-simon&fils/video-home.webp')}}" alt="photo 1 home" class="photo-taille-projet">
+                <img src="{{asset('image/projet/projet-simon&fils/video-home.png')}}" alt="Vidéo" class="photo-taille-projet">
                 <p class="titre-projet-view">Page Service</p>
-                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-simon&fils/service.webp')}}" alt="photo 1 home" class="photo-taille-projet">
-                <img src="{{secure_asset('image/projet/projet-simon&fils/service.png')}}" alt="Photo service" class="photo-taille-projet">
+                <source type="image/webp" srcset="{{asset('image/projet/projet-simon&fils/service.webp')}}" alt="photo 1 home" class="photo-taille-projet">
+                <img src="{{asset('image/projet/projet-simon&fils/service.png')}}" alt="Photo service" class="photo-taille-projet">
                 <p class="titre-projet-view">Page Assistance</p>
-                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-simon&fils/page-assistance.webp')}}" alt="photo 1 home" class="photo-taille-projet">
-                <img src="{{secure_asset('image/projet/projet-simon&fils/page-assistance.png')}}" alt="photo assistance" class="photo-taille-projet">
+                <source type="image/webp" srcset="{{asset('image/projet/projet-simon&fils/page-assistance.webp')}}" alt="photo 1 home" class="photo-taille-projet">
+                <img src="{{asset('image/projet/projet-simon&fils/page-assistance.png')}}" alt="photo assistance" class="photo-taille-projet">
                 <p class="titre-projet-view">Page Boutique</p>
-                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-simon&fils/boutique.webp')}}" alt="photo 1 home" class="photo-taille-projet">
-                <img src="{{secure_asset('image/projet/projet-simon&fils/boutique.png')}}" alt="photo boutique" class="photo-taille-projet">
+                <source type="image/webp" srcset="{{asset('image/projet/projet-simon&fils/boutique.webp')}}" alt="photo 1 home" class="photo-taille-projet">
+                <img src="{{asset('image/projet/projet-simon&fils/boutique.png')}}" alt="photo boutique" class="photo-taille-projet">
                 <p class="titre-projet-view">Footer</p>
-                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-simon&fils/footer.webp')}}" alt="photo 1 home" class="photo-taille-projet">
-                <img src="{{secure_asset('image/projet/projet-simon&fils/footer.png')}}" alt="footer" class="photo-taille-projet">
+                <source type="image/webp" srcset="{{asset('image/projet/projet-simon&fils/footer.webp')}}" alt="photo 1 home" class="photo-taille-projet">
+                <img src="{{asset('image/projet/projet-simon&fils/footer.png')}}" alt="footer" class="photo-taille-projet">
                 <p class="titre-projet-view">Page Contact</p>
-                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-simon&fils/contact.webp')}}" alt="photo 1 home" class="photo-taille-projet">
-                <img src="{{secure_asset('image/projet/projet-simon&fils/contact.png')}}" alt="photo contact" class="photo-taille-projet">
+                <source type="image/webp" srcset="{{asset('image/projet/projet-simon&fils/contact.webp')}}" alt="photo 1 home" class="photo-taille-projet">
+                <img src="{{asset('image/projet/projet-simon&fils/contact.png')}}" alt="photo contact" class="photo-taille-projet">
             </picture>
         </section>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js" ></script>
-    <script src="{{secure_asset('js/main.js')}}"></script>
+    <script src="{{asset('js/main.js')}}"></script>
     
 </body>
 </html>
