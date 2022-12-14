@@ -667,8 +667,6 @@ li{
 }
 
 .div-photo-projet1{
-    /* padding-left: 18%;
-    padding-right: 18%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -676,7 +674,7 @@ li{
 }
 
 .photo-projet1{
-    width: 100%;
+    width: 80%;
     border-radius: 0% 0% 10% 10%;
 }
 
@@ -1170,6 +1168,7 @@ svg{
     }
     .photo-projet1{
         border-radius: 10%;
+        width: 100%;
     }
     /* contact */
     .flex-contact{

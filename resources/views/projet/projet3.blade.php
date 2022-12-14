@@ -14,9 +14,10 @@
     @include('partial/navbar')
     <div data-barba="container" date-barba-namespace="projet1-section" class="div-padding">
         <section class="section-projet-unanime" id="projet1">
-            <div class="div-photo-projet1">
-                <img src="{{secure_asset('image/projet/renovation.webp')}}" class="photo-projet1" alt="">
-            </div>
+            <picture class="div-photo-projet1">
+                <source type="image/webp" srcset="{{secure_asset('image/projet/renovation.webp')}}" alt="logo Rénovation Dr" class="photo-projet1">
+                <img src="{{secure_asset('image/projet/renovation.jpg')}}" class="photo-projet1" alt="logo Rénovation Dr">
+            </picture>
     
             <div class="div-description">
                 <h3 class="h3-projet color-renovation">Rénovation DR</h3>
@@ -48,20 +49,26 @@
                     <a href="https://renovationdr.be/" class="lien-vers-site" target="__blank">voir le site</a>
                 </div>
             </div>
-            <div class="div-photo-projet-view">
+            <picture class="div-photo-projet-view">
                 <p class="titre-projet-view">Menu</p>
-                <img src="{{secure_asset('image/projet/projet-renovation/photo6.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-renovation/photo6.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <img src="{{secure_asset('image/projet/projet-renovation/photo6.jpg')}}" alt="photo 1 rénovation dr" class="photo-taille-projet">
                 <p class="titre-projet-view">Home</p>
-                <img src="{{secure_asset('image/projet/projet-renovation/photo1.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-renovation/photo1.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <img src="{{secure_asset('image/projet/projet-renovation/photo1.jpg')}}" alt="photo 2 rénovation dr" class="photo-taille-projet">
                 <p class="titre-projet-view">About Us</p>
-                <img src="{{secure_asset('image/projet/projet-renovation/photo2.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-renovation/photo2.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <img src="{{secure_asset('image/projet/projet-renovation/photo2.jpg')}}" alt="photo 3 rénovation dr" class="photo-taille-projet">
                 <p class="titre-projet-view">Big work</p>
-                <img src="{{secure_asset('image/projet/projet-renovation/photo3.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-renovation/photo3.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <img src="{{secure_asset('image/projet/projet-renovation/photo3.jpg')}}" alt="photo 4 rénovation dr" class="photo-taille-projet">
                 <p class="titre-projet-view">Contact</p>
-                <img src="{{secure_asset('image/projet/projet-renovation/photo4.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-renovation/photo4.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <img src="{{secure_asset('image/projet/projet-renovation/photo4.jpg')}}" alt="photo 5 rénovation dr" class="photo-taille-projet">
                 <p class="titre-projet-view">Footer</p>
-                <img src="{{secure_asset('image/projet/projet-renovation/photo5.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
-            </div>
+                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-renovation/photo5.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                <img src="{{secure_asset('image/projet/projet-renovation/photo5.jpg')}}" alt="photo 6 rénovation dr" class="photo-taille-projet">
+            </picture>
         </section>
     </div>
 
