@@ -13,9 +13,10 @@
     @include('partial/navbar')
     <div data-barba="container" date-barba-namespace="projet1-section">
         <section class="section-projet-unanime" id="projet1">
-            <div class="div-photo-projet1">
-                <img src="{{secure_asset('image/projet/funeraillessimon&fils.webp')}}" class="photo-projet1" alt="">
-            </div>
+            <picture class="div-photo-projet1">
+                <source type="image/webp" srcset="{{secure_asset('image/projet/funeraillessimon&fils.webp')}}" alt="logo funerailes" class="photo-projet1">
+                <img src="{{secure_asset('image/projet/funeraillessimon&fils.png')}}" class="photo-projet1" alt="logo funerailles">
+            </picture>
     
             <div class="div-description">
                 <h3 class="h3-projet color-simon">Funérailles Simon & Fils</h3>
