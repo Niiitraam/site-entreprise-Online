@@ -674,7 +674,7 @@ li{
 }
 
 .photo-projet1{
-    width: 80%;
+    width: 65%;
     border-radius: 0% 0% 10% 10%;
 }
 
@@ -825,6 +825,7 @@ li{
 .titre-projet-view{
     font-size: 1.25rem;
     text-transform: uppercase;
+    text-align: center;
 }
 
 

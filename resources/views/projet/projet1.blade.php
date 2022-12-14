@@ -49,29 +49,43 @@
                     <a href="https://isabelgomezinteriors.com/" class="lien-vers-site" target="__blank">voir le site</a>
                 </div>
             </div>
-            <picture class="div-photo-projet-view">
-                <p class="titre-projet-view">Page d'accueil</p>
-                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-isabel/isabel1.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
-                <img src="{{secure_asset('image/projet/projet-isabel/isabel1.png')}}" alt="photo 1 isabel" class="photo-taille-projet">
-                <p class="titre-projet-view">Menu</p>
-                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-isabel/isabel2.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
-                <img src="{{secure_asset('image/projet/projet-isabel/isabel2.png')}}" alt="photo 2 isabel" class="photo-taille-projet">
-                <p class="titre-projet-view">Contact</p>
-                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-isabel/isabel3.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
-                <img src="{{secure_asset('image/projet/projet-isabel/isabel3.png')}}" alt="photo 3 isabel" class="photo-taille-projet">
-                <p class="titre-projet-view">Page Projet</p>
-                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-isabel/isabel4.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
-                <img src="{{secure_asset('image/projet/projet-isabel/isabel4.png')}}" alt="photo 4 isabel" class="photo-taille-projet">
-                <p class="titre-projet-view">Page Boutique</p>
-                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-isabel/isabel5.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
-                <img src="{{secure_asset('image/projet/projet-isabel/isabel5.png')}}" alt="photo 5 isabel" class="photo-taille-projet">
-                <p class="titre-projet-view">Page graphisme</p>
-                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-isabel/isabel6.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
-                <img src="{{secure_asset('image/projet/projet-isabel/isabel6.png')}}" alt="photo 6 isabel" class="photo-taille-projet">
-                <p class="titre-projet-view">Footer</p>
-                <source type="image/webp" srcset="{{secure_asset('image/projet/projet-isabel/isabel7.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
-                <img src="{{secure_asset('image/projet/projet-isabel/isabel7.png')}}" alt="photo 7 isabel" class="photo-taille-projet">
-            </picture>
+            <div class="div-photo-projet-view">
+                <picture>
+                    <p class="titre-projet-view">Page d'accueil</p>
+                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-isabel/isabel1.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                    <img src="{{secure_asset('image/projet/projet-isabel/isabel1.png')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                </picture>
+                <picture>
+                    <p class="titre-projet-view">Menu</p>
+                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-isabel/isabel2.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                    <img src="{{secure_asset('image/projet/projet-isabel/isabel2.png')}}" alt="photo 2 isabel" class="photo-taille-projet">
+                </picture>
+                <picture>
+                    <p class="titre-projet-view">Contact</p>
+                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-isabel/isabel3.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                    <img src="{{secure_asset('image/projet/projet-isabel/isabel3.png')}}" alt="photo 3 isabel" class="photo-taille-projet">
+                </picture>
+                <picture>
+                    <p class="titre-projet-view">Page Projet</p>
+                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-isabel/isabel4.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                    <img src="{{secure_asset('image/projet/projet-isabel/isabel4.png')}}" alt="photo 4 isabel" class="photo-taille-projet">
+                </picture>
+                <picture>
+                    <p class="titre-projet-view">Page Boutique</p>
+                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-isabel/isabel5.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                    <img src="{{secure_asset('image/projet/projet-isabel/isabel5.png')}}" alt="photo 5 isabel" class="photo-taille-projet">
+                </picture>
+                <picture>
+                    <p class="titre-projet-view">Page graphisme</p>
+                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-isabel/isabel6.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                    <img src="{{secure_asset('image/projet/projet-isabel/isabel6.png')}}" alt="photo 6 isabel" class="photo-taille-projet">
+                </picture>
+                <picture>
+                    <p class="titre-projet-view">Footer</p>
+                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-isabel/isabel7.webp')}}" alt="photo 1 isabel" class="photo-taille-projet">
+                    <img src="{{secure_asset('image/projet/projet-isabel/isabel7.png')}}" alt="photo 7 isabel" class="photo-taille-projet">
+                </picture>
+            </div>
         </section>
     </div>
 

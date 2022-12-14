@@ -68,6 +68,5 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js" ></script>
     <script src="{{secure_asset('js/main.js')}}"></script>
-
 </body>
 </html>
