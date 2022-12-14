@@ -57,17 +57,17 @@
                 </picture>
                 <picture>
                     <p class="titre-projet-view">Renovation</p>
-                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-scheerlinck/projet1-scheerlinck.webp')}}" alt="photo 1 scheerlinck" class="photo-taille-projet">
+                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-scheerlinck/projet3-scheerlinck.webp')}}" alt="photo 1 scheerlinck" class="photo-taille-projet">
                     <img src="{{secure_asset('image/projet/projet-scheerlinck/projet3-scheerlinck.png')}}" alt="photo 3 isabel" class="photo-taille-projet">
                 </picture>
                 <picture>
                     <p class="titre-projet-view">Contact</p>
-                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-scheerlinck/projet1-scheerlinck.webp')}}" alt="photo 1 scheerlinck" class="photo-taille-projet">
+                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-scheerlinck/projet4-scheerlinck.webp')}}" alt="photo 1 scheerlinck" class="photo-taille-projet">
                     <img src="{{secure_asset('image/projet/projet-scheerlinck/projet4-scheerlinck.png')}}" alt="photo 4 isabel" class="photo-taille-projet">
                 </picture>
                 <picture>
                     <p class="titre-projet-view">Footer</p>
-                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-scheerlinck/projet1-scheerlinck.webp')}}" alt="photo 1 scheerlinck" class="photo-taille-projet">
+                    <source type="image/webp" srcset="{{secure_asset('image/projet/projet-scheerlinck/projet2-scheerlinck.webp')}}" alt="photo 1 scheerlinck" class="photo-taille-projet">
                     <img src="{{secure_asset('image/projet/projet-scheerlinck/projet2-scheerlinck.png')}}" alt="photo 5 isabel" class="photo-taille-projet">
                 </picture>
             </div>
